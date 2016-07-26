@@ -1,0 +1,38 @@
+// =============================================================================
+// Tables
+// =============================================================================
+
+// Components
+// =============================================================================
+
+table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+  border: 1px solid $base-border-color;
+}
+
+th {
+  font-weight: $base-font-weight-bold;
+}
+
+// Descendants
+// =============================================================================
+
+// Wrap you tables inside `table-responsive` and the table will be made mobile
+// friendly by enabling horizontal scrolling when content cannot be displayed
+// normally in smaller views.
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  min-height: .01%;
+  overflow-x: auto;
+}

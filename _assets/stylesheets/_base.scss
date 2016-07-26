@@ -1,0 +1,132 @@
+// =============================================================================
+// Base
+// =============================================================================
+
+// Document
+// =============================================================================
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  margin: 0 auto;
+  font-family: $base-font-family;
+  -webkit-font-smoothing: antialiased;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  color: $base-font-color;
+}
+
+// Typography
+// =============================================================================
+
+p {
+  margin: 0;
+  font-weight: $base-font-weight;
+}
+
+b,
+strong {
+  font-weight: $base-font-weight-bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: $base-font-size * 2.25;
+}
+
+h2 {
+  font-size: $base-font-size * 2;
+}
+
+h3 {
+  font-size: $base-font-size * 1.75;
+}
+
+h4 {
+  font-size: $base-font-size * 1.5;
+}
+
+h5 {
+  font-size: $base-font-size * 1.25;
+}
+
+h6 {
+  font-size: $base-font-size;
+}
+
+a {
+  color: $base-accent-color;
+  text-decoration: none;
+  transition: color $base-transition-speed linear;
+  &:hover,
+  &:active {
+    color: $base-accent-highlighted-color;
+  }
+  &:focus {
+    color: $base-accent-highlighted-color;
+    outline: none;
+  }
+}
+
+ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+ol {
+  padding-left: 20px;
+  margin: 0;
+}
+
+abbr {
+  cursor: help;
+  border-bottom: 1px dotted $base-border-color;
+}
+
+blockquote {
+  padding-left: 15px;
+  margin: 10px 0;
+  font-style: italic;
+  color: $base-font-color;
+  border-left: 2px solid $base-border-color;
+}
+
+// Other
+// =============================================================================
+
+hr {
+  margin: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid $base-border-color;
+  border-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0;
+}
+
+::selection {
+  color: $white;
+  background-color: $gray-darkest;
+}

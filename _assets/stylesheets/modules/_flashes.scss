@@ -1,0 +1,46 @@
+// =============================================================================
+// Flashes
+// =============================================================================
+
+// Settings
+// =============================================================================
+
+// Scaffolding flashes with a given color.
+// @param {Hex} $color Color for the flash background and color.
+
+@mixin flash-generator($color) {
+  color: $color;
+  background-color: lighten($color, 40);
+}
+
+// Component
+// =============================================================================
+
+.flash {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  font-weight: $base-font-weight-bold;
+  border-radius: $base-border-radius;
+}
+
+// Descendants
+// =============================================================================
+
+// Basic generated flashes
+
+.flash-danger {
+  @include flash-generator($brand-danger);
+}
+
+.flash-primary {
+  @include flash-generator($brand-primary);
+}
+
+.flash-success {
+  @include flash-generator($brand-success);
+}
+
+.flash-warning {
+  @include flash-generator($brand-warning);
+}

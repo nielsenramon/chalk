@@ -1,0 +1,96 @@
+// =============================================================================
+// Forms
+// =============================================================================
+
+// Components
+// =============================================================================
+
+form {
+  position: relative;
+  display: block;
+  clear: both;
+}
+
+fieldset {
+  display: block;
+  min-width: 100%;
+  padding: 20px;
+  margin: 0;
+  background-color: $gray-lightest;
+  border: 1px solid $base-border-color;
+  border-radius: $base-border-radius;
+}
+
+label,
+input,
+select,
+textarea {
+  display: inline-block;
+  font-family: $base-font-family;
+  line-height: $base-line-height;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: $base-font-weight-bold;
+  color: $base-font-color;
+}
+
+input:not([type="submit"]):not([type="file"]):not([type="checkbox"]):not([type="radio"]),
+textarea {
+  width: 100%;
+  padding: 10px 15px;
+  font-family: $base-font-family;
+  color: $base-font-color;
+  background-color: $white;
+  border: 1px solid $gray-lighter;
+  border-radius: $base-border-radius;
+  transition: border-color $base-transition-speed linear;
+  appearance: none;
+  &:hover {
+    border-color: darken($base-border-color, 10);
+  }
+  &:focus,
+  &:active {
+    border-color: $base-accent-color;
+    outline: none;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    background-color: $gray-lighter;
+    &:hover {
+      border-color: $gray-lighter;
+    }
+    &:active {
+      border-color: $gray-lighter;
+      outline: none;
+    }
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+input[type="file"] {
+  width: 100%;
+}
+
+// Descendants
+// =============================================================================
+
+// Positions your form label and/or input field under each other nicely grouped
+// with correct spacing in between.
+
+.form-item {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}

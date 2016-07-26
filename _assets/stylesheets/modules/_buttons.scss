@@ -1,0 +1,82 @@
+// =============================================================================
+// Buttons
+// =============================================================================
+
+// Settings
+// =============================================================================
+
+// Scaffold buttons with a given color and background.
+// @param {Hex} $background color for the button background.
+// @param {Hex} $font color for the button text.
+
+@mixin button-generator($background, $font) {
+  color: $font;
+  background-color: $background;
+  &:hover {
+    color: $font;
+    background-color: lighten($background, 5);
+  }
+  &:focus,
+  &:active {
+    color: $font;
+    background-color: darken($background, 10);
+    outline: none;
+  }
+}
+
+// Component
+// =============================================================================
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight-bold;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  border-radius: $base-border-radius;
+  transition: all $base-transition-speed ease-in-out;
+  appearance: none;
+  user-select: none;
+  &:disabled,
+  &.is-disabled {
+    color: $gray-light;
+    cursor: not-allowed;
+    background-color: $gray-lightest;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $gray-light;
+      background-color: $gray-lightest;
+      outline: none;
+    }
+  }
+}
+
+// Descendants
+// =============================================================================
+
+// Basic generated buttons
+
+.button-default {
+  @include button-generator($gray-lightest, $base-font-color);
+}
+
+.button-danger {
+  @include button-generator($brand-danger, $white);
+}
+
+.button-primary {
+  @include button-generator($brand-primary, $white);
+}
+
+.button-success {
+  @include button-generator($brand-success, $white);
+}
+
+.button-warning {
+  @include button-generator($brand-warning, $white);
+}
