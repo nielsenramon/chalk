@@ -5,8 +5,8 @@
 // Typography
 // =============================================================================
 
-$sans-serif: Helvetica, Arial, sans-serif;
-$serif: Courier, serif;
+$sans-serif: "Palanquin", Helvetica, Arial, sans-serif;
+$serif: "Cormorant Garamond", Courier, serif;
 $base-font-family: $sans-serif;
 $base-font-weight: 400;
 $base-font-weight-bold: 700;
@@ -30,13 +30,13 @@ $white: #fff;
 
 $brand-success: #1fbf92;
 $brand-danger: #e74b3c;
-$brand-primary: #3088bf;
+$brand-primary: #3449ed;
 $brand-warning: #f1c90b;
 
 // Font colors
 
 $base-font-color: $gray-dark;
-$base-accent-color: $brand-primary;
+$base-accent-color: $gray-darker;
 $base-accent-highlighted-color: darken($base-accent-color, 15);
 
 // Border color
@@ -49,7 +49,7 @@ $base-border-color: $gray-lightest;
 // Grid
 
 $columns: 12;
-$max-width: 1140px;
+$max-width: 650px;
 $gutter: 20px;
 $one-column: 100% / $columns;
 $negative-gutter: 0 - $gutter;

@@ -23,9 +23,13 @@ ga_analytics: UA-XXXXXXXX-X
 
 gems:
   - jekyll-assets
+  - jekyll-paginate
   - jekyll-sitemap
 
 name: Chalk
+
+paginate: 10
+paginate_path: "/posts/page:num/"
 
 permalink: pretty
 

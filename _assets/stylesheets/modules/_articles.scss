@@ -1,0 +1,57 @@
+// =============================================================================
+// Articles
+// =============================================================================
+
+.article {
+  display: block;
+  margin: 100px 0;
+}
+
+.article-list {
+  display: block;
+  padding: 0;
+  margin: 75px 0;
+  list-style: none;
+  li {
+    position: relative;
+    display: block;
+    padding: 25px 0;
+    border-bottom: 1px solid $base-border-color;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+
+.article-list-item {
+  h5 {
+    display: inline-block;
+    padding-bottom: 2px;
+    color: $gray-dark;
+    border-bottom: 1px solid transparent;
+    transition: border-color $base-transition-speed linear;
+  }
+  p {
+    display: block;
+    margin-top: 3px;
+    color: $gray-light;
+  }
+  &:hover h5 {
+    border-color: $gray-dark;
+  }
+}
+
+.article-list-date {
+  position: absolute;
+  top: 23px;
+  right: 0;
+  font-size: 16px;
+  color: $gray-lighter;
+}
+
+.article-subtitle {
+  display: block;
+  padding: 5px 0 0;
+  margin-bottom: 30px;
+  color: $gray-light;
+}

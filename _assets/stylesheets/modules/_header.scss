@@ -1,0 +1,16 @@
+// =============================================================================
+// Header
+// =============================================================================
+
+.header-nav {
+  display: block;
+  padding: 75px 0 20px;
+  border-bottom: 1px solid $base-border-color;
+}
+
+.header-logo {
+  display: inline-block;
+  font-family: $serif;
+  font-size: 36px;
+  color: $black;
+}

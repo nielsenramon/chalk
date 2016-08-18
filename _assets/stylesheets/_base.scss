@@ -49,11 +49,15 @@ h6 {
 }
 
 h1 {
-  font-size: $base-font-size * 2.25;
+  font-size: $base-font-size * 1.6;
+  font-weight: 400;
+  letter-spacing: -.03em;
+  color: $gray-dark;
 }
 
 h2 {
-  font-size: $base-font-size * 2;
+  font-family: $serif;
+  font-size: $base-font-size * 1.5;
 }
 
 h3 {
@@ -65,7 +69,8 @@ h4 {
 }
 
 h5 {
-  font-size: $base-font-size * 1.25;
+  font-size: $base-font-size * 1.17;
+  font-weight: 500;
 }
 
 h6 {

@@ -10,11 +10,14 @@
 
 // Layouts
 
+@import "layouts/footer";
 @import "layouts/grid";
 
 // Modules
 
+@import "modules/articles";
 @import "modules/buttons";
 @import "modules/flashes";
 @import "modules/forms";
+@import "modules/header";
 @import "modules/tables";

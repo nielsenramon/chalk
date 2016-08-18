@@ -3,3 +3,24 @@ layout: default
 title: ""
 description: ""
 ---
+
+<ul class="article-list">
+  {% for post in paginator.posts %}
+    <li>
+      <a href="{{ post.url }}" title="{{ post.title }}" class="article-list-item">
+        <h5>{{ post.title }}</h5>
+        <p>{{ post.description }}</p>
+        <span class="article-list-date">
+          {{ post.date | date: "%-d %B" }}
+        </span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+<footer class="footer">
+  <p>
+    Chalk is a high quality, completely customizable and 100% free blog
+    template for Jekyll built by
+    <a href="http://nielsenramon.com" target="_blank">Nielsen Ramon</a>.
+  </p>
+</footer>

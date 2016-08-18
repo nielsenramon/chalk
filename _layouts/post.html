@@ -35,7 +35,11 @@
     <div class="grid grid-centered">
       <div class="grid-cell">
         {% include navigation.html %}
-        {{ content }}
+        <article class="article">
+          <h1>{{ page.title }}</h1>
+          <p class="article-subtitle">{{ page.description }}</p>
+          {{ content }}
+        </article>
       </div>
     </div>
   </main>
