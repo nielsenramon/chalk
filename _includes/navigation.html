@@ -1,3 +1,47 @@
 <nav class="header-nav">
-  <a href="{{ site.baseurl }}" class="header-logo" title="Chalk">Chalk</a>
+  <a href="{{ site.baseurl }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
+  <ul class="header-links">
+    {% if site.social.twitter %}
+      <li>
+        <a href="#" target="_blank" title="Twitter">
+          <span class="icon icon-social-twitter"></span>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.facebook %}
+      <li>
+        <a href="#" target="_blank" title="Facebook">
+          <span class="icon icon-social-facebook"></span>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.github %}
+      <li>
+        <a href="#" target="_blank" title="GitHub">
+          <span class="icon icon-social-github"></span>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.dribbble %}
+      <li>
+        <a href="#" target="_blank" title="Dribbble">
+          <span class="icon icon-social-dribbble-outline"></span>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.linkedin %}
+      <li>
+        <a href="#" target="_blank" title="LinkedIn">
+          <span class="icon icon-social-linkedin"></span>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.rss_enabled == true %}
+      <li>
+        <a href="{{ site.url }}feed.xml" target="_blank" title="RSS">
+          <span class="icon icon-social-rss"></span>
+        </a>
+      </li>
+    {% endif %}
+  </ul>
 </nav>

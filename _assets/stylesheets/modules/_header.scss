@@ -14,3 +14,22 @@
   font-size: 36px;
   color: $black;
 }
+
+.header-links {
+  float: right;
+  padding: 0;
+  margin: 12.5px 0 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: middle;
+    &:first-child {
+      margin-left: 0;
+    }
+    a {
+      font-size: 18px;
+      color: $gray-darker;
+    }
+  }
+}
