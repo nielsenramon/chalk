@@ -1,0 +1,39 @@
+// Vendors
+
+@import "vendor/normalize";
+
+// Settings
+
+@import "variables";
+@import "mixins";
+@import "base";
+
+// Styles
+
+.notfound-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfound-content {
+  flex: auto;
+  max-width: 250px;
+  text-align: center;
+  h1 {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-family: $serif;
+    font-size: 36px;
+    color: $black;
+  }
+  p {
+    display: block;
+    text-align: center;
+  }
+}

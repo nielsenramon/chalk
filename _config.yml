@@ -34,8 +34,9 @@ url: # add site url http://example.com/
 
 # Optional settings
 
+discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
-rss_enabled: true # Change to false if not.
+rss_enabled: true # Change to false if not
 social:
   dribbble: # Add your Dribbble link
   facebook: # Add your Facebook link

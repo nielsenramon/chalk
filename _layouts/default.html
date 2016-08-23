@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -20,7 +20,7 @@
   <meta name="twitter:image" content="{% asset_path og-image.jpg %}">
 
   <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700|Palanquin:200,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700|Lato:300,400,700,900" rel="stylesheet">
 
   <link href="{{ site.url }}feed.xml" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 10 blog posts" />
 
@@ -45,9 +45,11 @@
   {% javascript vendor %}
   {% javascript application %}
 
-  <script>
-    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-    ga('create','{{ site.ga_analytics }}','auto');ga('send','pageview')
-  </script>
+  {% if site.ga_analytics %}
+    <script>
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','{{ site.ga_analytics }}','auto');ga('send','pageview')
+    </script>
+  {% endif %}
 </body>
 </html>

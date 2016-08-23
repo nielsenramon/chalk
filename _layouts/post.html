@@ -20,7 +20,7 @@
   <meta name="twitter:image" content="{% asset_path og-image.jpg %}">
 
   <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700|Palanquin:200,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700|Lato:300,400,700,900" rel="stylesheet">
 
   {% stylesheet application %}
 </head>
@@ -38,7 +38,21 @@
         <article class="article">
           <h1>{{ page.title }}</h1>
           <p class="article-subtitle">{{ page.description }}</p>
-          {{ content }}
+          <div class="article-content">
+            {{ content }}
+          </div>
+          {% if site.discus_identifier %}
+            <div id="disqus_thread" class="article-comments"></div>
+            <script>
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = '//{{ site.discus_identifier }}.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          {% endif %}
         </article>
       </div>
     </div>

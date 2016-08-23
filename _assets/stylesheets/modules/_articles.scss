@@ -55,3 +55,33 @@
   margin-bottom: 30px;
   color: $gray-light;
 }
+
+.article-content {
+  display: block;
+  p,
+  ul,
+  ol,
+  img,
+  blockquote {
+    display: block;
+    margin-bottom: 30px;
+  }
+  h2,
+  h3,
+  h4 {
+    display: block;
+    margin-bottom: 10px;
+    font-family: $sans-serif;
+    color: $gray-darkest;
+  }
+  blockquote p {
+    margin-bottom: 0;
+  }
+}
+
+.article-comments {
+  display: block;
+  padding-top: 20px;
+  margin-top: 100px;
+  border-top: 1px solid $base-border-color;
+}
