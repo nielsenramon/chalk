@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Introducing chalk"
-description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+category: Design
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
