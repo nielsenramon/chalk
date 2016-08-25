@@ -52,7 +52,14 @@
     vertical-align: middle;
   }
   a {
+    margin-right: 7.5px;
     color: $gray-dark;
+    &:hover {
+      color: $gray-darkest;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -67,11 +74,31 @@
   vertical-align: middle;
 }
 
-.article-subtitle {
+.article-empty {
   display: block;
-  padding: 5px 0 0;
-  margin-bottom: 30px;
+  margin: 100px 0;
+  font-style: italic;
   color: $gray-light;
+  text-align: center;
+}
+
+// Article page
+// =============================================================================
+
+.article-header {
+  display: block;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid $base-border-color;
+  h1 {
+    color: $gray-darkest;
+  }
+  p {
+    display: block;
+    margin: 12px 0 10px;
+    font-size: 15px;
+    color: $gray-dark;
+  }
 }
 
 .article-content {
@@ -100,6 +127,21 @@
 .article-comments {
   display: block;
   padding-top: 20px;
-  margin-top: 100px;
+  margin-top: 30px;
   border-top: 1px solid $base-border-color;
+}
+
+.article-share {
+  display: block;
+  margin-top: -4px;
+  a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    color: $gray-light;
+    vertical-align: middle;
+    &:hover {
+      color: $gray-dark;
+    }
+  }
 }

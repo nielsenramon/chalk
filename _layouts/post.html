@@ -1,75 +1,68 @@
 <!doctype html>
-<html lang="">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ site.name }} | {{ page.title }}</title>
-  <meta name="description" content="{{ page.description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:url" content="{{ site.url }}">
-  <meta property="og:description" content="{{ page.description }}">
-  <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:image" content="{% asset_path og-image.jpg %}">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="{{ site.url }}">
-  <meta name="twitter:title" content="{{ page.title }}">
-  <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="{% asset_path og-image.jpg %}">
-
-  <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700|Lato:300,400,700,900" rel="stylesheet">
-
-  {% stylesheet application %}
-</head>
+<html lang="en">
+{% include head.html %}
 <body>
-  <!--[if lt IE 8]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong>
-      browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>
-      to improve your experience.</p>
-  <![endif]-->
-
   <main role="main">
     <div class="grid grid-centered">
       <div class="grid-cell">
         {% include navigation.html %}
         <article class="article">
-          <h1>{{ page.title }}</h1>
-          <p class="article-subtitle">{{ page.description }}</p>
+          <header class="article-header">
+            <h1>{{ page.title }}</h1>
+            <p>{{ page.description }}</p>
+            <div class="article-list-footer">
+              <span class="article-list-date">
+                {{ page.date | date: "%B %-d, %Y" }}
+              </span>
+              <span class="article-list-divider">-</span>
+              <span class="article-list-minutes">
+                {% capture words %}
+                  {{ page.content | number_of_words }}
+                {% endcapture %}
+                {% unless words contains "-" %}
+                  {{ words | plus: 250 | divided_by: 250 | append: " minute read" }}
+                {% endunless %}
+              </span>
+              <span class="article-list-divider">-</span>
+              {% for tag in page.tags %}
+                <a href="{{ site.baseurl }}tag/{{ tag }}">{{ tag }}</a>
+              {% endfor %}
+            </div>
+          </header>
+
           <div class="article-content">
-            {% capture words %}
-              {{ page.content | number_of_words | minus: 250 }}
-            {% endcapture %}
-            {% unless words contains "-" %}
-              {{ words | plus: 250 | divided_by: 150 | append: " minute read" }}
-            {% endunless %}
             {{ content }}
           </div>
+
+          <div class="article-share">
+            <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status={{ page.title  | truncate "85" }} - {{ site.url }}{{ page.url }} {% if site.social.twitter %}by @{{ site.social.twitter }}{% endif %}', 'newwindow', 'width=500, height=225'); return false;">
+              <span class="icon icon-social-twitter"></span>
+            </a>
+            <a href="" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}', 'newwindow', 'width=500, height=500'); return false;">
+              <span class="icon icon-social-facebook"></span>
+            </a>
+            <a href="" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url={{ site.url }}{{ page.url }}', 'newwindow', 'width=550, height=400'); return false;">
+              <span class="icon icon-social-googleplus"></span>
+            </a>
+          </div>
+
           {% if site.discus_identifier %}
             <div id="disqus_thread" class="article-comments"></div>
             <script>
-            (function() {
-                var d = document, s = d.createElement('script');
-                s.src = '//{{ site.discus_identifier }}.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
+              (function() {
+                  var d = document, s = d.createElement('script');
+                  s.src = '//{{ site.discus_identifier }}.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+              })();
             </script>
             <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
           {% endif %}
         </article>
+        {% include footer.html %}
       </div>
     </div>
   </main>
-
-  {% javascript vendor %}
-  {% javascript application %}
-
-  <script>
-    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-    ga('create','{{ site.ga_analytics }}','auto');ga('send','pageview')
-  </script>
+  {% include javascripts.html %}
 </body>
 </html>

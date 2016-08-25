@@ -2,7 +2,7 @@
 layout: post
 title: "How does Jekyll work and how can you harness its powers"
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-category: Design
+tags: design
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor

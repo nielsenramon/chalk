@@ -1,0 +1,26 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{ site.name }} | {{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:image" content="{% asset_path og-image.jpg %}">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="{{ site.url }}">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:image" content="{% asset_path og-image.jpg %}">
+
+  <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700|Lato:300,400,700,900" rel="stylesheet">
+
+  <link href="{{ site.url }}feed.xml" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 10 blog posts" />
+
+  {% stylesheet application %}
+</head>

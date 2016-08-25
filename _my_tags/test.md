@@ -1,0 +1,4 @@
+---
+slug: test
+name: Test
+---

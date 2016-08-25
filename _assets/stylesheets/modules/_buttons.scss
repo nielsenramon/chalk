@@ -9,17 +9,18 @@
 // @param {Hex} $background color for the button background.
 // @param {Hex} $font color for the button text.
 
-@mixin button-generator($background, $font) {
-  color: $font;
-  background-color: $background;
+@mixin button-generator($color) {
+  color: darken($color, 5);
+  border-color: $color;
   &:hover {
-    color: $font;
-    background-color: lighten($background, 5);
+    color: lighten($color, 10);
+    border-color: lighten($color, 5);
   }
   &:focus,
   &:active {
-    color: $font;
-    background-color: darken($background, 10);
+    color: darken($color, 10);
+    background-color: transparent;
+    border-color: darken($color, 10);
     outline: none;
   }
 }
@@ -30,13 +31,15 @@
 .button {
   position: relative;
   display: inline-block;
-  padding: 10px 30px;
+  padding: 5px 15px;
   font-family: $base-font-family;
-  font-weight: $base-font-weight-bold;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 1;
   text-align: center;
   cursor: pointer;
-  border: 0;
+  background-color: transparent;
+  border: 1px solid $base-border-color;
   border-radius: $base-border-radius;
   transition: all $base-transition-speed ease-in-out;
   appearance: none;
@@ -62,21 +65,21 @@
 // Basic generated buttons
 
 .button-default {
-  @include button-generator($gray-lightest, $base-font-color);
+  @include button-generator($gray-light);
 }
 
 .button-danger {
-  @include button-generator($brand-danger, $white);
+  @include button-generator($brand-danger);
 }
 
 .button-primary {
-  @include button-generator($brand-primary, $white);
+  @include button-generator($brand-primary);
 }
 
 .button-success {
-  @include button-generator($brand-success, $white);
+  @include button-generator($brand-success);
 }
 
 .button-warning {
-  @include button-generator($brand-warning, $white);
+  @include button-generator($brand-warning);
 }

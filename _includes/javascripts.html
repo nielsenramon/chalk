@@ -1,0 +1,9 @@
+{% javascript vendor %}
+{% javascript application %}
+
+{% if site.ga_analytics %}
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','{{ site.ga_analytics }}','auto');ga('send','pageview')
+  </script>
+{% endif %}

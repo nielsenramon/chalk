@@ -2,7 +2,7 @@
 layout: post
 title: "How does example content look like"
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-category: iOS
+tags: ios
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
