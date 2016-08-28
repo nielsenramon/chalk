@@ -4,12 +4,25 @@ assets:
   compress:
     css: true
     js: true
+  features:
+    automatic_img_size: false
   sources:
     - _assets/fonts
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
     - _vendor/
+collections:
+  my_tags:
+    output: true
+    permalink: /tag/:slug/
+defaults:
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: articles_by_tag
 exclude:
   - .bowerrc
   - .travis.yml
@@ -25,17 +38,6 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
 permalink: posts/:slug
-collections:
-  my_tags:
-    output: true
-    permalink: /tag/:slug/
-defaults:
-  -
-    scope:
-      path: ""
-      type: my_tags
-    values:
-      layout: articles_by_tag
 
 # Mandatory settings (these are required)
 

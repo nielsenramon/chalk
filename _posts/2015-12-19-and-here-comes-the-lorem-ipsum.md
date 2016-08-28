@@ -47,7 +47,7 @@ culpa qui officia deserunt mollit anim id est laborum.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua.
 
-![https://hd.unsplash.com/photo-1431512284068-4c4002298068](https://hd.unsplash.com/photo-1431512284068-4c4002298068)
+{% img sample-image.jpg %}
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
