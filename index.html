@@ -8,7 +8,10 @@ description: ""
   {% for post in paginator.posts %}
     <li class="article-list-item">
       <a href="{{ post.url }}" title="{{ post.title }}">
-        <h5>{{ post.title }}</h5>
+        <h5>
+          {{ post.title }}
+          <span class="icon icon-ios-arrow-thin-right"></span>
+        </h5>
       </a>
       <p>{{ post.description }}</p>
       <div class="article-list-footer">
