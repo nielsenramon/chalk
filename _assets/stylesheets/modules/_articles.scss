@@ -20,6 +20,19 @@
     &:last-child {
       border-bottom: 0;
     }
+    &.article-pagination {
+      display: block;
+      height: 93px;
+      padding: 15px 0 50px;
+      a {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: .1em;
+        color: $gray;
+        text-transform: uppercase;
+      }
+    }
   }
 }
 
@@ -89,6 +102,16 @@
   color: $gray-light;
   text-align: center;
 }
+
+
+// Paginator
+// =============================================================================
+
+
+.article-pagination-right {
+  float: right;
+}
+
 
 // Article page
 // =============================================================================

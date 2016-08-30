@@ -47,7 +47,7 @@ culpa qui officia deserunt mollit anim id est laborum.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua.
 
-{% img sample-image.jpg %}
+<img src="{% asset_path 'sample-image.jpg' %}" data-at2x="{% asset_path 'sample-image@2x.jpg' %}" alt="" />
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis

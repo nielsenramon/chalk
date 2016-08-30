@@ -34,4 +34,14 @@ description: ""
       </div>
     </li>
   {% endfor %}
+  {% if paginator.total_pages > 1 %}
+    <li class="article-pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="article-pagination-right">Newer posts <span class="icon icon-ios-arrow-thin-right"></span></a>
+      {% endif %}
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}"><span class="icon icon-ios-arrow-thin-left"></span> Older posts</a>
+      {% endif %}
+    </li>
+  {% endif %}
 </ul>

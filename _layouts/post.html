@@ -35,7 +35,8 @@
           </div>
 
           <div class="article-share">
-            <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status={{ page.title  | truncate "85" }} - {{ site.url }}{{ page.url }} {% if site.social.twitter %}by @{{ site.social.twitter }}{% endif %}', 'newwindow', 'width=500, height=225'); return false;">
+            {% assign page_title = page.title  | truncate '110' %}
+            <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status={{ page_title }} - {{ site.url }}{{ page.url }} {% if site.social.twitter %}by @{{ site.social.twitter }}{% endif %}', 'newwindow', 'width=500, height=225'); return false;">
               <span class="icon icon-social-twitter"></span>
             </a>
             <a href="" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}', 'newwindow', 'width=500, height=500'); return false;">
