@@ -44,7 +44,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  line-height: 1.25;
+  line-height: 1.5;
   text-rendering: optimizeLegibility;
 }
 
@@ -52,7 +52,7 @@ h1 {
   font-size: $base-font-size * 1.6;
   font-weight: 400;
   letter-spacing: -.03em;
-  color: $gray-dark;
+  color: $gray-darkest;
 }
 
 h2 {
