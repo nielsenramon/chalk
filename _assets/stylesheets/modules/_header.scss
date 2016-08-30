@@ -33,3 +33,20 @@
     }
   }
 }
+
+@include breakpoint(extra-small) {
+  .header-nav {
+    text-align: center;
+  }
+  .header-links {
+    display: block;
+    float: none;
+    text-align: center;
+    li {
+      margin: 0 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

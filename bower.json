@@ -1,7 +1,6 @@
 {
   "name": "chalk",
   "dependencies": {
-    "jquery": "~2.2.3",
-    "retinajs": "~1.3.0"
+    "jquery": "~2.2.3"
   }
 }

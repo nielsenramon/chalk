@@ -24,9 +24,11 @@
                 {% endunless %}
               </span>
               <span class="article-list-divider">-</span>
-              {% for tag in page.tags %}
-                <a href="{{ site.baseurl }}tag/{{ tag }}">{{ tag }}</a>
-              {% endfor %}
+              <div class="article-list-tags">
+                {% for tag in page.tags %}
+                  <a href="{{ site.baseurl }}tag/{{ tag }}">{{ tag }}</a>
+                {% endfor %}
+              </div>
             </div>
           </header>
 

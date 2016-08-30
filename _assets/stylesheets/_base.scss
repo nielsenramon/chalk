@@ -79,6 +79,18 @@ h6 {
   font-size: $base-font-size;
 }
 
+@include breakpoint(small) {
+  h1 {
+    font-size: $base-font-size * 1.5;
+  }
+  h2 {
+    font-size: $base-font-size * 1.35;
+  }
+  h3 {
+    font-size: $base-font-size * 1.25;
+  }
+}
+
 a {
   color: $base-accent-color;
   text-decoration: none;

@@ -15,11 +15,13 @@
   }
 }
 
-@include breakpoint(medium) {
+@include breakpoint(small) {
   .highlight {
+    padding: 50px 25px;
     font-size: 14px;
   }
 }
+
 .highlight .c {
   font-style: italic;
   color: #998;
