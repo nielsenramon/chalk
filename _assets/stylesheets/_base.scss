@@ -22,6 +22,7 @@ body {
   font-weight: $base-font-weight;
   line-height: $base-line-height;
   color: $base-font-color;
+  background: $body-background;
 }
 
 // Typography
@@ -52,7 +53,7 @@ h1 {
   font-size: $base-font-size * 1.6;
   font-weight: 400;
   letter-spacing: -.03em;
-  color: $gray-darkest;
+  color: $article-header-title-color;
 }
 
 h2 {

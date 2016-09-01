@@ -51,7 +51,7 @@
     position: relative;
     display: block;
     padding-right: 25px;
-    color: $gray-darkest;
+    color: $article-header-title-color;
     border-bottom: 1px solid transparent;
     .icon {
       display: inline-block;
@@ -68,7 +68,7 @@
     display: block;
     margin: 12px 0 10px;
     font-size: 15px;
-    color: $gray-dark;
+    color: $article-header-description-color;
   }
 }
 
@@ -78,15 +78,15 @@
   a {
     display: inline-block;
     font-size: 12px;
-    color: $gray-light;
+    color: $article-footer-color;
     text-transform: uppercase;
     vertical-align: middle;
   }
   a {
     margin-right: 7.5px;
-    color: $gray-dark;
+    color: $article-footer-link-color;
     &:hover {
-      color: $gray-darkest;
+      color: $article-footer-link-color-hover;
     }
     &:last-child {
       margin-right: 0;
@@ -96,13 +96,6 @@
 
 .article-list-divider {
   margin: 0 15px;
-}
-
-.article-list-date {
-  display: inline-block;
-  font-size: 16px;
-  color: $gray-lighter;
-  vertical-align: middle;
 }
 
 .article-list-tags {
@@ -138,7 +131,7 @@
     display: block;
     margin: 12px 0 10px;
     font-size: 15px;
-    color: $gray-dark;
+    color: $article-header-description-color;
   }
 }
 
@@ -158,7 +151,7 @@
     display: block;
     margin-bottom: 10px;
     font-family: $sans-serif;
-    color: $gray-darkest;
+    color: $article-post-titles-color;
   }
   blockquote p {
     margin-bottom: 0;

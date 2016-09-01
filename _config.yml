@@ -43,7 +43,7 @@ permalink: posts/:slug
 
 baseurl: /
 name: Chalk
-paginate: 4
+paginate: 25
 paginate_path: "/posts/page/:num/"
 url: http://chalk.nielsenramon.com # add site url http://example.com/
 
