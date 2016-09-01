@@ -1,4 +1,10 @@
-// Colors
+// =============================================================================
+// Light theme 404 page
+// =============================================================================
+
+// Variables
+// =============================================================================
+
 // Shades of gray
 
 $black: #000;
@@ -35,6 +41,9 @@ $article-footer-link-color: $gray-dark;
 $article-footer-link-color-hover: $gray-darkest;
 $article-paginator-color-hover: $gray-darkest;
 
+// Imports
+// =============================================================================
+
 // Vendors
 
 @import "vendor/normalize";
@@ -67,10 +76,15 @@ $article-paginator-color-hover: $gray-darkest;
     margin-bottom: 4px;
     font-family: $serif;
     font-size: 36px;
-    color: $black;
+    a {
+      color: $gray-darkest;
+    }
   }
   p {
     display: block;
     text-align: center;
+    a {
+      color: $gray-darkest;
+    }
   }
 }

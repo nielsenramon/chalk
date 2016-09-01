@@ -13,12 +13,16 @@ sitemap: false
 
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700|Palanquin:200,400,500,700" rel="stylesheet">
 
-  {% stylesheet notfound %}
+  {% if site.blog_theme == "light" %}
+    {% stylesheet notfound-light %}
+  {% else %}
+    {% stylesheet notfound-dark %}
+  {% endif %}
 </head>
 <body>
   <main role="main" class="notfound-wrapper">
     <div class="notfound-content">
-      <h1>Chalk</h1>
+      <h1><a href="{{ site.baseurl }}" title="Back to homepage">Chalk</a></h1>
       <p>
         Looks like you got lost. Let's get you back to the <a href="{{ site.baseurl }}">homepage</a>!
       </p>

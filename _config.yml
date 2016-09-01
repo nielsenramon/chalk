@@ -46,6 +46,7 @@ name: Chalk
 paginate: 25
 paginate_path: "/posts/page/:num/"
 url: http://chalk.nielsenramon.com # add site url http://example.com/
+blog_theme: light # Or use dark
 
 # Optional settings
 
