@@ -1,4 +1,0 @@
----
-slug: test
-name: Test
----
