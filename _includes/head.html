@@ -9,16 +9,15 @@
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:image" content="{% asset_path og-image.jpg %}">
+  <meta property="og:image" content="{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path og-image.jpg %}{% endif %}">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="{{ site.url }}">
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="{% asset_path og-image.jpg %}">
+  <meta name="twitter:image" content="{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path og-image.jpg %}{% endif %}">
 
   <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
-
   <link href="{{ site.url }}feed.xml" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 10 blog posts" />
 
   {% if site.blog_theme == "light" %}
