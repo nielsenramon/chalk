@@ -1,8 +1,13 @@
-# chalk
+---
+layout: post
+title: "Introducing chalk"
+description: "Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll."
+tags: [web, jekyll]
+---
 
 Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll.
 
-Features:
+#### Features:
   - Dark and Light theme
   - Filter on tags
   - Customizable pagination
@@ -15,14 +20,14 @@ Features:
   - PageSpeed optimized
   - Cross browser support (supports all modern browsers)
 
-Integrations:
+#### Integrations
   - [Google Analytics](https://analytics.google.com/analytics/web/)
   - [Google Fonts](https://fonts.google.com/)
   - [Disqus](https://disqus.com/)
   - [Ionicons](http://ionicons.com/)
   - Social media
 
-Used tools:
+#### Used tools
   - [Autoprefixer](https://github.com/postcss/autoprefixer)
   - [Bower](http://bower.io/)
   - [Circle CI](https://circleci.com/)
@@ -35,19 +40,19 @@ Used tools:
   - [Retina.js](http://imulus.github.io/retinajs/)
   - [STACSS](http://stacss.nielsenramon.com/)
 
-### Installation
+## Installation
 
 Setup your environment:
 
     bin/setup
 
-### Development
+## Development
 
 Run Jekyll:
 
     bundle exec jekyll serve
 
-### Deploy to GitHub Pages
+## Deploy to GitHub Pages
 
 Run this in the root project folder in your console:
 
