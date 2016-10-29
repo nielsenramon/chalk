@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing chalk"
-description: "Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll."
+description: "Chalk is a high quality, completely customisable, performant and 100% free blog template for Jekyll."
 tags: [web, jekyll]
 ---
 
@@ -12,7 +12,7 @@ tags: [web, jekyll]
 #### Features:
   - Dark and Light theme.
   - Filter on tags.
-  - Customizable pagination.
+  - customisable pagination.
   - Beautified link sharing in Facebook and other social media.
   - Automatic time to read post indicator.
   - Automatic RSS feed.
