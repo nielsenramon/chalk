@@ -4,7 +4,7 @@ baseurl: /
 name: Chalk
 paginate: 25
 paginate_path: "/posts/page/:num/"
-url: http://chalk.nielsenramon.com # add site url http://example.com/
+url: # add site url http://example.com/
 blog_theme: light # Or use dark
 
 # Optional settings
@@ -17,7 +17,7 @@ social:
   facebook: # Add your Facebook link
   github: # Add your GitHub link
   linkedin: # Add your LinkedIn link
-  twitter: nielsenramon # Add your Twitter handle
+  twitter: # Add your Twitter handle
 
 # Important settings (change at own risk)
 
