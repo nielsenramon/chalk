@@ -12,13 +12,9 @@ ga_analytics: UA-28631876-6
 rss_enabled: true
 about_enabled: false # Change to true if you wish to show an icon in the navigation that redirects to the about page
 social:
-  dribbble: https://dribbble.com/nielsenramon
-  facebook: # Add your Facebook link
-  github: https://github.com/nielsenramon
-  linkedin: # Add your LinkedIn link
+  dribbble: nielsenramon
+  github: nielsenramon
   twitter: nielsenramon
-  email: # Add your Email address
-  bitcoin: # Add your Bitcoin link or address
 
 # Important settings (change at own risk)
 
