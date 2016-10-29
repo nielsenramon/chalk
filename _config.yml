@@ -14,13 +14,9 @@ local_fonts: false # Change to true if you wish to use local fonts
 about_enabled: false # Change to true if you wish to show an icon in the navigation that redirects to the about page
 scrollappear_enabled: true # Change to false to disable
 social:
-  dribbble: https://dribbble.com/nielsenramon
-  facebook: # Add your Facebook link
-  github: https://github.com/nielsenramon
-  linkedin: # Add your LinkedIn link
+  dribbble: nielsenramon
+  github: nielsenramon
   twitter: nielsenramon
-  email: # Add your Email address
-  bitcoin: # Add your Bitcoin link or address
 
 # Important settings (change at own risk)
 
