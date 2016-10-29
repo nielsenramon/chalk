@@ -1,28 +1,32 @@
 # chalk
 
+![](_assets/images/documentation/chalk-intro@2x.png)
+
 Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll.
 
 Features:
-  - Dark and Light theme
-  - Filter on tags
-  - Customizable pagination
-  - Beautified link sharing in Facebook and other social media
-  - Automatic time to read post indicator
-  - Automatic RSS feed
-  - About page
-  - 404 page
-  - SEO optimized
-  - PageSpeed optimized
-  - Cross browser support (supports all modern browsers)
+  - Dark and Light theme.
+  - Filter on tags.
+  - Customizable pagination.
+  - Beautified link sharing in Facebook and other social media.
+  - Automatic time to read post indicator.
+  - Automatic RSS feed.
+  - About page.
+  - 404 page.
+  - SEO optimized.
+  - PageSpeed optimized.
+  - Cross browser support (supports all modern browsers).
+  - Media embed for videos.
+  - Enlarge images on click (like Medium).
 
-Integrations:
+Integrations
   - [Google Analytics](https://analytics.google.com/analytics/web/)
   - [Google Fonts](https://fonts.google.com/)
   - [Disqus](https://disqus.com/)
   - [Ionicons](http://ionicons.com/)
-  - Social media
+  - Social media links
 
-Used tools:
+Used tools
   - [Autoprefixer](https://github.com/postcss/autoprefixer)
   - [Bower](http://bower.io/)
   - [Circle CI](https://circleci.com/)
@@ -37,7 +41,8 @@ Used tools:
 
 ### Installation
 
-Setup your environment:
+If you haven't installed Ruby then go ahead and install it with: `brew install Ruby`.
+Next setup your environment:
 
     bin/setup
 

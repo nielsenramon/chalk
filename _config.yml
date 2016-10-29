@@ -1,3 +1,24 @@
+# Mandatory settings
+
+baseurl: /
+name: Chalk
+paginate: 25
+paginate_path: "/posts/page/:num/"
+url: http://chalk.nielsenramon.com # add site url http://example.com/
+blog_theme: light # Or use dark
+
+# Optional settings
+
+discus_identifier: # Add your Disqus identifier
+ga_analytics: # Add your GA Tracking Id
+rss_enabled: true # Change to false if not
+social:
+  dribbble: # Add your Dribbble link
+  facebook: # Add your Facebook link
+  github: # Add your GitHub link
+  linkedin: # Add your LinkedIn link
+  twitter: http://twitter.com/nielsenramon # Add your Twitter handle
+
 # Important settings (change at own risk)
 
 assets:
@@ -39,24 +60,3 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
 permalink: posts/:slug
-
-# Mandatory settings (these are required)
-
-baseurl: /
-name: Chalk
-paginate: 25
-paginate_path: "/posts/page/:num/"
-url: http://chalk.nielsenramon.com # add site url http://example.com/
-blog_theme: light # Or use dark
-
-# Optional settings
-
-discus_identifier: # Add your Disqus identifier
-ga_analytics: # Add your GA Tracking Id
-rss_enabled: true # Change to false if not
-social:
-  dribbble: # Add your Dribbble link
-  facebook: # Add your Facebook link
-  github: # Add your GitHub link
-  linkedin: # Add your LinkedIn link
-  twitter: # Add your Twitter handle

@@ -64,6 +64,9 @@
       opacity: 1;
     }
   }
+  a {
+    text-decoration: none;
+  }
   p {
     display: block;
     margin: 12px 0 10px;
@@ -132,6 +135,9 @@
     margin: 12px 0 10px;
     font-size: 15px;
     color: $article-header-description-color;
+  }
+  a {
+    text-decoration: none;
   }
 }
 

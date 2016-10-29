@@ -6,7 +6,7 @@ description: ""
 
 <ul class="article-list">
   {% for post in paginator.posts %}
-    <li class="article-list-item">
+    <li class="article-list-item reveal">
       <a href="{{ post.url }}" title="{{ post.title }}">
         <h5>
           {{ post.title }}
@@ -37,7 +37,7 @@ description: ""
     </li>
   {% endfor %}
   {% if paginator.total_pages > 1 %}
-    <li class="article-pagination">
+    <li class="article-pagination reveal">
       {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path }}" class="article-pagination-right">Newer posts <span class="icon icon-ios-arrow-thin-right"></span></a>
       {% endif %}

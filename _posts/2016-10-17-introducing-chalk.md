@@ -5,6 +5,8 @@ description: "Chalk is a high quality, completely customizable, performant and 1
 tags: [web, jekyll]
 ---
 
+{% include image.html path="documentation/chalk-intro.png" path-detail="documentation/chalk-intro@2x.png" alt="Chalk intro" %}
+
 #### Features:
   - Dark and Light theme.
   - Filter on tags.
@@ -40,6 +42,8 @@ tags: [web, jekyll]
   - [Retina.js](http://imulus.github.io/retinajs/)
   - [STACSS](http://stacss.nielsenramon.com/)
 
+{% include image.html path="documentation/enlarge.gif" path-detail="documentation/enlarge@2x.gif" alt="Enlarge image feature" %}
+
 ## Installation
 
 If you haven't installed Ruby then go ahead and install it with: `brew install Ruby`.
@@ -68,3 +72,5 @@ bin/deploy
 You can find more info on how to use the gh-pages branch and a custom domain [here](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/).
 
 [View this](https://github.com/nielsenramon/kickster#automated-deployment-with-circle-ci) for more info about automated deployment with Circle CI.
+
+_If you have any questions about using or configuring Chalk please create an issue <a href="" title="here" target="_blank">here</a>!_

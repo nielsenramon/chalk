@@ -18,11 +18,11 @@
 // Inline highlighting
 
 .highlighter-rouge {
-  color: $brand-danger;
-  font-size: 14px;
-  border: 1px solid $base-border-color;
-  background: lighten($gray-lightest, 6);
   padding: 2px 4px;
+  font-size: 14px;
+  color: $brand-danger;
+  background: lighten($gray-lightest, 6);
+  border: 1px solid $base-border-color;
   border-radius: 1px;
 }
 
