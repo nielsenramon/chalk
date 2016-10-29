@@ -56,6 +56,19 @@ social:
 
 Other than the `_config.yml` you can change a lot more in the project.
 
+#### Tags
+
+To add tags you must add a file with the tag name in `_my_tags`.
+In the file you add 2 variables: `slug` used to reference the tag and `name` which is displayed in the article header.
+
+{% highlight yml %}
+# _my_tags/design.md
+---
+slug: design
+name: Design
+---
+{% endhighlight %}
+
 #### SCSS
 
 You can change colors, fonts, sizes in the `_assets/stylesheets/_variables.scss` file.

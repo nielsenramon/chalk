@@ -7,6 +7,8 @@ tags: [web, jekyll]
 
 {% include image.html path="documentation/chalk-intro.png" path-detail="documentation/chalk-intro@2x.png" alt="Chalk intro" %}
 
+[Download Chalk here!](https://github.com/nielsenramon/chalk)
+
 #### Features:
   - Dark and Light theme.
   - Filter on tags.

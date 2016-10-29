@@ -13,6 +13,8 @@ sr.reveal('.reveal', {
   distance: '0',
   duration: 500,
   easing: 'ease-in-out',
-  mobile: true,
-  scale: 1
+  origin: 'top',
+  scale: 1,
+  reset: false,
+  viewFactor: 0
 });
