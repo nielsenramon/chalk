@@ -2,6 +2,8 @@
 
 Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll.
 
+## Overview
+
 Features:
   - Dark and Light theme.
   - Filter on tags.
@@ -36,6 +38,8 @@ Used tools
   - [Kickster](http://kickster.nielsenramon.com/)
   - [Retina.js](http://imulus.github.io/retinajs/)
   - [STACSS](http://stacss.nielsenramon.com/)
+
+## Usage
 
 ### Installation
 
