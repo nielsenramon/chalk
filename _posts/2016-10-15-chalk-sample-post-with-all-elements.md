@@ -7,10 +7,10 @@ tags: [design, jekyll]
 ---
 
 Chalk uses the default Jekyll syntax highlighting gem Rouge. It has a customized style for both light and dark theme.
+Use the `highlight` tag to use the following code highlighting your preferred language:
 
 {% highlight html %}
 <!-- This is a comment -->
-
 <div class="grid">
   <h1>This is a heading</h1>
   <p>
@@ -21,7 +21,11 @@ Chalk uses the default Jekyll syntax highlighting gem Rouge. It has a customized
 
 ## Headings
 
-Chalk includes 4 headings by default.
+Chalk includes 3 headings by default:
+
+## Heading first level
+### Heading second level
+#### Heading third level
 
 {% highlight markdown %}
 ## Heading first level
@@ -32,18 +36,16 @@ Chalk includes 4 headings by default.
 ## Lists
 
 Unordered list example:
-
 * Unordered list item 1
 * Unordered list item 2
 * Unordered list item 3
 * Unordered list item 4
 
-Order list example:
-
-1. Order list item 1
-2. Order list item 1
-3. Order list item 1
-4. Order list item 1
+Ordered list example:
+1. Ordered list item 1
+2. Ordered list item 1
+3. Ordered list item 1
+4. Ordered list item 1
 
 {% highlight markdown %}
 * Unordered list item 1
@@ -67,12 +69,16 @@ incididunt ut labore et dolore magna.
 
 ## Media
 
-Images can include a retina version if you wish:
+Images can be added with a default `<img>` tag.
+If you wish that an image can be enlarged on click use the image include tag. You can pass 3 variables:
+- `path`: Image to show in the blog post.
+- `path-detail`: Image to show when enlarging.
+- `alt`: Alt text for image in blog post.
 
-<img src="{% asset_path 'sample-image.jpg' %}" data-at2x="{% asset_path 'sample-image@2x.jpg' %}" alt="" />
+{% include image.html path="sample-image.jpg" path-detail="sample-image@2x.jpg" alt="Sample image" %}
 
 {% highlight html %}
-<img src="{% asset_path 'sample-image.jpg' %}" data-at2x="{% asset_path 'sample-image@2x.jpg' %}" alt="" />
+{% include image.html path="sample-image.jpg" path-detail="sample-image@2x.jpg" alt="Sample image" %}
 {% endhighlight %}
 
 Videos can be added and are responsive by default (4x3 by default, 16x9 with extra class).

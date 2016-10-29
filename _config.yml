@@ -7,6 +7,7 @@ assets:
   features:
     automatic_img_size: false
   sources:
+    - _assets/bower
     - _assets/fonts
     - _assets/images
     - _assets/javascripts
