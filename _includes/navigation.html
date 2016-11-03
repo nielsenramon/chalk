@@ -36,6 +36,27 @@
         </a>
       </li>
     {% endif %}
+    {% if site.social.bitcoin %}
+      <li>
+        <a href="{{ site.social.bitcoin }}" target="_blank" title="Bitcoin">
+          <span class="icon icon-social-bitcoin"></span>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.email %}
+      <li>
+        <a href="mailto:{{ site.social.email }}" target="_blank" title="Email">
+          <span class="icon icon-email"></span>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.pgp %}
+      <li>
+        <a href="{{ site.social.pgp }}" target="_blank" title="PGP">
+          <span class="icon icon-locked"></span>
+        </a>
+      </li>
+    {% endif %}
     {% if site.rss_enabled == true %}
       <li>
         <a href="{{ site.baseurl }}feed.xml" target="_blank" title="RSS">
