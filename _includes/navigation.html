@@ -36,6 +36,20 @@
         </a>
       </li>
     {% endif %}
+    {% if site.social.bitcoin %}
+      <li>
+        <a href="{{ site.social.bitcoin }}" target="_blank" title="Bitcoin">
+          <span class="icon icon-social-bitcoin"></span>
+        </a>
+      </li>
+    {% endif %}
+    {% if site.social.email %}
+      <li>
+        <a href="mailto:{{ site.social.email }}" target="_blank" title="Email">
+          <span class="icon icon-at"></span>
+        </a>
+      </li>
+    {% endif %}
     {% if site.rss_enabled == true %}
       <li>
         <a href="{{ site.baseurl }}feed.xml" target="_blank" title="RSS">
