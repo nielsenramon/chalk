@@ -6,7 +6,7 @@ layout: default
   <ul class="article-list">
     {% for post in site.tags[page.slug] %}
       <li class="article-list-item reveal">
-        <a href="{{ post.url }}" title="{{ post.title }}">
+        <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
           <h5>{{ post.title }}</h5>
         </a>
         <p>{{ post.description }}</p>
