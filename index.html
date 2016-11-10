@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "The high quality, completely customisable, performant and 100% free blog template for Jekyll"
+title: "The high quality, completely customizable, performant and 100% free blog template for Jekyll"
 description: "Chalk uses all the best tools and merges them into one premium blogging theme."
 ---
 
 <ul class="article-list">
   {% for post in paginator.posts %}
     <li class="article-list-item reveal">
-      <a href="{{ post.url }}" title="{{ post.title }}">
+      <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
         <h5>
           {{ post.title }}
           <span class="icon icon-ios-arrow-thin-right"></span>
@@ -30,7 +30,7 @@ description: "Chalk uses all the best tools and merges them into one premium blo
         <span class="article-list-divider">-</span>
         <div class="article-list-tags">
           {% for tag in post.tags %}
-            <a href="{{ site.baseurl }}tag/{{ tag }}">{{ tag }}</a>
+            <a href="{{ 'tag/' | relative_url }}{{ tag }}">{{ tag }}</a>
           {% endfor %}
         </div>
       </div>

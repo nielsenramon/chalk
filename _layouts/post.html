@@ -26,7 +26,7 @@
               <span class="article-list-divider">-</span>
               <div class="article-list-tags">
                 {% for tag in page.tags %}
-                  <a href="{{ site.baseurl }}tag/{{ tag }}">{{ tag }}</a>
+                  <a href="{{ 'tag/' | relative_url }}{{ tag }}">{{ tag }}</a>
                 {% endfor %}
               </div>
             </div>
@@ -38,13 +38,13 @@
 
           <div class="article-share">
             {% assign page_title = page.title  | truncate '110' %}
-            <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status={{ page_title }} - {{ site.url }}{{ page.url }} {% if site.social.twitter %}by @{{ site.social.twitter }}{% endif %}', 'newwindow', 'width=500, height=225'); return false;">
+            <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status={{ page_title }} - {{ page.url | absolute_url }} {% if site.social.twitter %}by @{{ site.social.twitter }}{% endif %}', 'newwindow', 'width=500, height=225'); return false;">
               <span class="icon icon-social-twitter"></span>
             </a>
-            <a href="" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}', 'newwindow', 'width=500, height=500'); return false;">
+            <a href="" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}', 'newwindow', 'width=500, height=500'); return false;">
               <span class="icon icon-social-facebook"></span>
             </a>
-            <a href="" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url={{ site.url }}{{ page.url }}', 'newwindow', 'width=550, height=400'); return false;">
+            <a href="" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url={{ page.url | absolute_url }}', 'newwindow', 'width=550, height=400'); return false;">
               <span class="icon icon-social-googleplus"></span>
             </a>
           </div>

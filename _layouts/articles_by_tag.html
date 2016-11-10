@@ -6,7 +6,7 @@ layout: default
   <ul class="article-list">
     {% for post in site.tags[page.slug] %}
       <li class="article-list-item reveal">
-        <a href="{{ post.url }}" title="{{ post.title }}">
+        <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
           <h5>{{ post.title }}</h5>
         </a>
         <p>{{ post.description }}</p>
@@ -25,7 +25,7 @@ layout: default
           </span>
           <span class="article-list-divider">-</span>
           {% for tag in post.tags %}
-            <a href="{{ site.baseurl }}tag/{{ tag }}" title="See all posts by this tag">{{ tag }}</a>
+            <a href="{{ 'tag/' | relative_url }}{{ tag }}" title="See all posts by this tag">{{ tag }}</a>
           {% endfor %}
         </div>
       </li>

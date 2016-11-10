@@ -1,6 +1,5 @@
 # Mandatory settings
 
-baseurl: /
 name: Chalk
 paginate: 25
 paginate_path: "/posts/page/:num/"
