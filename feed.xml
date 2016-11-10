@@ -6,14 +6,14 @@
     <title>{{ site.name | xml_escape }}</title>
     <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
     <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
+    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:10 %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         <description>{{ post.description | xml_escape }}</description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ site.url }}{{ post.url }}</link>
-        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        <link>{{ post.url | absolute_url }}</link>
+        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
       </item>
     {% endfor %}
   </channel>

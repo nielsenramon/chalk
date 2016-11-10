@@ -1,13 +1,13 @@
 ![](_assets/images/documentation/chalk-intro@2x.png)
 
-Chalk is a high quality, completely customisable, performant and 100% free blog template for Jekyll.
+Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll.
 
 ## Overview
 
 Features:
   - Dark and Light theme.
   - Filter on tags.
-  - customisable pagination.
+  - customizable pagination.
   - Beautified link sharing in Facebook and other social media.
   - Automatic time to read post indicator.
   - Automatic RSS feed.

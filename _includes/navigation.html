@@ -1,5 +1,5 @@
 <nav class="header-nav reveal">
-  <a href="{{ site.baseurl }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
+  <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
   <ul class="header-links">
     {% if site.social.twitter %}
       <li>
@@ -52,7 +52,7 @@
     {% endif %}
     {% if site.rss_enabled == true %}
       <li>
-        <a href="{{ site.baseurl }}feed.xml" target="_blank" title="RSS">
+        <a href="{{ 'feed.xml' | relative_url }}" target="_blank" title="RSS">
           <span class="icon icon-social-rss"></span>
         </a>
       </li>
