@@ -13,10 +13,10 @@ discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
 rss_enabled: true # Change to false if not
 social:
-  dribbble: # Add your Dribbble link
-  facebook: # Add your Facebook link
-  github: # Add your GitHub link
-  linkedin: # Add your LinkedIn link
+  dribbble: # Add your Dribbble handle
+  facebook: # Add your Facebook handle
+  github: # Add your GitHub handle
+  linkedin: # Add your LinkedIn handle
   twitter: # Add your Twitter handle
   email: # Add your Email address
   bitcoin: # Add your Bitcoin link or address
