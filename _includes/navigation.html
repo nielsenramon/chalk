@@ -29,6 +29,13 @@
         </a>
       </li>
     {% endif %}
+    {% if site.social.flickr %}
+      <li>
+        <a href="https://www.flickr.com/photos/{{ site.social.flickr }}" target="_blank" title="Flickr">
+          <span class="icon icon-camera"></span>
+        </a>
+      </li>
+    {% endif %}
     {% if site.social.linkedin %}
       <li>
         <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank" title="LinkedIn">
