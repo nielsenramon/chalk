@@ -14,6 +14,7 @@ rss_enabled: true # Change to false if not
 social:
   dribbble: # Add your Dribbble handle
   facebook: # Add your Facebook handle
+  flickr: # Add your Flickr handle
   github: # Add your GitHub handle
   linkedin: # Add your LinkedIn handle
   twitter: # Add your Twitter handle
