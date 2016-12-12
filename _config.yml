@@ -62,4 +62,5 @@ gems:
   - jekyll-assets
   - jekyll-paginate
   - jekyll-sitemap
+  - jemoji
 permalink: posts/:slug

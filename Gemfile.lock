@@ -22,6 +22,10 @@ GEM
       addressable (~> 2)
     ffi (1.9.14)
     forwardable-extended (2.6.0)
+    gemoji (2.1.0)
+    html-pipeline (2.4.2)
+      activesupport (>= 2)
+      nokogiri (>= 1.4)
     html-proofer (3.3.1)
       activesupport (>= 4.2, < 6.0)
       addressable (~> 2.3)
@@ -57,6 +61,10 @@ GEM
       jekyll (~> 3.3)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
+    jemoji (0.6.2)
+      gemoji (~> 2.0)
+      html-pipeline (~> 2.2)
+      jekyll (>= 3.0)
     kramdown (1.13.1)
     liquid (3.0.6)
     listen (3.0.8)
@@ -101,6 +109,7 @@ DEPENDENCIES
   jekyll-assets
   jekyll-paginate
   jekyll-sitemap
+  jemoji
   mini_magick
   sass
   uglifier

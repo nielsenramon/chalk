@@ -55,6 +55,10 @@ Ordered list example:
 2. Order list item 1
 {% endhighlight %}
 
+## Emoji support :star:
+
+Emoji's can be used everywhere in :cat2: your markdown!
+
 ## Quotes
 
 A quote looks like this:
