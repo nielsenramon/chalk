@@ -48,7 +48,13 @@ tags: [web, jekyll]
 
 ## Installation
 
-If you haven't installed Ruby then go ahead and install it with: `brew install Ruby`.
+If you haven't installed the following tools then go ahead and do so (make sure you have [Homebrew](http://brew.sh/) installed):
+
+{% highlight bash %}
+brew install ruby
+brew install npm
+{% endhighlight %}
+
 Next setup your environment:
 
 {% highlight bash %}

@@ -43,7 +43,11 @@ Used tools
 
 ### Installation
 
-If you haven't installed Ruby then go ahead and install it with: `brew install Ruby`.
+If you haven't installed the following tools then go ahead and do so (make sure you have [Homebrew](http://brew.sh/) installed):
+
+    brew install ruby
+    brew install npm
+
 Next setup your environment:
 
     bin/setup
