@@ -1,6 +1,13 @@
 <nav class="header-nav reveal">
   <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
   <ul class="header-links">
+    {% if site.about_enabled == true %}
+      <li>
+        <a href="{{ 'about' | relative_url }}" title="About me">
+          <span class="icon icon-android-person"></span>
+        </a>
+      </li>
+    {% endif %}
     {% if site.social.twitter %}
       <li>
         <a href="https://twitter.com/{{ site.social.twitter }}" target="_blank" title="Twitter">
