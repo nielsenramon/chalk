@@ -5,11 +5,11 @@
 // Typography
 // =============================================================================
 
-$sans-serif: "Lato", Helvetica, Arial, sans-serif;
-$serif: "Cormorant Garamond", Courier, serif;
+$sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$serif: "Garamond", Courier, serif;
 $base-font-family: $sans-serif;
 $base-font-weight: 400;
-$base-font-weight-bold: 700;
+$base-font-weight-bold: 400;
 
 // Colors
 // =============================================================================
