@@ -1,8 +1,7 @@
 //= require_self
 
 $(document).on('turbolinks:load', function (event) {
-  // Initialize fluidbox
-  $('.fluidbox-trigger').fluidbox();
+  baguetteBox.run('.js-baguette-box')
 
   // Track page views on Turbolinks
   if (typeof ga === 'function') {
