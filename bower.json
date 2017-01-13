@@ -2,6 +2,7 @@
   "name": "chalk",
   "dependencies": {
     "jquery": "~3.1.1",
-    "fluidbox": "~2.0.4"
+    "fluidbox": "~2.0.4",
+    "baguettebox.js": "~1.8.1"
   }
 }
