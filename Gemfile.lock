@@ -9,7 +9,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
-    autoprefixer-rails (6.6.0)
+    autoprefixer-rails (6.6.1)
       execjs
     colorator (1.1.0)
     colored (1.2)
@@ -21,10 +21,10 @@ GEM
       forwardable-extended (~> 2.5)
     fastimage (2.0.1)
       addressable (~> 2)
-    ffi (1.9.14)
+    ffi (1.9.17)
     forwardable-extended (2.6.0)
     gemoji (2.1.0)
-    html-pipeline (2.4.2)
+    html-pipeline (2.5.0)
       activesupport (>= 2)
       nokogiri (>= 1.4)
     html-proofer (3.4.0)
@@ -58,7 +58,7 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
-    jekyll-sitemap (0.12.0)
+    jekyll-sitemap (1.0.0)
       jekyll (~> 3.3)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
@@ -67,8 +67,8 @@ GEM
       gemoji (~> 2.0)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0)
-    json (1.8.3)
-    kramdown (1.13.1)
+    json (1.8.6)
+    kramdown (1.13.2)
     liquid (3.0.6)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -77,12 +77,12 @@ GEM
     mini_magick (4.6.0)
     mini_portile2 (2.1.0)
     minitest (5.10.1)
-    nokogiri (1.7.0)
+    nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     parallel (1.10.0)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
-    public_suffix (2.0.4)
+    public_suffix (2.0.5)
     rack (1.6.5)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
@@ -118,4 +118,4 @@ DEPENDENCIES
   uglifier
 
 BUNDLED WITH
-   1.13.6
+   1.13.7
