@@ -1,5 +1,4 @@
 //= require jquery
-//= require vendor/jquery-throttle-debounce.js
-//= require fluidbox
-//= require scrollreveal
+//= require baguettebox.js/src/baguetteBox.js
 //= require vendor/retina.js
+//= require vendor/turbolinks.js

@@ -1,20 +1,11 @@
 //= require_self
 
-// Initialize fluidbox
+$(document).on('turbolinks:load', function (event) {
+  baguetteBox.run('.js-baguette-box')
 
-$(function () {
-  $('.fluidbox-trigger').fluidbox();
-})
-
-// Initialize scrollreveal
-
-window.sr = ScrollReveal({ reset: true });
-sr.reveal('.reveal', {
-  distance: '0',
-  duration: 500,
-  easing: 'ease-in-out',
-  origin: 'top',
-  scale: 1,
-  reset: false,
-  viewFactor: 0
+  // Track page views on Turbolinks
+  if (typeof ga === 'function') {
+    ga('set', 'location', event.data.url)
+    ga('send', 'pageview')
+  }
 });

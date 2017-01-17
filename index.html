@@ -6,7 +6,7 @@ description: "Chalk uses all the best tools and merges them into one premium blo
 
 <ul class="article-list">
   {% for post in paginator.posts %}
-    <li class="article-list-item reveal">
+    <li class="article-list-item">
       <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
         <h5>
           {{ post.title }}
@@ -37,7 +37,7 @@ description: "Chalk uses all the best tools and merges them into one premium blo
     </li>
   {% endfor %}
   {% if paginator.total_pages > 1 %}
-    <li class="article-pagination reveal">
+    <li class="article-pagination">
       {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path }}" class="article-pagination-right">Newer posts <span class="icon icon-ios-arrow-thin-right"></span></a>
       {% endif %}
