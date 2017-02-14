@@ -181,12 +181,15 @@
   margin-top: -4px;
   a {
     display: inline-block;
-    margin-right: 10px;
-    font-size: 18px;
-    color: $gray-light;
+    margin-right: 12px;
     vertical-align: middle;
-    &:hover {
-      color: $gray-dark;
+    svg {
+      vertical-align: middle;
+      transition: fill $base-transition-speed linear;
+      fill: $gray-light;
+    }
+    &:hover svg {
+      fill: $gray-dark;
     }
   }
 }
