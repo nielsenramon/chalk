@@ -48,6 +48,11 @@ If you haven't installed the following tools then go ahead and do so (make sure 
     brew install ruby
     brew install npm
 
+On windows, install Ruby and Node with the installers found here:
+
+  - [Ruby](https://rubyinstaller.org/)  
+  - [Node.js](https://nodejs.org/en/download/)
+
 Next setup your environment:
 
     bin/setup

@@ -55,6 +55,11 @@ brew install ruby
 brew install npm
 {% endhighlight %}
 
+On windows, install Ruby and Node with the installers found here:
+
+  - [Ruby](https://rubyinstaller.org/)  
+  - [Node.js](https://nodejs.org/en/download/)
+
 Next setup your environment:
 
 {% highlight bash %}
