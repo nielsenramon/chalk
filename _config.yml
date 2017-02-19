@@ -1,5 +1,5 @@
 # Mandatory settings
-
+baseurl: /
 name: Eden An
 paginate: 25
 paginate_path: "/posts/page/:num/"
