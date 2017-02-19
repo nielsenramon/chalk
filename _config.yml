@@ -1,25 +1,25 @@
 # Mandatory settings
 
-name: Chalk
+name: Eden An
 paginate: 25
 paginate_path: "/posts/page/:num/"
-url: # add site url http://example.com/
+url: https://eden-annn.github.io
 blog_theme: light # Or use dark
 
 # Optional settings
 
 discus_identifier: # Add your Disqus identifier
-ga_analytics: # Add your GA Tracking Id
+ga_analytics: 
 rss_enabled: true # Change to false if not
-about_enabled: false # Change to true if you wish to show an icon in the navigation that redirects to the about page
+about_enabled: true # Change to true if you wish to show an icon in the navigation that redirects to the about page
 social:
   dribbble: # Add your Dribbble handle
-  facebook: # Add your Facebook handle
+  facebook: 
   flickr: # Add your Flickr handle
-  github: # Add your GitHub handle
-  linkedin: # Add your LinkedIn handle
-  twitter: # Add your Twitter handle
-  email: # Add your Email address
+  github: eden-annn
+  linkedin: #taejae-han-8b5b32ba
+  twitter: #HANTAEJAE
+  email: eden-annn.gmail.com
   bitcoin: # Add your Bitcoin link or address
 
 # Important settings (change at own risk)
