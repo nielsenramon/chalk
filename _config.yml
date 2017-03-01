@@ -33,6 +33,8 @@ assets:
   sources:
     - _assets/bower
     - _assets/fonts
+    - _assets/fonts/Cormorant-Garamond
+    - _assets/fonts/Lato
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
