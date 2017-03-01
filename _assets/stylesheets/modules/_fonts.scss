@@ -1,282 +1,59 @@
 @charset "UTF-8";
 
-@font-face {
-font-family: 'Cormorant Garamond';
-font-weight: 300;
-font-style: normal;
-src: url(asset_path('Cormorant-Garamond-300/Cormorant-Garamond-300.eot'));
-src: url(asset_path('Cormorant-Garamond-300/Cormorant-Garamond-300.eot?#iefix')) format('embedded-opentype'),
-local('Cormorant Garamond Light'),
-local('Cormorant-Garamond-300'),
-url(asset_path('Cormorant-Garamond-300/Cormorant-Garamond-300.woff2')) format('woff2'),
-url(asset_path('Cormorant-Garamond-300/Cormorant-Garamond-300.woff')) format('woff'),
-url(asset_path('Cormorant-Garamond-300/Cormorant-Garamond-300.ttf')) format('truetype'),
-url(asset_path('Cormorant-Garamond-300/Cormorant-Garamond-300.svg#CormorantGaramond')) format('svg');
-}
-
-@font-face {
-font-family: 'Cormorant Garamond';
-font-weight: 400;
-font-style: normal;
-src: url(asset_path('Cormorant-Garamond-regular/Cormorant-Garamond-regular.eot'));
-src: url(asset_path('Cormorant-Garamond-regular/Cormorant-Garamond-regular.eot?#iefix') format('embedded-opentype')),
-local('Cormorant Garamond Regular'),
-local('Cormorant-Garamond-regular'),
-url(asset_path('Cormorant-Garamond-regular/Cormorant-Garamond-regular.woff2')) format('woff2'),
-url(asset_path('Cormorant-Garamond-regular/Cormorant-Garamond-regular.woff')) format('woff'),
-url(asset_path('Cormorant-Garamond-regular/Cormorant-Garamond-regular.ttf')) format('truetype'),
-url(asset_path('Cormorant-Garamond-regular/Cormorant-Garamond-regular.svg#CormorantGaramond')) format('svg');
-}
-
+/* Cormorant Garamond */
 @font-face {
 font-family: 'Cormorant Garamond';
 font-weight: 500;
 font-style: normal;
-src: url(asset_path('Cormorant-Garamond-500/Cormorant-Garamond-500.eot'));
-src: url(asset_path('Cormorant-Garamond-500/Cormorant-Garamond-500.eot?#iefix')) format('embedded-opentype'),
+src: url(asset_path('Cormorant-Garamond-500.eot'));
+src: url(asset_path('Cormorant-Garamond-500.eot?#iefix')) format('embedded-opentype'),
 local('Cormorant Garamond Medium'),
 local('Cormorant-Garamond-500'),
-url(asset_path('Cormorant-Garamond-500/Cormorant-Garamond-500.woff2')) format('woff2'),
-url(asset_path('Cormorant-Garamond-500/Cormorant-Garamond-500.woff')) format('woff'),
-url(asset_path('Cormorant-Garamond-500/Cormorant-Garamond-500.ttf')) format('truetype'),
-url(asset_path('Cormorant-Garamond-500/Cormorant-Garamond-500.svg#CormorantGaramond')) format('svg');
+url(asset_path('Cormorant-Garamond-500.woff2')) format('woff2'),
+url(asset_path('Cormorant-Garamond-500.woff')) format('woff'),
+url(asset_path('Cormorant-Garamond-500.ttf')) format('truetype'),
+url(asset_path('Cormorant-Garamond-500.svg#CormorantGaramond')) format('svg');
 }
 
-@font-face {
-font-family: 'Cormorant Garamond';
-font-weight: 600;
-font-style: normal;
-src: url(asset_path('Cormorant-Garamond-600/Cormorant-Garamond-600.eot'));
-src: url(asset_path('Cormorant-Garamond-600/Cormorant-Garamond-600.eot?#iefix')) format('embedded-opentype'),
-local('Cormorant Garamond SemiBold'),
-local('Cormorant-Garamond-600'),
-url(asset_path('Cormorant-Garamond-600/Cormorant-Garamond-600.woff2')) format('woff2'),
-url(asset_path('Cormorant-Garamond-600/Cormorant-Garamond-600.woff')) format('woff'),
-url(asset_path('Cormorant-Garamond-600/Cormorant-Garamond-600.ttf')) format('truetype'),
-url(asset_path('Cormorant-Garamond-600/Cormorant-Garamond-600.svg#CormorantGaramond')) format('svg');
-}
-
-@font-face {
-font-family: 'Cormorant Garamond';
-font-weight: 700;
-font-style: normal;
-src: url(asset_path('Cormorant-Garamond-500/Cormorant-Garamond-500.eot'));
-src: url(asset_path('Cormorant-Garamond-500/Cormorant-Garamond-500.eot?#iefix')) format('embedded-opentype'),
-local('Cormorant Garamond Medium'),
-local('Cormorant-Garamond-500'),
-url(asset_path('Cormorant-Garamond-500/Cormorant-Garamond-500.woff2')) format('woff2'),
-url(asset_path('Cormorant-Garamond-500/Cormorant-Garamond-500.woff')) format('woff'),
-url(asset_path('Cormorant-Garamond-500/Cormorant-Garamond-500.ttf')) format('truetype'),
-url(asset_path('Cormorant-Garamond-500/Cormorant-Garamond-500.svg#CormorantGaramond')) format('svg');
-}
-
-@font-face {
-font-family: 'Cormorant Garamond';
-font-weight: 300;
-font-style: italic;
-src: url(asset_path('Cormorant-Garamond-300italic/Cormorant-Garamond-300italic.eot'));
-src: url(asset_path('Cormorant-Garamond-300italic/Cormorant-Garamond-300italic.eot?#iefix')) format('embedded-opentype'),
-local('Cormorant Garamond Light Italic'),
-local('Cormorant-Garamond-300italic'),
-url(asset_path('Cormorant-Garamond-300italic/Cormorant-Garamond-300italic.woff2')) format('woff2'),
-url(asset_path('Cormorant-Garamond-300italic/Cormorant-Garamond-300italic.woff')) format('woff'),
-url(asset_path('Cormorant-Garamond-300italic/Cormorant-Garamond-300italic.ttf')) format('truetype'),
-url(asset_path('Cormorant-Garamond-300italic/Cormorant-Garamond-300italic.svg#CormorantGaramond')) format('svg');
-}
-
-@font-face {
-font-family: 'Cormorant Garamond';
-font-weight: 400;
-font-style: italic;
-src: url(asset_path('Cormorant-Garamond-italic/Cormorant-Garamond-italic.eot'));
-src: url(asset_path('Cormorant-Garamond-italic/Cormorant-Garamond-italic.eot?#iefix')) format('embedded-opentype'),
-local('Cormorant Garamond Italic'),
-local('Cormorant-Garamond-italic'),
-url(asset_path('Cormorant-Garamond-italic/Cormorant-Garamond-italic.woff2')) format('woff2'),
-url(asset_path('Cormorant-Garamond-italic/Cormorant-Garamond-italic.woff')) format('woff'),
-url(asset_path('Cormorant-Garamond-italic/Cormorant-Garamond-italic.ttf')) format('truetype'),
-url(asset_path('Cormorant-Garamond-italic/Cormorant-Garamond-italic.svg#CormorantGaramond')) format('svg');
-}
-
-@font-face {
-font-family: 'Cormorant Garamond';
-font-weight: 500;
-font-style: italic;
-src: url(asset_path('Cormorant-Garamond-500italic/Cormorant-Garamond-500italic.eot'));
-src: url(asset_path('Cormorant-Garamond-500italic/Cormorant-Garamond-500italic.eot?#iefix')) format('embedded-opentype'),
-local('Cormorant Garamond Medium Italic'),
-local('Cormorant-Garamond-500italic'),
-url(asset_path('Cormorant-Garamond-500italic/Cormorant-Garamond-500italic.woff2')) format('woff2'),
-url(asset_path('Cormorant-Garamond-500italic/Cormorant-Garamond-500italic.woff')) format('woff'),
-url(asset_path('Cormorant-Garamond-500italic/Cormorant-Garamond-500italic.ttf')) format('truetype'),
-url(asset_path('Cormorant-Garamond-500italic/Cormorant-Garamond-500italic.svg#CormorantGaramond')) format('svg');
-}
-
-@font-face {
-font-family: 'Cormorant Garamond';
-font-weight: 600;
-font-style: italic;
-src: url(asset_path('Cormorant-Garamond-600italic/Cormorant-Garamond-600italic.eot'));
-src: url(asset_path('Cormorant-Garamond-600italic/Cormorant-Garamond-600italic.eot?#iefix') format('embedded-opentype')),
-local('Cormorant Garamond SemiBold Italic'),
-local('Cormorant-Garamond-600italic'),
-url(asset_path('Cormorant-Garamond-600italic/Cormorant-Garamond-600italic.woff2')) format('woff2'),
-url(asset_path('Cormorant-Garamond-600italic/Cormorant-Garamond-600italic.woff')) format('woff'),
-url(asset_path('Cormorant-Garamond-600italic/Cormorant-Garamond-600italic.ttf')) format('truetype'),
-url(asset_path('Cormorant-Garamond-600italic/Cormorant-Garamond-600italic.svg#CormorantGaramond')) format('svg');
-}
-
-@font-face {
-font-family: 'Cormorant Garamond';
-font-weight: 700;
-font-style: italic;
-src: url(asset_path('Cormorant-Garamond-700italic/Cormorant-Garamond-700italic.eot'));
-src: url(asset_path('Cormorant-Garamond-700italic/Cormorant-Garamond-700italic.eot?#iefix')) format('embedded-opentype'),
-local('Cormorant Garamond Bold Italic'),
-local('Cormorant-Garamond-700italic'),
-url(asset_path('Cormorant-Garamond-700italic/Cormorant-Garamond-700italic.woff2')) format('woff2'),
-url(asset_path('Cormorant-Garamond-700italic/Cormorant-Garamond-700italic.woff')) format('woff'),
-url(asset_path('Cormorant-Garamond-700italic/Cormorant-Garamond-700italic.ttf')) format('truetype'),
-url(asset_path('Cormorant-Garamond-700italic/Cormorant-Garamond-700italic.svg#CormorantGaramond')) format('svg');
-}
-
-@font-face {
-font-family: 'Lato';
-font-weight: 100;
-font-style: normal;
-src: url(asset_path('Lato-100/Lato-100.eot'));
-src: url(asset_path('Lato-100/Lato-100.eot?#iefix')) format('embedded-opentype'),
-local('Lato Hairline'),
-local('Lato-100'),
-url(asset_path('Lato-100/Lato-100.woff2')) format('woff2'),
-url(asset_path('Lato-100/Lato-100.woff')) format('woff'),
-url(asset_path('Lato-100/Lato-100.ttf')) format('truetype'),
-url(asset_path('Lato-100/Lato-100.svg#Lato')) format('svg');
-}
-
+/*Lato*/
 @font-face {
 font-family: 'Lato';
 font-weight: 300;
 font-style: normal;
-src: url(asset_path('Lato-300/Lato-300.eot'));
-src: url(asset_path('Lato-300/Lato-300.eot?#iefix')) format('embedded-opentype'),
+src: url(asset_path('Lato-300.eot'));
+src: url(asset_path('Lato-300.eot?#iefix')) format('embedded-opentype'),
 local('Lato Light'),
 local('Lato-300'),
-url(asset_path('Lato-300/Lato-300.woff2')) format('woff2'),
-url(asset_path('Lato-300/Lato-300.woff')) format('woff'),
-url(asset_path('Lato-300/Lato-300.ttf')) format('truetype'),
-url(asset_path('Lato-300/Lato-300.svg#Lato')) format('svg');
+url(asset_path('Lato-300.woff2')) format('woff2'),
+url(asset_path('Lato-300.woff')) format('woff'),
+url(asset_path('Lato-300.ttf')) format('truetype'),
+url(asset_path('Lato-300.svg#Lato')) format('svg');
 }
 
 @font-face {
 font-family: 'Lato';
 font-weight: 400;
 font-style: normal;
-src: url(asset_path('Lato-regular/Lato-regular.eot'));
-src: url(asset_path('Lato-regular/Lato-regular.eot?#iefix')) format('embedded-opentype'),
+src: url(asset_path('Lato-regular.eot'));
+src: url(asset_path('Lato-regular.eot?#iefix')) format('embedded-opentype'),
 local('Lato Regular'),
 local('Lato-regular'),
-url(asset_path('Lato-regular/Lato-regular.woff2')) format('woff2'),
-url(asset_path('Lato-regular/Lato-regular.woff')) format('woff'),
-url(asset_path('Lato-regular/Lato-regular.ttf')) format('truetype'),
-url(asset_path('Lato-regular/Lato-regular.svg#Lato')) format('svg');
+url(asset_path('Lato-regular.woff2')) format('woff2'),
+url(asset_path('Lato-regular.woff')) format('woff'),
+url(asset_path('Lato-regular.ttf')) format('truetype'),
+url(asset_path('Lato-regular.svg#Lato')) format('svg');
 }
 
 @font-face {
 font-family: 'Lato';
 font-weight: 700;
 font-style: normal;
-src: url(asset_path('Lato-700/Lato-700.eot'));
-src: url(asset_path('Lato-700/Lato-700.eot?#iefix')) format('embedded-opentype'),
+src: url(asset_path('Lato-700.eot'));
+src: url(asset_path('Lato-700.eot?#iefix')) format('embedded-opentype'),
 local('Lato Bold'),
 local('Lato-700'),
-url(asset_path('Lato-700/Lato-700.woff2')) format('woff2'),
-url(asset_path('Lato-700/Lato-700.woff')) format('woff'),
-url(asset_path('Lato-700/Lato-700.ttf')) format('truetype'),
-url(asset_path('Lato-700/Lato-700.svg#Lato')) format('svg');
+url(asset_path('Lato-700.woff2')) format('woff2'),
+url(asset_path('Lato-700.woff')) format('woff'),
+url(asset_path('Lato-700.ttf')) format('truetype'),
+url(asset_path('Lato-700.svg#Lato')) format('svg');
 }
-
-@font-face {
-font-family: 'Lato';
-font-weight: 900;
-font-style: normal;
-src: url(asset_path('Lato-900/Lato-900.eot'));
-src: url(asset_path('Lato-900/Lato-900.eot?#iefix')) format('embedded-opentype'),
-local('Lato Black'),
-local('Lato-900'),
-url(asset_path('Lato-900/Lato-900.woff2')) format('woff2'),
-url(asset_path('Lato-900/Lato-900.woff')) format('woff'),
-url(asset_path('Lato-900/Lato-900.ttf')) format('truetype'),
-url(asset_path('Lato-900/Lato-900.svg#Lato')) format('svg');
-}
-
-@font-face {
-font-family: 'Lato';
-font-weight: 100;
-font-style: italic;
-src: url(asset_path('Lato-100italic/Lato-100italic.eot'));
-src: url(asset_path('Lato-100italic/Lato-100italic.eot?#iefix')) format('embedded-opentype'),
-local('Lato Hairline Italic'),
-local('Lato-100italic'),
-url(asset_path('Lato-100italic/Lato-100italic.woff2')) format('woff2'),
-url(asset_path('Lato-100italic/Lato-100italic.woff')) format('woff'),
-url(asset_path('Lato-100italic/Lato-100italic.ttf')) format('truetype'),
-url(asset_path('Lato-100italic/Lato-100italic.svg#Lato')) format('svg');
-}
-
-@font-face {
-font-family: 'Lato';
-font-weight: 300;
-font-style: italic;
-src: url(asset_path('Lato-300italic/Lato-300italic.eot'));
-src: url(asset_path('Lato-300italic/Lato-300italic.eot?#iefix')) format('embedded-opentype'),
-local('Lato Light Italic'),
-local('Lato-300italic'),
-url(asset_path('Lato-300italic/Lato-300italic.woff2')) format('woff2'),
-url(asset_path('Lato-300italic/Lato-300italic.woff')) format('woff'),
-url(asset_path('Lato-300italic/Lato-300italic.ttf')) format('truetype'),
-url(asset_path('Lato-300italic/Lato-300italic.svg#Lato')) format('svg');
-}
-
-@font-face {
-font-family: 'Lato';
-font-weight: 400;
-font-style: italic;
-src: url(asset_path('Lato-italic/Lato-italic.eot'));
-src: url(asset_path('Lato-italic/Lato-italic.eot?#iefix')) format('embedded-opentype'),
-local('Lato Italic'),
-local('Lato-italic'),
-url(asset_path('Lato-italic/Lato-italic.woff2')) format('woff2'),
-url(asset_path('Lato-italic/Lato-italic.woff')) format('woff'),
-url(asset_path('Lato-italic/Lato-italic.ttf')) format('truetype'),
-url(asset_path('Lato-italic/Lato-italic.svg#Lato')) format('svg');
-}
-
-@font-face {
-font-family: 'Lato';
-font-weight: 700;
-font-style: italic;
-src: url(asset_path('Lato-700italic/Lato-700italic.eot'));
-src: url(asset_path('Lato-700italic/Lato-700italic.eot?#iefix')) format('embedded-opentype'),
-local('Lato Bold Italic'),
-local('Lato-700italic'),
-url(asset_path('Lato-700italic/Lato-700italic.woff2')) format('woff2'),
-url(asset_path('Lato-700italic/Lato-700italic.woff')) format('woff'),
-url(asset_path('Lato-700italic/Lato-700italic.ttf')) format('truetype'),
-url(asset_path('Lato-700italic/Lato-700italic.svg#Lato')) format('svg');
-}
-
-@font-face {
-font-family: 'Lato';
-font-weight: 900;
-font-style: italic;
-src: url(asset_path('Lato-900italic/Lato-900italic.eot'));
-src: url(asset_path('Lato-900italic/Lato-900italic.eot?#iefix')) format('embedded-opentype'),
-local('Lato Black Italic'),
-local('Lato-900italic'),
-url(asset_path('Lato-900italic/Lato-900italic.woff2')) format('woff2'),
-url(asset_path('Lato-900italic/Lato-900italic.woff')) format('woff'),
-url(asset_path('Lato-900italic/Lato-900italic.ttf')) format('truetype'),
-url(asset_path('Lato-900italic/Lato-900italic.svg#Lato')) format('svg');
-}
-
