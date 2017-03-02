@@ -1,0 +1,63 @@
+// =============================================================================
+// Fonts
+// =============================================================================
+
+@charset "UTF-8";
+
+// Cormorant Garamond
+// =============================================================================
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  src: url(asset_path('cormorant-garamond/Cormorant-Garamond-700.eot'));
+  src: url(asset_path('cormorant-garamond/Cormorant-Garamond-700.eot?#iefix')) format('embedded-opentype'),
+  local('Cormorant Garamond Medium'),
+  local('Cormorant-Garamond-600'),
+  url(asset_path('cormorant-garamond/Cormorant-Garamond-700.woff2')) format('woff2'),
+  url(asset_path('cormorant-garamond/Cormorant-Garamond-700.woff')) format('woff'),
+  url(asset_path('cormorant-garamond/Cormorant-Garamond-700.ttf')) format('truetype'),
+}
+
+// Lato
+// =============================================================================
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url(asset_path('lato/Lato-300.eot'));
+  src: url(asset_path('lato/Lato-300.eot?#iefix')) format('embedded-opentype'),
+  local('Lato Light'),
+  local('Lato-300'),
+  url(asset_path('lato/Lato-300.woff2')) format('woff2'),
+  url(asset_path('lato/Lato-300.woff')) format('woff'),
+  url(asset_path('lato/Lato-300.ttf')) format('truetype'),
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(asset_path('lato/Lato-regular.eot'));
+  src: url(asset_path('lato/Lato-regular.eot?#iefix')) format('embedded-opentype'),
+  local('Lato Regular'),
+  local('Lato-regular'),
+  url(asset_path('lato/Lato-regular.woff2')) format('woff2'),
+  url(asset_path('lato/Lato-regular.woff')) format('woff'),
+  url(asset_path('lato/Lato-regular.ttf')) format('truetype'),
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url(asset_path('lato/Lato-700.eot'));
+  src: url(asset_path('lato/Lato-700.eot?#iefix')) format('embedded-opentype'),
+  local('Lato Bold'),
+  local('Lato-700'),
+  url(asset_path('lato/Lato-700.woff2')) format('woff2'),
+  url(asset_path('lato/Lato-700.woff')) format('woff'),
+  url(asset_path('lato/Lato-700.ttf')) format('truetype'),
+}

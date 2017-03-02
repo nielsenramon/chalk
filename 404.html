@@ -11,6 +11,10 @@ sitemap: false
   <title>{{ site.name }} | Page not found</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  {% if site.local_fonts %}
+    {% stylesheet fonts %}
+  {% endif %}
+  
   {% if site.blog_theme == "light" %}
     {% stylesheet notfound-light %}
   {% else %}
@@ -26,5 +30,16 @@ sitemap: false
       </p>
     </div>
   </main>
+
+  {% unless site.local_fonts %}
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Cormorant Garamond:700', 'Lato:300,400,700']
+        }
+      });
+    </script>
+  {% endunless %}
 </body>
 </html>
