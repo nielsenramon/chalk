@@ -63,4 +63,4 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
-permalink: posts/:slug
+permalink: posts/:slug/
