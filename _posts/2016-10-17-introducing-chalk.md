@@ -23,6 +23,7 @@ tags: [web, jekyll]
   - Cross browser support (supports all modern browsers).
   - Media embed for videos.
   - Enlarge images on click (like Medium).
+  - Support for local fonts
 
 #### Integrations
   - [Google Analytics](https://analytics.google.com/analytics/web/)
@@ -76,11 +77,13 @@ bundle exec jekyll serve
 
 ## Deploy to GitHub Pages
 
-Run this in the root project folder in your console:
+Before you deploy, commit your changes to any working branch except the `gh-pages` one then run the following command:
 
 {% highlight bash %}
 bin/deploy
 {% endhighlight %}
+
+**Important note**: Chalk does not support the standard way of Jekyll hosting on GitHub Pages. You need to deploy your working branch with the `bin/deploy` script. This is because Chalk uses Jekyll plugins that aren't supported by GitHub pages.
 
 You can find more info on how to use the gh-pages branch and a custom domain [here](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/).
 

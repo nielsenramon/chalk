@@ -16,18 +16,14 @@ Note: You do not _have_ to change anything. Chalk works out of the box. I do rec
 {% highlight yml %}
 # Mandatory settings
 
-baseurl: /
 name: Chalk
-paginate: 25
-paginate_path: "/posts/page/:num/"
-url: http://chalk.nielsenramon.com # add site url http://example.com/
+paginate: 1
+url: # add your site url (format: http://example.com/)
 blog_theme: light # Or use dark
 {% endhighlight %}
 
-* `baseurl`: Set baseurl to match the production URL without the host.
 * `name`: Used as the page title and throughout your project as the default name.
 * `paginate`: Define how much posts should be shown on the homepage for each page.
-* `paginate_path`: Change the path name to something else for paginated pages.
 * `url`: Your production url (http://example.com).
 * `blog_theme`: 2 options here, `light` or `dark`. Choose which design you prefer.
 
@@ -36,19 +32,26 @@ blog_theme: light # Or use dark
 {% highlight yml %}
 # Optional settings
 
+about_enabled: false # Change to true if you wish to show an icon in the navigation that redirects to the about page
 discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
+local_fonts: false # Change to true if you wish to use local fonts
 rss_enabled: true # Change to false if not
 social:
-  dribbble: # Add your Dribbble link
-  facebook: # Add your Facebook link
-  github: # Add your GitHub link
-  linkedin: # Add your LinkedIn link
+  dribbble: # Add your Dribbble handle
+  facebook: # Add your Facebook handle
+  flickr: # Add your Flickr handle
+  github: # Add your GitHub handle
+  linkedin: # Add your LinkedIn handle
   twitter: # Add your Twitter handle
+  email: # Add your Email address
+  bitcoin: # Add your Bitcoin link or address
 {% endhighlight %}
 
+* `about_enabled`: If you wish to put the about page link in the top navigation in between the social icons set to true.
 * `discus_identifier`: If you like to use Disqus for comments on each blog post, you can add the Disqus identifier here and it will popup automatically.
 * `ga_analytics`: Add Google Analytics Tracking ID here.
+* `local_fonts`: By default Chalk uses Google Fonts but if you wish to use local fonts this is the fallback.
 * `rss_enabled`: When set to `true`, the rss icon in the top navigation will show up and people will be able to subscribe to your rss feed.
 * `social`: Add you social links in here. When filled in they will show up in the navigation.
 
@@ -126,7 +129,7 @@ $base-transition-speed: .2s;
 
 #### Fonts
 
-Chalk uses Google Fonts by default. You can change the font in `_includes/javascripts.html`.
+Chalk uses Google Fonts by default. You can change the font in `_includes/javascripts.html` and in `404.html`.
 
 {% highlight html %}
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
@@ -138,6 +141,8 @@ Chalk uses Google Fonts by default. You can change the font in `_includes/javasc
   });
 </script>
 {% endhighlight %}
+
+Don't forget Chalk also support local fonts if enabled in `config.yml`!
 
 #### Footer
 
