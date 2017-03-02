@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* Cormorant Garamond */
+@font-face {
+font-family: 'Cormorant Garamond';
+font-weight: 500;
+font-style: normal;
+src: url(asset_path('Cormorant-Garamond-500.eot'));
+src: url(asset_path('Cormorant-Garamond-500.eot?#iefix')) format('embedded-opentype'),
+local('Cormorant Garamond Medium'),
+local('Cormorant-Garamond-500'),
+url(asset_path('Cormorant-Garamond-500.woff2')) format('woff2'),
+url(asset_path('Cormorant-Garamond-500.woff')) format('woff'),
+url(asset_path('Cormorant-Garamond-500.ttf')) format('truetype'),
+url(asset_path('Cormorant-Garamond-500.svg#CormorantGaramond')) format('svg');
+}
+
+/*Lato*/
+@font-face {
+font-family: 'Lato';
+font-weight: 300;
+font-style: normal;
+src: url(asset_path('Lato-300.eot'));
+src: url(asset_path('Lato-300.eot?#iefix')) format('embedded-opentype'),
+local('Lato Light'),
+local('Lato-300'),
+url(asset_path('Lato-300.woff2')) format('woff2'),
+url(asset_path('Lato-300.woff')) format('woff'),
+url(asset_path('Lato-300.ttf')) format('truetype'),
+url(asset_path('Lato-300.svg#Lato')) format('svg');
+}
+
+@font-face {
+font-family: 'Lato';
+font-weight: 400;
+font-style: normal;
+src: url(asset_path('Lato-regular.eot'));
+src: url(asset_path('Lato-regular.eot?#iefix')) format('embedded-opentype'),
+local('Lato Regular'),
+local('Lato-regular'),
+url(asset_path('Lato-regular.woff2')) format('woff2'),
+url(asset_path('Lato-regular.woff')) format('woff'),
+url(asset_path('Lato-regular.ttf')) format('truetype'),
+url(asset_path('Lato-regular.svg#Lato')) format('svg');
+}
+
+@font-face {
+font-family: 'Lato';
+font-weight: 700;
+font-style: normal;
+src: url(asset_path('Lato-700.eot'));
+src: url(asset_path('Lato-700.eot?#iefix')) format('embedded-opentype'),
+local('Lato Bold'),
+local('Lato-700'),
+url(asset_path('Lato-700.woff2')) format('woff2'),
+url(asset_path('Lato-700.woff')) format('woff'),
+url(asset_path('Lato-700.ttf')) format('truetype'),
+url(asset_path('Lato-700.svg#Lato')) format('svg');
+}
