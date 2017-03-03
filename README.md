@@ -57,6 +57,8 @@ On windows, install Ruby and Node with the installers found here:
 Next setup your environment:
 
     bin/setup
+    
+On Windows, change the names of the files inside the `bin` folder to "setup.sh" and "deploy.sh" respectively. Then, using powershell, `cd` into the root of the project's folder and run the following command: `./bin/setup.sh`.
 
 ### Development
 
@@ -69,8 +71,9 @@ Run Jekyll:
 Before you deploy, commit your changes to any working branch except the `gh-pages` one then run the following command:
 
     bin/deploy
+On Windows, using powershell, `cd` into the root of the project's folder and run the following command: `./bin/.sh`.
 
-**Important note**: Chalk does not support the standard way of Jekyll hosting on GitHub Pages. You need to deploy your working branch with the `bin/deploy` script. This is because Chalk uses Jekyll plugins that aren't supported by GitHub pages.
+**Important note**: Chalk does not support the standard way of Jekyll hosting on GitHub Pages. You need to deploy your working branch with the `bin/deploy` script. This is because Chalk uses Jekyll plugins that aren't supported by GitHub pages. The `bin/deploy` script will automatically build and clean up the entire project, then push it to the gh-pages branch of your repo. If you don't have that branch, the script creates that branch for you.
 
 You can find more info on how to use the gh-pages branch and a custom domain [here](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/).
 
