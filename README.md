@@ -66,13 +66,15 @@ Run Jekyll:
 
 ## Deploy to GitHub Pages
 
-Before you deploy, commit your changes to any working branch except the `gh-pages` one then run the following command:
+Before you can deploy to GitHub pages you need to specify the branch to use in the `bin/branch.cfg` file. This must be the 
+branch the your GitHub page uses it can be found in your repository settings.
+Before you deploy, commit your changes to any working branch except the branch specified in `bin/branch.cfg` then run the following command:
 
     bin/deploy
 
 **Important note**: Chalk does not support the standard way of Jekyll hosting on GitHub Pages. You need to deploy your working branch with the `bin/deploy` script. This is because Chalk uses Jekyll plugins that aren't supported by GitHub pages.
 
-You can find more info on how to use the gh-pages branch and a custom domain [here](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/).
+You can find more info on how to use GitHub pages and a custom domain [here](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/).
 
 [View this](https://github.com/nielsenramon/kickster#automated-deployment-with-circle-ci) for more info about automated deployment with Circle CI.
 
