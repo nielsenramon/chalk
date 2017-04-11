@@ -1,9 +1,9 @@
 # Mandatory settings
 
-name: Chalk
+name: PIKANG
 paginate: 25
 url: http://chalk.nielsenramon.com
-blog_theme: light
+blog_theme: use dark
 
 # Optional settings
 
