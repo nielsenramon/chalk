@@ -9,9 +9,9 @@
 
 @font-face {
   font-family: ionicons;
-  src: url(asset_path("ionicons/ionicons.eot?#iefix")) format("embedded-opentype"),
-  url(asset_path("ionicons/ionicons.woff")) format("woff"),
-  url(asset_path("ionicons/ionicons.ttf"))  format("truetype");
+  src: url(font_path("ionicons/ionicons.eot?#iefix")) format("embedded-opentype"),
+  url(font_path("ionicons/ionicons.woff")) format("woff"),
+  url(font_path("ionicons/ionicons.ttf"))  format("truetype");
 }
 
 // Component
