@@ -1,9 +1,13 @@
 {% unless site.local_fonts %}
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js"></script>
   <script>
     WebFont.load({
       google: {
         families: ['Cormorant Garamond:700', 'Lato:300,400,700']
+      },
+      active: function() {
+        //when fonts loaded
+        console.log('fonts loaded');
       }
     });
   </script>
