@@ -1,5 +1,4 @@
 !.keep
-*.DS_Store
 *.sass-cache
 /.asset-cache/*
 /_site/*
