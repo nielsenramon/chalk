@@ -1,5 +1,7 @@
 //= require_self
 
+window.sr = ScrollReveal({ reset: true });
+
 $(document).on('turbolinks:load', function () {
   // Initialize fluidbox
   $('.fluidbox-trigger').fluidbox();
@@ -20,5 +22,3 @@ $(document).on('turbolinks:load', function () {
     viewFactor: 0
   });
 });
-
-window.sr = ScrollReveal({ reset: true });
