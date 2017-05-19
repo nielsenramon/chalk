@@ -13,4 +13,4 @@ bundle update
 
 # Set up JS dependencies via Bower.
 npm i -g bower
-bower install
+bower install --allow-root
