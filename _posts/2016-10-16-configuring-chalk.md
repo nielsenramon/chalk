@@ -148,4 +148,4 @@ Don't forget Chalk also support local fonts if enabled in `config.yml`!
 
 Changing the text in the footer is easy. It can be found in `_includes/footer.html`.
 
-_If you have any questions about using or configuring Chalk please create an issue <a href="" title="here" target="_blank">here</a>!_
+_If you have any questions about using or configuring Chalk please create an issue <a href="" title="here" rel="noreferrer noopener" target="_blank">here</a>!_
