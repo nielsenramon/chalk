@@ -9,6 +9,5 @@ Thumbs.db
 /_assets/yarn/
 /_site/
 /.asset-cache/
-/node_modules/
 Gemfile.lock
 yarn.lock
