@@ -28,11 +28,11 @@ assets:
   features:
     automatic_img_size: false
   sources:
-    - _assets/bower
     - _assets/fonts
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
+    - _assets/yarn
     - _vendor/
 collections:
   my_tags:
@@ -46,13 +46,12 @@ defaults:
     values:
       layout: articles_by_tag
 exclude:
-  - .bowerrc
   - .travis.yml
   - bin/*
-  - bower.json
   - circle.yml
   - Gemfile
   - Gemfile.lock
+  - package.json
   - README.md
   - vendor/
 gems:
