@@ -31,20 +31,20 @@ Used tools
   - [Autoprefixer](https://github.com/postcss/autoprefixer)
   - [Circle CI](https://circleci.com/)
   - [Html-proofer](https://github.com/gjtorikian/html-proofer)
-  - [Jekyll](http://jekyllrb.com/)
+  - [Jekyll](https://jekyllrb.com/)
   - [Jekyll assets](https://github.com/jekyll/jekyll-assets)
   - [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
   - [HTML5 Boilerplate](https://html5boilerplate.com/) (Influenced by)
-  - [Kickster](http://kickster.nielsenramon.com/)
-  - [Retina.js](http://imulus.github.io/retinajs/)
-  - [STACSS](http://stacss.nielsenramon.com/)
+  - [Kickster](https://kickster.nielsenramon.com/)
+  - [Retina.js](https://imulus.github.io/retinajs/)
+  - [STACSS](https://stacss.nielsenramon.com/)
   - [Yarn](https://yarnpkg.com)
 
 ## Usage
 
 ### Installation
 
-If you haven't installed the following tools then go ahead and do so (make sure you have [Homebrew](http://brew.sh/) installed):
+If you haven't installed the following tools then go ahead and do so (make sure you have [Homebrew](https://brew.sh/) installed):
 
     brew install ruby
     brew install npm
@@ -82,7 +82,7 @@ MIT License
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/chalk/fork )
+1. Fork it (https://github.com/[my-github-username]/chalk/fork)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
