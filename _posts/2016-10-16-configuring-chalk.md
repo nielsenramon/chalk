@@ -18,13 +18,13 @@ Note: You do not _have_ to change anything. Chalk works out of the box. I do rec
 
 name: Chalk
 paginate: 1
-url: # add your site url (format: http://example.com/)
+url: # add your site url (format: https://example.com/)
 blog_theme: light # Or use dark
 {% endhighlight %}
 
 * `name`: Used as the page title and throughout your project as the default name.
 * `paginate`: Define how much posts should be shown on the homepage for each page.
-* `url`: Your production url (http://example.com).
+* `url`: Your production url (https://example.com).
 * `blog_theme`: 2 options here, `light` or `dark`. Choose which design you prefer.
 
 ### Optional settings
