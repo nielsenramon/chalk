@@ -34,7 +34,6 @@ tags: [web, jekyll]
 
 #### Used tools
   - [Autoprefixer](https://github.com/postcss/autoprefixer)
-  - [Bower](http://bower.io/)
   - [Circle CI](https://circleci.com/)
   - [Html-proofer](https://github.com/gjtorikian/html-proofer)
   - [Jekyll](http://jekyllrb.com/)
@@ -44,6 +43,7 @@ tags: [web, jekyll]
   - [Kickster](http://kickster.nielsenramon.com/)
   - [Retina.js](http://imulus.github.io/retinajs/)
   - [STACSS](http://stacss.nielsenramon.com/)
+  - [Yarn](https://yarnpkg.com)
 
 {% include image.html path="documentation/enlarge.gif" path-detail="documentation/enlarge@2x.gif" alt="Enlarge image feature" %}
 
@@ -58,7 +58,7 @@ brew install npm
 
 On windows, install Ruby and Node with the installers found here:
 
-  - [Ruby](https://rubyinstaller.org/)  
+  - [Ruby](https://rubyinstaller.org/)
   - [Node.js](https://nodejs.org/en/download/)
 
 Next setup your environment:
