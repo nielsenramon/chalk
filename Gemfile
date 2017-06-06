@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+gem 'json', github: 'flori/json', branch: 'v1.8'
 gem "autoprefixer-rails"
 gem "html-proofer"
 gem "jekyll"
