@@ -1,5 +1,11 @@
 //= require_self
 
+// Share buttons
+$('.btn-share').on('click', function() {
+    window.open($(this).attr('href'), 'Share', 'width=200,height=200,noopener');
+    return false;
+});
+
 $(document).on('turbolinks:load', function () {
   // Initialize fluidbox
   $('.fluidbox-trigger').fluidbox();
