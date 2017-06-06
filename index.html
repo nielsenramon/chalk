@@ -24,7 +24,9 @@ description: "Chalk uses all the best tools and merges them into one premium blo
             {{ post.content | number_of_words }}
           {% endcapture %}
           {% unless words contains "-" %}
-            {{ words | plus: 250 | divided_by: 250 | append: " minute read" }}
+            {% assign minutes = words | plus: 250 | divided_by: 250 %}
+            {{ minutes | append: " minute" }}{% if minutes > 1 %}{{ "s" }}{% endif %}
+            {{ "read" }}
           {% endunless %}
         </span>
         <span class="article-list-divider">-</span>
