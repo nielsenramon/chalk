@@ -58,6 +58,19 @@ Next setup your environment:
 
     bin/setup
 
+### Windows Installation
+
+If you haven't installed the following tools then go ahead and do so:
+
+[Ruby](https://rubyinstaller.org/)  
+[Node.js](https://nodejs.org/en/download/)
+
+    npm install -g bower
+
+Next setup your environment:
+
+    bower install
+
 ### Development
 
 Run Jekyll:
