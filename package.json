@@ -1,9 +1,9 @@
 {
   "name": "chalk",
   "dependencies": {
-    "jquery": "^3.1.1",
+    "jquery": "^3.2.1",
     "throttle-debounce-fn": "^1.0.1",
-    "fluidbox": "^2.0.4",
+    "fluidbox": "^2.0.5",
     "scrollreveal": "^3.3.2",
     "turbolinks": "^5.0.0",
     "retinajs": "^2.1.1"
