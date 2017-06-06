@@ -52,7 +52,7 @@ exclude:
   - Gemfile.lock
   - package.json
   - README.md
-  - vendor/
+  - yarn.lock
 gems:
   - jekyll-assets
   - jekyll-paginate
