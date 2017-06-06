@@ -9,7 +9,4 @@ dependencies:
 test:
   post:
     - bundle exec jekyll build
-    - find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
-    - mv _site/* .
-    - rm -R _site/
-    - bundle exec htmlproofer . --only-4xx --allow-hash-href --assume-extension --check-opengraph --url-ignore "feed.xml"
+    - bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph --url-ignore "feed.xml"
