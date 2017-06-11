@@ -129,20 +129,17 @@ $base-transition-speed: .2s;
 
 #### Fonts
 
-Chalk uses Google Fonts by default. You can change the font in `_includes/javascripts.html` and in `404.html`.
+Chalk uses Google Fonts by default. You can change the font in `_includes/webfonts.html` and in `404.html`.
 
-{% highlight html %}
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
-<script>
-  WebFont.load({
-    google: {
-      families: ['Cormorant Garamond:700', 'Lato:300,400,700']
-    }
-  });
-</script>
+{% highlight javascript %}
+WebFont.load({
+  google: {
+    families: ['Cormorant Garamond:700', 'Lato:300,400,700']
+  }
+});
 {% endhighlight %}
 
-Don't forget Chalk also support local fonts if enabled in `config.yml`!
+Don't forget that Chalk also supports local fonts if enabled in `config.yml`!
 
 #### Footer
 
