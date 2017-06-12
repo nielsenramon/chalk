@@ -5,7 +5,7 @@ layout: default
 {% if site.tags[page.slug] %}
   <ul class="article-list">
     {% for post in site.tags[page.slug] %}
-      <li class="article-list-item reveal">
+      <li class="article-list-item {% if site.scrollappear_enabled %}appear{% endif %}">
         <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
           <h5>{{ post.title }}</h5>
         </a>
