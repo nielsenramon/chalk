@@ -12,7 +12,7 @@ $(document).on('turbolinks:load', function () {
     $('.appear').scrollAppear();
   }
 
-  // Initialize fluidbox
+  // Initialize Fluidbox
   $('.fluidbox-trigger').fluidbox();
 
   // Track page views on Turbolinks
