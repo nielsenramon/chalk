@@ -11,6 +11,7 @@ about_enabled: false # Change to true if you wish to show an icon in the navigat
 discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
 local_fonts: false # Change to true if you wish to use local fonts
+scrollappear_enabled: true # Change to false to disable
 rss_enabled: true # Change to false if not
 social:
   dribbble: # Add your Dribbble handle
@@ -53,6 +54,7 @@ exclude:
   - package.json
   - README.md
   - vendor/
+  - yarn.lock
 gems:
   - jekyll-assets
   - jekyll-paginate

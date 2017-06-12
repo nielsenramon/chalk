@@ -1,6 +1,12 @@
+{% javascript vendor %}
+
 {% unless site.local_fonts %}
   {% javascript webfonts %}
 {% endunless %}
+
+{% if site.scrollappear_enabled %}
+  {% javascript scrollappear %}
+{% endif %}
 
 {% if site.ga_analytics %}
   <script>
@@ -10,5 +16,4 @@
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 {% endif %}
 
-{% javascript vendor %}
 {% javascript application %}
