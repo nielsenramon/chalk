@@ -10,7 +10,7 @@ $(document).ready(function() {
   $('.fluidbox-trigger').fluidbox();
 
   // Share buttons
-  $('.btn-share').on('click', function() {
+  $('.article-share a').on('click', function() {
     window.open($(this).attr('href'), 'Share', 'width=200,height=200,noopener');
     return false;
   });

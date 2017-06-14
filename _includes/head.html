@@ -8,7 +8,6 @@
   {% assign thumb_image = 'og-image.jpg' | asset_path | absolute_url %}
 {% endif %}
 <head>
-  <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>{{ site.name }} | {{ page.title }}</title>
   <meta name="description" content="{{ page.description }}">
@@ -31,12 +30,12 @@
   <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 10 blog posts" />
 
   {% if site.local_fonts %}
-    {% stylesheet fonts %}
+    {% include stylesheet.html path="fonts" %}
   {% endif %}
 
   {% if site.blog_theme == "light" %}
-    {% stylesheet light %}
+    {% include stylesheet.html path="light" %}
   {% else %}
-    {% stylesheet dark %}
+    {% include stylesheet.html path="dark" %}
   {% endif %}
 </head>
