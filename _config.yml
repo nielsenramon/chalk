@@ -60,5 +60,5 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
-paginate_path: "/posts/page/:num/"
+paginate_path: /posts/page/:num/
 permalink: posts/:slug
