@@ -1,6 +1,6 @@
 //= require_self
 
-$(document).ready(function() {
+$(function() {
   // ScrollAppear
   if (typeof $.fn.scrollAppear === 'function') {
     $('.appear').scrollAppear();
