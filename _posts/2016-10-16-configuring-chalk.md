@@ -37,6 +37,7 @@ discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
 local_fonts: false # Change to true if you wish to use local fonts
 rss_enabled: true # Change to false if not
+scrollappear_enabled: true # Change to false to disable
 social:
   dribbble: # Add your Dribbble handle
   facebook: # Add your Facebook handle
@@ -53,6 +54,7 @@ social:
 * `ga_analytics`: Add Google Analytics Tracking ID here.
 * `local_fonts`: By default Chalk uses Google Fonts but if you wish to use local fonts this is the fallback.
 * `rss_enabled`: When set to `true`, the rss icon in the top navigation will show up and people will be able to subscribe to your rss feed.
+* `scrollappear_enabled`: If set to `true`, some elements appear with fade-in effect when visible for the first time, i.e., when scrolling down.
 * `social`: Add you social links in here. When filled in they will show up in the navigation.
 
 ### Other settings

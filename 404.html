@@ -12,17 +12,18 @@ sitemap: false
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {% if site.local_fonts %}
-    {% stylesheet fonts %}
+    {% include stylesheet.html path="fonts" %}
   {% endif %}
 
   {% if site.blog_theme == "light" %}
     {% stylesheet notfound-light %}
+    {% include stylesheet.html path="notfound-light" %}
   {% else %}
-    {% stylesheet notfound-dark %}
+    {% include stylesheet.html path="notfound-dark" %}
   {% endif %}
 </head>
 <body>
-  <main role="main" class="notfound-wrapper">
+  <main class="notfound-wrapper">
     <div class="notfound-content">
       <h1><a href="{{ '/' | relative_url }}" title="Back to homepage">{{ site.name }}</a></h1>
       <p>
@@ -32,7 +33,7 @@ sitemap: false
   </main>
 
   {% unless site.local_fonts %}
-    {% javascript webfonts %}
+    {% include javascript.html path="webfonts" %}
   {% endunless %}
 </body>
 </html>

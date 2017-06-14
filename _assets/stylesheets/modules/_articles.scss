@@ -188,6 +188,7 @@
       vertical-align: middle;
       transition: fill $base-transition-speed linear;
       fill: $gray-light;
+      width: 20px;
     }
     &:hover svg {
       fill: $gray-dark;
