@@ -37,7 +37,7 @@
           </div>
 
           <div class="article-share">
-            {% assign page_title = page.title | truncate '110' | cgi_escape %}
+            {% assign page_title = page.title | truncate 110 | cgi_escape %}
             {% capture twitter-share-text %}
               {{ page_title }} - {{ page.url | absolute_url }}{% if site.social.twitter %} by @{{ site.social.twitter }}{% endif %}
             {% endcapture %}
