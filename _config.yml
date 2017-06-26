@@ -55,7 +55,7 @@ exclude:
   - README.md
   - vendor/
   - yarn.lock
-gems:
+plugins:
   - jekyll-assets
   - jekyll-paginate
   - jekyll-sitemap
