@@ -24,7 +24,7 @@ Integrations
   - [Google Analytics](https://analytics.google.com/analytics/web/)
   - [Google Fonts](https://fonts.google.com/)
   - [Disqus](https://disqus.com/)
-  - [Ionicons](http://ionicons.com/)
+  - [SVG Icons](https://icomoon.io/)
   - Social media links
 
 Used tools

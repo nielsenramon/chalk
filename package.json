@@ -5,6 +5,7 @@
     "throttle-debounce-fn": "^1.0.1",
     "fluidbox": "^2.0.5",
     "retinajs": "^2.1.1",
-    "webfontloader": "^1.6.28"
+    "webfontloader": "^1.6.28",
+    "svgxuse": "^1.2.4"
   }
 }

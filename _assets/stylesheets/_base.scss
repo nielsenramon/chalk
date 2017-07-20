@@ -106,6 +106,10 @@ a {
   }
 }
 
+svg {
+  transition: fill 0.2s linear;
+}
+
 ul,
 ol {
   padding-left: 40px;

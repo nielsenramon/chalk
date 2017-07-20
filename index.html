@@ -10,7 +10,7 @@ description: "Chalk uses all the best tools and merges them into one premium blo
       <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
         <h5>
           {{ post.title }}
-          <span class="icon icon-arrow-right"></span>
+          <svg class="icon-arrow-right"><use xlink:href="{% asset_path icon-arrow-right.svg %}#icon-arrow-right"></use></svg>
         </h5>
       </a>
       <p>{{ post.description }}</p>
@@ -37,12 +37,12 @@ description: "Chalk uses all the best tools and merges them into one premium blo
     </li>
   {% endfor %}
   {% if paginator.total_pages > 1 %}
-    <li class="article-pagination {% if site.scrollappear_enabled %}appear{% endif %}">
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="article-pagination-right">Newer posts <span class="icon icon-arrow-right"></span></a>
-      {% endif %}
+    <li class="article-pagination {% if site.settings.scrollappear_enabled %}appear{% endif %}">
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}"><span class="icon icon-arrow-left"></span> Older posts</a>
+        <a href="{{ paginator.next_page_path }}" class="article-pagination-left"><svg class="icon-arrow-left"><use xlink:href="{% asset_path icon-arrow-left.svg %}#icon-arrow-left"></use></svg> Older posts</a>
+      {% endif %}
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="article-pagination-right">Newer posts <svg class="icon-arrow-right"><use xlink:href="{% asset_path icon-arrow-right.svg %}#icon-arrow-right"></use></svg></a>
       {% endif %}
     </li>
   {% endif %}

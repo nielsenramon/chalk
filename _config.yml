@@ -30,6 +30,7 @@ assets:
     automatic_img_size: false
   sources:
     - _assets/fonts
+    - _assets/icons
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
