@@ -4,70 +4,70 @@
     {% if site.about_enabled == true %}
       <li>
         <a href="{{ 'about' | relative_url }}" title="About me">
-          <span class="icon icon-about"></span>
+          <svg class="icon-about"><use xlink:href="{% asset_path about.svg %}#icon-about"></use></svg>
         </a>
       </li>
     {% endif %}
     {% if site.social.twitter %}
       <li>
         <a href="https://twitter.com/{{ site.social.twitter }}" rel="noreferrer noopener" target="_blank" title="Twitter">
-          <span class="icon icon-twitter"></span>
+          <svg class="icon-twitter"><use xlink:href="{% asset_path twitter.svg %}#icon-twitter"></use></svg>
         </a>
       </li>
     {% endif %}
     {% if site.social.facebook %}
       <li>
         <a href="https://www.facebook.com/{{ site.social.facebook }}" rel="noreferrer noopener" target="_blank" title="Facebook">
-          <span class="icon icon-facebook"></span>
+          <svg class="icon-facebook"><use xlink:href="{% asset_path facebook.svg %}#icon-facebook"></use></svg>
         </a>
       </li>
     {% endif %}
     {% if site.social.github %}
       <li>
         <a href="https://github.com/{{ site.social.github }}" rel="noreferrer noopener" target="_blank" title="GitHub">
-          <span class="icon icon-github"></span>
+          <svg class="icon-github"><use xlink:href="{% asset_path github.svg %}#icon-github"></use></svg>
         </a>
       </li>
     {% endif %}
     {% if site.social.dribbble %}
       <li>
         <a href="https://dribbble.com/{{ site.social.dribbble }}" rel="noreferrer noopener" target="_blank" title="Dribbble">
-          <span class="icon icon-dribbble"></span>
+          <svg class="icon-dribbble"><use xlink:href="{% asset_path dribbble.svg %}#icon-dribbble"></use></svg>
         </a>
       </li>
     {% endif %}
     {% if site.social.flickr %}
       <li>
         <a href="https://www.flickr.com/photos/{{ site.social.flickr }}" rel="noreferrer noopener" target="_blank" title="Flickr">
-          <span class="icon icon-flickr"></span>
+          <svg class="icon-flickr"><use xlink:href="{% asset_path flickr.svg %}#icon-flickr"></use></svg>
         </a>
       </li>
     {% endif %}
     {% if site.social.linkedin %}
       <li>
         <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" rel="noreferrer noopener" target="_blank" title="LinkedIn">
-          <span class="icon icon-linkedin"></span>
+          <svg class="icon-linkedin"><use xlink:href="{% asset_path linkedin.svg %}#icon-linkedin"></use></svg>
         </a>
       </li>
     {% endif %}
     {% if site.social.bitcoin %}
       <li>
         <a href="{{ site.social.bitcoin }}" rel="noreferrer noopener" target="_blank" title="Bitcoin">
-          <span class="icon icon-bitcoin"></span>
+          <svg class="icon-bitcoin"><use xlink:href="{% asset_path bitcoin.svg %}#icon-bitcoin"></use></svg>
         </a>
       </li>
     {% endif %}
     {% if site.social.email %}
       <li>
         <a href="mailto:{{ site.social.email }}" title="Email">
-          <span class="icon icon-email"></span>
+          <svg class="icon-email"><use xlink:href="{% asset_path email.svg %}#icon-email"></use></svg>
         </a>
       </li>
     {% endif %}
     {% if site.rss_enabled == true %}
       <li>
         <a href="{{ 'feed.xml' | relative_url }}" rel="noreferrer noopener" target="_blank" title="RSS">
-          <span class="icon icon-rss"></span>
+          <svg class="icon-rss"><use xlink:href="{% asset_path rss.svg %}#icon-rss"></use></svg>
         </a>
       </li>
     {% endif %}

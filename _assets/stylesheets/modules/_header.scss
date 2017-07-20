@@ -32,8 +32,13 @@
     a {
       font-size: 18px;
       color: $header-link-color;
-      &:hover {
-        color: $header-link-color-hover;
+      svg {
+        width: 16px;
+        height: 16px;
+        fill: $gray-light;
+      }
+      &:hover svg {
+        fill: $header-link-color-hover;
       }
     }
   }
