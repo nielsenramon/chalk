@@ -1,9 +1,9 @@
 # Mandatory settings
 
-name: Chalk
+name: ONEGEE
 paginate: 25
-url: # add your site url (format: https://example.com/)
-blog_theme: light # Or use dark
+url: http://onegee.github.io # add your site url (format: https://example.com/)
+blog_theme: dark # Or use dark
 
 # Optional settings
 
