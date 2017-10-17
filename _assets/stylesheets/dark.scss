@@ -47,7 +47,7 @@ $article-paginator-color-hover: $gray-lightest;
 // Vendors
 
 @import "vendor/normalize";
-@import "../bower/fluidbox/src/css/_fluidbox.scss";
+@import "../yarn/fluidbox/src/css/_fluidbox.scss";
 
 // Settings
 
@@ -67,4 +67,4 @@ $article-paginator-color-hover: $gray-lightest;
 @import "modules/embed";
 @import "modules/header";
 @import "modules/highlights-dark";
-@import "modules/icons";
+@import "modules/scrollappear";

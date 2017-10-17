@@ -1,16 +1,16 @@
 ---
 layout: default
-title: "The high quality, completely customisable, performant and 100% free blog template for Jekyll"
+title: "The high quality, completely customizable, performant and 100% free blog template for Jekyll"
 description: "Chalk uses all the best tools and merges them into one premium blogging theme."
 ---
 
 <ul class="article-list">
   {% for post in paginator.posts %}
-    <li class="article-list-item reveal">
-      <a href="{{ post.url }}" title="{{ post.title }}">
+    <li class="article-list-item {% if site.scrollappear_enabled %}appear{% endif %}">
+      <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
         <h5>
           {{ post.title }}
-          <span class="icon icon-ios-arrow-thin-right"></span>
+          <svg class="icon-arrow-right"><use href="{% asset_path icon-arrow-right.svg %}#icon-arrow-right" xlink:href="{% asset_path icon-arrow-right.svg %}#icon-arrow-right"></use></svg>
         </h5>
       </a>
       <p>{{ post.description }}</p>
@@ -30,19 +30,19 @@ description: "Chalk uses all the best tools and merges them into one premium blo
         <span class="article-list-divider">-</span>
         <div class="article-list-tags">
           {% for tag in post.tags %}
-            <a href="{{ site.baseurl }}tag/{{ tag }}">{{ tag }}</a>
+            <a href="{{ 'tag/' | relative_url }}{{ tag }}">{{ tag }}</a>
           {% endfor %}
         </div>
       </div>
     </li>
   {% endfor %}
   {% if paginator.total_pages > 1 %}
-    <li class="article-pagination reveal">
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="article-pagination-right">Newer posts <span class="icon icon-ios-arrow-thin-right"></span></a>
-      {% endif %}
+    <li class="article-pagination {% if site.settings.scrollappear_enabled %}appear{% endif %}">
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}"><span class="icon icon-ios-arrow-thin-left"></span> Older posts</a>
+        <a href="{{ paginator.next_page_path }}" class="article-pagination-left"><svg class="icon-arrow-left"><use href="{% asset_path icon-arrow-left.svg %}#icon-arrow-left" xlink:href="{% asset_path icon-arrow-left.svg %}#icon-arrow-left"></use></svg> Older posts</a>
+      {% endif %}
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="article-pagination-right">Newer posts <svg class="icon-arrow-right"><use href="{% asset_path icon-arrow-right.svg %}#icon-arrow-right" xlink:href="{% asset_path icon-arrow-right.svg %}#icon-arrow-right"></use></svg></a>
       {% endif %}
     </li>
   {% endif %}

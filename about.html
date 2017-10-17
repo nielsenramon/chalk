@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "The high quality, completely customisable and 100% free blog template for Jekyll"
+title: "The high quality, completely customizable and 100% free blog template for Jekyll"
 description: ""
 ---
 
-<div class="about reveal">
-  <img src="{% asset_path 'about.jpg' %}" data-at2x="{% asset_path 'about@2x.jpg' %}" alt="About Nielsen Ramon header image" />
+<div class="about {% if site.scrollappear_enabled %}appear{% endif %}">
+  <img src="{% asset_path 'about.jpg' %}" alt="About Nielsen Ramon header image" />
   <h1>About me</h1>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

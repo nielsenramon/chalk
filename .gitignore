@@ -1,6 +1,13 @@
-!.keep
+# Global
 *.DS_Store
+Desktop.ini
+Thumbs.db
+
+# Project
+!.keep
 *.sass-cache
-/.asset-cache/*
-/_site/*
-/_assets/bower/*
+/_assets/yarn/
+/_site/
+/.asset-cache/
+Gemfile.lock
+yarn.lock

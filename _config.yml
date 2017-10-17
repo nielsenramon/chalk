@@ -1,41 +1,54 @@
 # Mandatory settings
 
-baseurl: /
 name: Chalk
 paginate: 25
-paginate_path: "/posts/page/:num/"
-url: # add site url http://example.com/
+url: # add your site url (format: https://example.com/)
 blog_theme: light # Or use dark
 
 # Optional settings
 
+about_enabled: false # Change to true if you wish to show an icon in the navigation that redirects to the about page
 discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
+local_fonts: false # Change to true if you wish to use local fonts
 rss_enabled: true # Change to false if not
+scrollappear_enabled: true # Change to false to disable
 social:
-  dribbble: # Add your Dribbble link
-  facebook: # Add your Facebook link
-  github: # Add your GitHub link
-  linkedin: # Add your LinkedIn link
+  dribbble: # Add your Dribbble handle
+  facebook: # Add your Facebook handle
+  flickr: # Add your Flickr handle
+  github: # Add your GitHub handle
+  linkedin: # Add your LinkedIn handle
   twitter: # Add your Twitter handle
   email: # Add your Email address
   bitcoin: # Add your Bitcoin link or address
+  ethereum: # Add your Ethereum link or address
+  gitlab: # Add your GitLab handle
+  youtube: # Add your Youtube handle
+  twitch: # Add your Twitch handle
+  discord: # Add you Discord server invitation ID
+  tumblr: # Add your Tumblr handle
+  bitbucket: # Add your Bitbucket handle
+  docker: # Add your Docker Hub handle
+  instagram: # Add your Instagram handle
+  keybase: # Add your Keybase handle
+  medium: # Add your Medium handle
+  spotify: # Add your Spotify handle
+  stackoverflow: # Add your Stack Overflow ID number
+  steam: # Add your Steam handle
 
 # Important settings (change at own risk)
 
 assets:
-  compress:
-    css: true
-    js: true
   features:
     automatic_img_size: false
   sources:
-    - _assets/bower
     - _assets/fonts
+    - _assets/icons
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
-    - _vendor/
+    - _assets/yarn
 collections:
   my_tags:
     output: true
@@ -48,17 +61,19 @@ defaults:
     values:
       layout: articles_by_tag
 exclude:
-  - .bowerrc
   - .travis.yml
   - bin/*
-  - bower.json
   - circle.yml
   - Gemfile
   - Gemfile.lock
+  - package.json
   - README.md
   - vendor/
-gems:
+  - yarn.lock
+plugins:
   - jekyll-assets
   - jekyll-paginate
   - jekyll-sitemap
+  - jemoji
+paginate_path: /posts/page/:num/
 permalink: posts/:slug

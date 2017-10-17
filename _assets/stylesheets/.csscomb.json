@@ -5,7 +5,6 @@
   "color-shorthand": true,
   "element-case": "lower",
   "eof-newline": true,
-  "exclude": ["node_modules/**"],
   "leading-zero": false,
   "lines-between-rulesets": 1,
   "quotes": "double",

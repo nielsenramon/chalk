@@ -2,7 +2,7 @@
 layout: post
 title: "Chalk sample post with all elements"
 description: "Have a look at all the predesigned elements you can use in Chalk."
-og_image: "documentation/sample-image.jpg"
+thumb_image: "documentation/sample-image.jpg"
 tags: [design, jekyll]
 ---
 
@@ -55,6 +55,10 @@ Ordered list example:
 2. Order list item 1
 {% endhighlight %}
 
+## Emoji support :star:
+
+Emoji's can be used everywhere in :cat2: your markdown!
+
 ## Quotes
 
 A quote looks like this:
@@ -84,11 +88,11 @@ If you wish that an image can be enlarged on click use the image include tag. Yo
 Videos can be added and are responsive by default (4x3 by default, 16x9 with extra class).
 
 <div class="embed-responsive embed-responsive-16by9">
-<iframe src="https://www.youtube.com/embed/vO7m8Hre72E?modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/vO7m8Hre72E?modestbranding=1&autohide=1&showinfo=0&controls=0" allowfullscreen></iframe>
 </div>
 
 {% highlight html %}
 <div class="embed-responsive embed-responsive-16by9">
-<iframe src="url-to-video" frameborder="0" allowfullscreen></iframe>
+<iframe src="url-to-video" allowfullscreen></iframe>
 </div>
 {% endhighlight %}
