@@ -1,4 +1,4 @@
-;(function ($, window, document, undefined) {
+;(function ($) {
 
   var els = [];
 
@@ -13,6 +13,7 @@
   $.fn.scrollAppear = function() {
     this.each(function() {
       els.push($(this));
+      $(this).addClass('appear');
     });
 
     refreshVisibility();
@@ -22,4 +23,4 @@
     });
     return this;
   };
-}(jQuery, window, document));
+}(jQuery));
