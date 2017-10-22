@@ -6,7 +6,7 @@ description: "Chalk uses all the best tools and merges them into one premium blo
 
 <ul class="article-list">
   {% for post in paginator.posts %}
-    <li class="article-list-item {% if site.scrollappear_enabled %}appear{% endif %}">
+    <li class="article-list-item {% if site.scrollappear_enabled %}scrollappear{% endif %}">
       <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
         <h5>
           {{ post.title }}
@@ -37,7 +37,7 @@ description: "Chalk uses all the best tools and merges them into one premium blo
     </li>
   {% endfor %}
   {% if paginator.total_pages > 1 %}
-    <li class="article-pagination {% if site.settings.scrollappear_enabled %}appear{% endif %}">
+    <li class="article-pagination {% if site.settings.scrollappear_enabled %}scrollappear{% endif %}">
       {% if paginator.next_page %}
         <a href="{{ paginator.next_page_path }}" class="article-pagination-left"><svg class="icon-arrow-left"><use href="{% asset_path icon-arrow-left.svg %}#icon-arrow-left" xlink:href="{% asset_path icon-arrow-left.svg %}#icon-arrow-left"></use></svg> Older posts</a>
       {% endif %}
