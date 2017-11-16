@@ -1,8 +1,8 @@
 # Mandatory settings
 
-name: Chalk
-paginate: 25
-url: # add your site url (format: https://example.com/)
+name: Lee Jongyeop
+paginate: 29
+url: https://daymoon29.github.io
 blog_theme: light # Or use dark
 
 # Optional settings
@@ -17,10 +17,10 @@ social:
   dribbble: # Add your Dribbble handle
   facebook: # Add your Facebook handle
   flickr: # Add your Flickr handle
-  github: # Add your GitHub handle
+  github: https://github.com/daymoon29
   linkedin: # Add your LinkedIn handle
   twitter: # Add your Twitter handle
-  email: # Add your Email address
+  email: icn.daymoon@gmail.com
   bitcoin: # Add your Bitcoin link or address
   ethereum: # Add your Ethereum link or address
   gitlab: # Add your GitLab handle
@@ -30,7 +30,7 @@ social:
   tumblr: # Add your Tumblr handle
   bitbucket: # Add your Bitbucket handle
   docker: # Add your Docker Hub handle
-  instagram: # Add your Instagram handle
+  instagram: https://instagram.com/daymoon_29
   keybase: # Add your Keybase handle
   medium: # Add your Medium handle
   spotify: # Add your Spotify handle
