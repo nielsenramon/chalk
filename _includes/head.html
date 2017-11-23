@@ -2,10 +2,10 @@
   {% if page.thumb_image contains '://' %}
     {% assign thumb_image = page.thumb_image %}
   {% else %}
-    {% assign thumb_image = page.thumb_image | asset_path | absolute_url %}
+    {% assign thumb_image = page.thumb_image | asset_path | prepend: site.url %}    
   {% endif %}
 {% else %}
-  {% assign thumb_image = 'og-image.jpg' | asset_path | absolute_url %}
+  {% assign thumb_image = 'og-image.jpg' | asset_path | prepend: site.url %}  
 {% endif %}
 <head>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
