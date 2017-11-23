@@ -2,11 +2,13 @@
 
 name: Chalk
 paginate: 25
-url: # add your site url (format: https://example.com/)
+url: # add your site url (format: https://example.com)
+
 blog_theme: light # Or use dark
 
 # Optional settings
 
+baseurl: # Set if blog doesn't sit at the root of the domain (format: /blog)
 about_enabled: false # Change to true if you wish to show an icon in the navigation that redirects to the about page
 discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
