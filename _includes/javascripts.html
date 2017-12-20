@@ -1,9 +1,12 @@
 {% if site.ga_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_analytics }}"></script>
   <script>
-    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-    ga('create','{{ site.ga_analytics }}','auto');ga('send','pageview')
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ site.ga_analytics }}');
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 {% endif %}
 
 {% include javascript.html path="vendor" %}
