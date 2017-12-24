@@ -25,14 +25,14 @@ Integrations
   - [Google Fonts](https://fonts.google.com/)
   - [Disqus](https://disqus.com/)
   - [SVG Icons](https://icomoon.io/)
-  - Social media links
+  - Many social media links
 
 Used tools
   - [Autoprefixer](https://github.com/postcss/autoprefixer)
   - [Circle CI](https://circleci.com/)
   - [Html-proofer](https://github.com/gjtorikian/html-proofer)
   - [Jekyll](https://jekyllrb.com/)
-  - [Jekyll assets](https://github.com/jekyll/jekyll-assets)
+  - [Jekyll Assets](https://github.com/jekyll/jekyll-assets)
   - [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
   - [HTML5 Boilerplate](https://html5boilerplate.com/) (Influenced by)
   - [Kickster](https://kickster.nielsenramon.com/)
