@@ -9,13 +9,13 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:image" content="{% asset og-image.jpg @path %}">
+  <meta property="og:image" content="{{ site.url }}{% asset og-image.jpg @path %}">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="{{ page.url | absolute_url }}">
   <meta name="twitter:title" content="{{ page.title | escape }}">
   <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="{% asset og-image.jpg @path %}">
+  <meta name="twitter:image" content="{{ site.url }}{% asset og-image.jpg @path %}">
 
   <link rel="apple-touch-icon" href="{% asset apple-touch-icon.png @path %}">
   <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 10 blog posts" />
