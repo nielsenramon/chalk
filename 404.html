@@ -12,14 +12,13 @@ sitemap: false
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {% if site.local_fonts %}
-    {% include stylesheet.html path="fonts" %}
+    {% asset fonts.css %}
   {% endif %}
 
   {% if site.blog_theme == "light" %}
-    {% stylesheet notfound-light %}
-    {% include stylesheet.html path="notfound-light" %}
+    {% asset notfound-light.css %}
   {% else %}
-    {% include stylesheet.html path="notfound-dark" %}
+    {% asset notfound-dark.css %}
   {% endif %}
 </head>
 <body>
@@ -33,7 +32,7 @@ sitemap: false
   </main>
 
   {% unless site.local_fonts %}
-    {% include javascript.html path="webfonts" %}
+    {% asset webfonts.js %}
   {% endunless %}
 </body>
 </html>

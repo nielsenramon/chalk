@@ -9,14 +9,14 @@
   </script>
 {% endif %}
 
-{% include javascript.html path="vendor" %}
+{% asset vendor.js %}
 
 {% unless site.local_fonts %}
-  {% include javascript.html path="webfonts" %}
+  {% asset webfonts.js %}
 {% endunless %}
 
 {% if site.scrollappear_enabled %}
-  {% include javascript.html path="scrollappear" %}
+  {% asset scrollappear.js %}
 {% endif %}
 
-{% include javascript.html path="application" %}
+{% asset application.js %}

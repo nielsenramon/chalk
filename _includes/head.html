@@ -1,12 +1,3 @@
-{% if page.thumb_image %}
-  {% if page.thumb_image contains '://' %}
-    {% assign thumb_image = page.thumb_image %}
-  {% else %}
-    {% assign thumb_image = page.thumb_image | asset_path | prepend: site.url %}    
-  {% endif %}
-{% else %}
-  {% assign thumb_image = 'og-image.jpg' | asset_path | prepend: site.url %}  
-{% endif %}
 <head>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>{{ site.name }} | {{ page.title }}</title>
@@ -18,24 +9,24 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:image" content="{{ thumb_image }}">
+  <meta property="og:image" content="{% asset og-image.jpg @path %}">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="{{ page.url | absolute_url }}">
   <meta name="twitter:title" content="{{ page.title | escape }}">
   <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="{{ thumb_image }}">
+  <meta name="twitter:image" content="{% asset og-image.jpg @path %}">
 
-  <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
+  <link rel="apple-touch-icon" href="{% asset apple-touch-icon.png @path %}">
   <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 10 blog posts" />
 
   {% if site.local_fonts %}
-    {% include stylesheet.html path="fonts" %}
+    {% asset fonts.css %}
   {% endif %}
 
   {% if site.blog_theme == "light" %}
-    {% include stylesheet.html path="light" %}
+    {% asset light.css %}
   {% else %}
-    {% include stylesheet.html path="dark" %}
+    {% asset dark.css %}
   {% endif %}
 </head>
