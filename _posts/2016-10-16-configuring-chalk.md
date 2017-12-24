@@ -16,16 +16,16 @@ Note: You do not _have_ to change anything. Chalk works out of the box. I do rec
 {% highlight yml %}
 # Mandatory settings
 
-name: Chalk
-paginate: 1
-url: # add your site url (format: https://example.com/)
 blog_theme: light # Or use dark
+name: Chalk
+paginate: 25
+url: # add your site url (format: https://example.com)
 {% endhighlight %}
 
+* `blog_theme`: 2 options here, `light` or `dark`. Choose which design you prefer.
 * `name`: Used as the page title and throughout your project as the default name.
 * `paginate`: Define how much posts should be shown on the homepage for each page.
 * `url`: Your production url (https://example.com).
-* `blog_theme`: 2 options here, `light` or `dark`. Choose which design you prefer.
 
 ### Optional settings
 
@@ -33,6 +33,7 @@ blog_theme: light # Or use dark
 # Optional settings
 
 about_enabled: false # Change to true if you wish to show an icon in the navigation that redirects to the about page
+baseurl: # Set if blog doesn't sit at the root of the domain (format: /blog)
 discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
 local_fonts: false # Change to true if you wish to use local fonts
@@ -47,11 +48,25 @@ social:
   twitter: # Add your Twitter handle
   email: # Add your Email address
   bitcoin: # Add your Bitcoin link or address
+  ethereum: # Add your Ethereum link or address
+  gitlab: # Add your GitLab handle
+  youtube: # Add your Youtube handle
+  twitch: # Add your Twitch handle
+  discord: # Add you Discord server invitation ID
+  tumblr: # Add your Tumblr handle
+  bitbucket: # Add your Bitbucket handle
+  docker: # Add your Docker Hub handle
+  instagram: # Add your Instagram handle
+  keybase: # Add your Keybase handle
+  medium: # Add your Medium handle
+  spotify: # Add your Spotify handle
+  stackoverflow: # Add your Stack Overflow ID number
+  steam: # Add your Steam handle
 {% endhighlight %}
 
 * `about_enabled`: If you wish to put the about page link in the top navigation in between the social icons set to true.
 * `discus_identifier`: If you like to use Disqus for comments on each blog post, you can add the Disqus identifier here and it will popup automatically.
-* `ga_analytics`: Add Google Analytics Tracking ID here.
+* `ga_analytics`: Add Google Analytics Tracking ID here, it uses the Google Tag Manager snippet.
 * `local_fonts`: By default Chalk uses Google Fonts but if you wish to use local fonts this is the fallback.
 * `rss_enabled`: When set to `true`, the rss icon in the top navigation will show up and people will be able to subscribe to your rss feed.
 * `scrollappear_enabled`: If set to `true`, some elements appear with fade-in effect when visible for the first time, i.e., when scrolling down.
@@ -131,7 +146,7 @@ $base-transition-speed: .2s;
 
 #### Fonts
 
-Chalk uses Google Fonts by default. You can change the font in `_includes/webfonts.html` and in `404.html`.
+Chalk uses Google Fonts by default. You can change the font in `_assets/javascripts/webfonts.js` and in `404.html`.
 
 {% highlight javascript %}
 WebFont.load({

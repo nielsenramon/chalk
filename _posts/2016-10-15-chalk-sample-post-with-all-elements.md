@@ -81,8 +81,12 @@ If you wish that an image can be enlarged on click use the image include tag. Yo
 
 {% include image.html path="documentation/sample-image.jpg" path-detail="documentation/sample-image@2x.jpg" alt="Sample image" %}
 
-{% highlight html %}
-{% include image.html path="documentation/sample-image.jpg" path-detail="documentation/sample-image@2x.jpg" alt="Sample image" %}
+{% highlight liquid %}
+{% raw %}
+{% include image.html path="documentation/sample-image.jpg"
+                      path-detail="documentation/sample-image@2x.jpg"
+                      alt="Sample image" %}
+{% endraw %}
 {% endhighlight %}
 
 Videos can be added and are responsive by default (4x3 by default, 16x9 with extra class).
@@ -93,6 +97,6 @@ Videos can be added and are responsive by default (4x3 by default, 16x9 with ext
 
 {% highlight html %}
 <div class="embed-responsive embed-responsive-16by9">
-<iframe src="url-to-video" allowfullscreen></iframe>
+  <iframe src="url-to-video" allowfullscreen></iframe>
 </div>
 {% endhighlight %}

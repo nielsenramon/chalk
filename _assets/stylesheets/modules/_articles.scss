@@ -12,22 +12,18 @@
   padding: 0;
   margin: 50px 0;
   list-style: none;
-
   li {
     position: relative;
     display: block;
     padding: 50px 0;
     border-bottom: 1px solid $base-border-color;
-
     &:last-child {
       border-bottom: 0;
     }
-
     &.article-pagination {
       display: table;
       width: 100%;
       margin-top: -15px;
-
       a {
         display: inline-block;
         padding-top: 6px;
@@ -38,7 +34,6 @@
         text-decoration: none;
         text-transform: uppercase;
         transition: color $base-transition-speed linear;
-
         svg {
           width: 16px;
           height: 16px;
@@ -60,17 +55,14 @@
 }
 
 .article-list-item {
-
   a {
     text-decoration: none;
-
     h5 {
       position: relative;
       display: block;
       padding-right: 25px;
       color: $article-header-title-color;
       border-bottom: 1px solid transparent;
-
       svg {
         width: 16px;
         height: 16px;
@@ -80,9 +72,7 @@
         opacity: 0;
         transition: opacity $base-transition-speed linear;
       }
-
     }
-
     &:hover h5 svg {
       opacity: 1;
     }

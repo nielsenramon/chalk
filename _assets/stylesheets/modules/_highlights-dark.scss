@@ -3,7 +3,7 @@
 // =============================================================================
 
 .highlight {
-  padding: 50px;
+  padding: 25px;
   margin: 0;
   margin: 30px 0;
   overflow: auto;
@@ -31,7 +31,6 @@
 
 @include breakpoint(small) {
   .highlight {
-    padding: 50px 25px;
     font-size: 14px;
   }
 }
