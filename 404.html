@@ -1,38 +1,30 @@
----
-permalink: /404.html
-sitemap: false
----
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ site.name }} | Page not found</title>
+  <title>Chalk | Page not found</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% if site.local_fonts %}
-    {% asset fonts.css %}
-  {% endif %}
+  
 
-  {% if site.blog_theme == "light" %}
-    {% asset notfound-light.css %}
-  {% else %}
-    {% asset notfound-dark.css %}
-  {% endif %}
+  
+    <link rel="stylesheet" type="text/css" href="/assets/notfound-light-cad965e831d108de7a9e684b75c846c4113e8029af76d3bfd6b254b9d3f25746.css">
+  
 </head>
 <body>
   <main class="notfound-wrapper">
     <div class="notfound-content">
-      <h1><a href="{{ '/' | relative_url }}" title="Back to homepage">{{ site.name }}</a></h1>
+      <h1><a href="/" title="Back to homepage">Chalk</a></h1>
       <p>
-        Looks like you got lost. Let's get you back to the <a href="{{ '/' | relative_url }}">homepage</a>!
+        Looks like you got lost. Let's get you back to the <a href="/">homepage</a>!
       </p>
     </div>
   </main>
 
-  {% unless site.local_fonts %}
-    {% asset webfonts.js %}
-  {% endunless %}
+  
+    <script type="text/javascript" src="/assets/webfonts-de7fea3d4cd783107fc0bb00615c55b21984b9ee56ee5ea772e71422fa1e3bfa.js"></script>
+  
 </body>
 </html>
