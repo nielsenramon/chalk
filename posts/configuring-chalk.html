@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Chalk | How to configure Chalk</title>
+  <meta name="description" content="Learn more about the config file for Chalk and how to set it up properly.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="google-site-verification" content="rrfms53zaykhCVWMuR5mkjCjwprrP-O-oDsOCAn8H6c">
+
+  <meta property="og:title" content="How to configure Chalk">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://chalk.nielsenramon.com/posts/configuring-chalk">
+  <meta property="og:description" content="Learn more about the config file for Chalk and how to set it up properly.">
+  <meta property="og:site_name" content="Chalk">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://chalk.nielsenramon.com/posts/configuring-chalk">
+  <meta name="twitter:title" content="How to configure Chalk">
+  <meta name="twitter:description" content="Learn more about the config file for Chalk and how to set it up properly.">
+
+  
+    <meta property="og:image" content="http://chalk.nielsenramon.com/assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+    <meta name="twitter:image" content="http://chalk.nielsenramon.com/assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+  
+
+  <link href="http://chalk.nielsenramon.com/feed.xml" type="application/rss+xml" rel="alternate" title="Chalk Last 10 blog posts">
+
+  
+
+  
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-light-a98c41efc5ed9fcc06ac664c9e2f7a9b3c3b2e0a52357d221fe382f6f4abc8fc.ico">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon-light-87d1f2a3a19b1500e5c1626a0492025ca5f7f97d24540dc5900288e92112925a.png">
+    <link rel="stylesheet" type="text/css" href="/assets/light-c50ee5755480f01641dc271657dee43ffbc81c5fdbb004d1308f130d34578c35.css">
+  
+</head>
+
+<body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav scrollappear">
+  <a href="/" class="header-logo" title="Chalk">Chalk</a>
+  <ul class="header-links">
+    
+    
+      <li>
+        <a href="https://twitter.com/nielsenramon" rel="noreferrer noopener" target="_blank" title="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-twitter">
+  <use href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter" xlink:href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+      <li>
+        <a href="https://github.com/nielsenramon" rel="noreferrer noopener" target="_blank" title="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-github">
+  <use href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github" xlink:href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="https://dribbble.com/nielsenramon" rel="noreferrer noopener" target="_blank" title="Dribbble">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-dribbble">
+  <use href="/assets/dribbble-13bac13b56f8cd7edb821f8a51d199f6c5867b8ec835d226b27d54a05374ef88.svg#icon-dribbble" xlink:href="/assets/dribbble-13bac13b56f8cd7edb821f8a51d199f6c5867b8ec835d226b27d54a05374ef88.svg#icon-dribbble"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="/feed.xml" rel="noreferrer noopener" target="_blank" title="RSS">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-rss">
+  <use href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss" xlink:href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss"></use>
+</svg>
+
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+        <article class="article scrollappear">
+          <header class="article-header">
+            <h1>How to configure Chalk</h1>
+            <p>Learn more about the config file for Chalk and how to set it up properly.</p>
+            <div class="article-list-footer">
+              <span class="article-list-date">
+                October 16, 2016
+              </span>
+              <span class="article-list-divider">-</span>
+              <span class="article-list-minutes">
+                
+                
+                  5 minute read
+                
+              </span>
+              <span class="article-list-divider">-</span>
+              <div class="article-list-tags">
+                
+                  <a href="/tag/web">web</a>
+                
+                  <a href="/tag/jekyll">jekyll</a>
+                
+              </div>
+            </div>
+          </header>
+
+          <div class="article-content">
+            <p>The <code class="highlighter-rouge">_config.yml</code> file is the most important one. It contains the basic setup of your project.
+Some parts are preconfigured and shouldn’t be touched as the comments state.
+Of course if you are familiar with Jekyll you can change whatever you want.</p>
+
+<p>Note: You do not <em>have</em> to change anything. Chalk works out of the box. I do recommend changing the <code class="highlighter-rouge">_config.yml</code> to suit your needs.</p>
+
+<h3 id="mandatory-settings">Mandatory settings</h3>
+
+<figure class="highlight"><pre><code class="language-yml" data-lang="yml"><span class="c1"># Mandatory settings</span>
+
+<span class="na">blog_theme</span><span class="pi">:</span> <span class="s">light</span> <span class="c1"># Or use dark</span>
+<span class="na">name</span><span class="pi">:</span> <span class="s">Chalk</span>
+<span class="na">paginate</span><span class="pi">:</span> <span class="s">25</span>
+<span class="na">url</span><span class="pi">:</span> <span class="c1"># add your site url (format: https://example.com)</span></code></pre></figure>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">blog_theme</code>: 2 options here, <code class="highlighter-rouge">light</code> or <code class="highlighter-rouge">dark</code>. Choose which design you prefer.</li>
+  <li>
+<code class="highlighter-rouge">name</code>: Used as the page title and throughout your project as the default name.</li>
+  <li>
+<code class="highlighter-rouge">paginate</code>: Define how much posts should be shown on the homepage for each page.</li>
+  <li>
+<code class="highlighter-rouge">url</code>: Your production url (https://example.com).</li>
+</ul>
+
+<h3 id="optional-settings">Optional settings</h3>
+
+<figure class="highlight"><pre><code class="language-yml" data-lang="yml"><span class="c1"># Optional settings</span>
+
+<span class="na">about_enabled</span><span class="pi">:</span> <span class="no">false</span> <span class="c1"># Change to true if you wish to show an icon in the navigation that redirects to the about page</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="c1"># Set if blog doesn't sit at the root of the domain (format: /blog)</span>
+<span class="na">discus_identifier</span><span class="pi">:</span> <span class="c1"># Add your Disqus identifier</span>
+<span class="na">ga_analytics</span><span class="pi">:</span> <span class="c1"># Add your GA Tracking Id</span>
+<span class="na">local_fonts</span><span class="pi">:</span> <span class="no">false</span> <span class="c1"># Change to true if you wish to use local fonts</span>
+<span class="na">rss_enabled</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># Change to false if not</span>
+<span class="na">scrollappear_enabled</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># Change to false to disable</span>
+<span class="na">social</span><span class="pi">:</span>
+  <span class="na">dribbble</span><span class="pi">:</span> <span class="c1"># Add your Dribbble handle</span>
+  <span class="na">facebook</span><span class="pi">:</span> <span class="c1"># Add your Facebook handle</span>
+  <span class="na">flickr</span><span class="pi">:</span> <span class="c1"># Add your Flickr handle</span>
+  <span class="na">github</span><span class="pi">:</span> <span class="c1"># Add your GitHub handle</span>
+  <span class="na">linkedin</span><span class="pi">:</span> <span class="c1"># Add your LinkedIn handle</span>
+  <span class="na">twitter</span><span class="pi">:</span> <span class="c1"># Add your Twitter handle</span>
+  <span class="na">email</span><span class="pi">:</span> <span class="c1"># Add your Email address</span>
+  <span class="na">bitcoin</span><span class="pi">:</span> <span class="c1"># Add your Bitcoin link or address</span>
+  <span class="na">ethereum</span><span class="pi">:</span> <span class="c1"># Add your Ethereum link or address</span>
+  <span class="na">gitlab</span><span class="pi">:</span> <span class="c1"># Add your GitLab handle</span>
+  <span class="na">youtube</span><span class="pi">:</span> <span class="c1"># Add your Youtube handle</span>
+  <span class="na">twitch</span><span class="pi">:</span> <span class="c1"># Add your Twitch handle</span>
+  <span class="na">discord</span><span class="pi">:</span> <span class="c1"># Add you Discord server invitation ID</span>
+  <span class="na">tumblr</span><span class="pi">:</span> <span class="c1"># Add your Tumblr handle</span>
+  <span class="na">bitbucket</span><span class="pi">:</span> <span class="c1"># Add your Bitbucket handle</span>
+  <span class="na">docker</span><span class="pi">:</span> <span class="c1"># Add your Docker Hub handle</span>
+  <span class="na">instagram</span><span class="pi">:</span> <span class="c1"># Add your Instagram handle</span>
+  <span class="na">keybase</span><span class="pi">:</span> <span class="c1"># Add your Keybase handle</span>
+  <span class="na">medium</span><span class="pi">:</span> <span class="c1"># Add your Medium handle</span>
+  <span class="na">spotify</span><span class="pi">:</span> <span class="c1"># Add your Spotify handle</span>
+  <span class="na">stackoverflow</span><span class="pi">:</span> <span class="c1"># Add your Stack Overflow ID number</span>
+  <span class="na">steam</span><span class="pi">:</span> <span class="c1"># Add your Steam handle</span></code></pre></figure>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">about_enabled</code>: If you wish to put the about page link in the top navigation in between the social icons set to true.</li>
+  <li>
+<code class="highlighter-rouge">discus_identifier</code>: If you like to use Disqus for comments on each blog post, you can add the Disqus identifier here and it will popup automatically.</li>
+  <li>
+<code class="highlighter-rouge">ga_analytics</code>: Add Google Analytics Tracking ID here, it uses the Google Tag Manager snippet.</li>
+  <li>
+<code class="highlighter-rouge">local_fonts</code>: By default Chalk uses Google Fonts but if you wish to use local fonts this is the fallback.</li>
+  <li>
+<code class="highlighter-rouge">rss_enabled</code>: When set to <code class="highlighter-rouge">true</code>, the rss icon in the top navigation will show up and people will be able to subscribe to your rss feed.</li>
+  <li>
+<code class="highlighter-rouge">scrollappear_enabled</code>: If set to <code class="highlighter-rouge">true</code>, some elements appear with fade-in effect when visible for the first time, i.e., when scrolling down.</li>
+  <li>
+<code class="highlighter-rouge">social</code>: Add you social links in here. When filled in they will show up in the navigation.</li>
+</ul>
+
+<h3 id="other-settings">Other settings</h3>
+
+<p>Other than the <code class="highlighter-rouge">_config.yml</code> you can change a lot more in the project.</p>
+
+<h4 id="tags">Tags</h4>
+
+<p>To add tags you must add a file with the tag name in <code class="highlighter-rouge">_my_tags</code>.
+In the file you add 2 variables: <code class="highlighter-rouge">slug</code> used to reference the tag and <code class="highlighter-rouge">name</code> which is displayed in the article header.</p>
+
+<figure class="highlight"><pre><code class="language-yml" data-lang="yml"><span class="c1"># _my_tags/design.md</span>
+<span class="nn">---</span>
+<span class="na">slug</span><span class="pi">:</span> <span class="s">design</span>
+<span class="na">name</span><span class="pi">:</span> <span class="s">Design</span>
+<span class="nn">---</span></code></pre></figure>
+
+<h4 id="scss">SCSS</h4>
+
+<p>You can change colors, fonts, sizes in the <code class="highlighter-rouge">_assets/stylesheets/_variables.scss</code> file.
+For each specific theme (light or dark) you can change the variables in <code class="highlighter-rouge">_assets/stylesheets/dark.scss</code> and <code class="highlighter-rouge">_assets/stylesheets/light.scss</code>.</p>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// =============================================================================
+// Variables
+// =============================================================================
+</span>
+<span class="c1">// Typography
+// =============================================================================
+</span>
+<span class="nv">$sans-serif</span><span class="p">:</span> <span class="s2">"Lato"</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="nv">$serif</span><span class="p">:</span> <span class="s2">"Cormorant Garamond"</span><span class="o">,</span> <span class="n">Courier</span><span class="o">,</span> <span class="nb">serif</span><span class="p">;</span>
+<span class="nv">$base-font-family</span><span class="p">:</span> <span class="nv">$sans-serif</span><span class="p">;</span>
+<span class="nv">$base-font-weight</span><span class="p">:</span> <span class="m">400</span><span class="p">;</span>
+<span class="nv">$base-font-weight-bold</span><span class="p">:</span> <span class="m">700</span><span class="p">;</span>
+
+<span class="c1">// Colors
+// =============================================================================
+</span>
+<span class="c1">// Brand colors
+</span>
+<span class="nv">$brand-success</span><span class="p">:</span> <span class="mh">#1fbf92</span><span class="p">;</span>
+<span class="nv">$brand-danger</span><span class="p">:</span> <span class="mh">#e74b3c</span><span class="p">;</span>
+<span class="nv">$brand-primary</span><span class="p">:</span> <span class="mh">#3449ed</span><span class="p">;</span>
+<span class="nv">$brand-warning</span><span class="p">:</span> <span class="mh">#f1c90b</span><span class="p">;</span>
+
+<span class="c1">// Sizes
+// =============================================================================
+</span>
+<span class="c1">// Grid
+</span>
+<span class="nv">$columns</span><span class="p">:</span> <span class="m">12</span><span class="p">;</span>
+<span class="nv">$max-width</span><span class="p">:</span> <span class="m">650px</span><span class="p">;</span>
+<span class="nv">$gutter</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="nv">$one-column</span><span class="p">:</span> <span class="m">100%</span> <span class="o">/</span> <span class="nv">$columns</span><span class="p">;</span>
+<span class="nv">$negative-gutter</span><span class="p">:</span> <span class="m">0</span> <span class="o">-</span> <span class="nv">$gutter</span><span class="p">;</span>
+
+<span class="c1">// Font sizes
+</span>
+<span class="nv">$base-font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+<span class="nv">$base-line-height</span><span class="p">:</span> <span class="m">1</span><span class="mi">.8</span><span class="p">;</span>
+
+<span class="c1">// Box sizes
+</span>
+<span class="nv">$base-border-radius</span><span class="p">:</span> <span class="m">4px</span><span class="p">;</span>
+
+<span class="c1">// Effects
+// =============================================================================
+</span>
+<span class="nv">$base-transition-speed</span><span class="p">:</span> <span class="mi">.2s</span><span class="p">;</span></code></pre></figure>
+
+<h4 id="fonts">Fonts</h4>
+
+<p>Chalk uses Google Fonts by default. You can change the font in <code class="highlighter-rouge">_assets/javascripts/webfonts.js</code> and in <code class="highlighter-rouge">404.html</code>.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">WebFont</span><span class="p">.</span><span class="nx">load</span><span class="p">({</span>
+  <span class="na">google</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">families</span><span class="p">:</span> <span class="p">[</span><span class="s1">'Cormorant Garamond:700'</span><span class="p">,</span> <span class="s1">'Lato:300,400,700'</span><span class="p">]</span>
+  <span class="p">}</span>
+<span class="p">});</span></code></pre></figure>
+
+<p>Don’t forget that Chalk also supports local fonts if enabled in <code class="highlighter-rouge">config.yml</code>!</p>
+
+<h4 id="footer">Footer</h4>
+
+<p>Changing the text in the footer is easy. It can be found in <code class="highlighter-rouge">_includes/footer.html</code>.</p>
+
+<p><em>If you have any questions about using or configuring Chalk please create an issue <a href="" title="here" rel="noreferrer noopener" target="_blank">here</a>!</em></p>
+
+          </div>
+          <div class="article-share">
+            
+            
+            <a href="https://twitter.com/home?status=How+to+configure+Chalk%20-%20http://chalk.nielsenramon.com/posts/configuring-chalk%20by%20@nielsenramon" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+              <svg viewbox="0 0 512 512"><path d="M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6 -18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6 0.8 15 2.5 22.1 -80.5-4-151.9-42.6-199.6-101.3 -8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7C67 210.7 52 206.3 39 199c0 0.4 0 0.8 0 1.2 0 47 33.4 86.1 77.7 95 -8.1 2.2-16.7 3.4-25.5 3.4 -6.2 0-12.3-0.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3 -33.1 26-74.9 41.5-120.3 41.5 -7.8 0-15.5-0.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-0.1-8.4-0.3-12.5C462.6 146 479 129 492 109.5z"></path></svg>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://chalk.nielsenramon.com/posts/configuring-chalk" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
+              <svg viewbox="0 0 512 512"><path d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64H288z"></path></svg>
+            </a>
+            <a href="https://plus.google.com/share?url=http://chalk.nielsenramon.com/posts/configuring-chalk" title="Share on Google+" rel="noreferrer noopener" target="_blank">
+              <svg viewbox="0 0 128 128"><path d="M40.7 55.9v16.1c0 0 15.6 0 22 0C59.2 82.5 53.8 88.2 40.7 88.2c-13.3 0-23.7-10.8-23.7-24.2s10.4-24.2 23.7-24.2c7.1 0 11.6 2.5 15.8 5.9 3.3-3.3 3.1-3.8 11.6-11.9 -7.2-6.6-16.8-10.6-27.4-10.6C18.2 23.3 0 41.5 0 64c0 22.5 18.2 40.7 40.7 40.7 33.6 0 41.8-29.3 39-48.8H40.7zM113.9 56.7V42.6h-10.1v14.1H89.4v10.1h14.5v14.5h10.1V66.8H128V56.7H113.9z"></path></svg>
+            </a>
+          </div>
+
+          
+            <div id="disqus_thread" class="article-comments"></div>
+            <script src="https://chalk-1.disqus.com/embed.js" async defer></script>
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+          
+        </article>
+        <footer class="footer scrollappear">
+  <p>
+    Chalk is a high quality, completely customizable, performant and 100% free
+    blog template for Jekyll built by
+    <a href="/about" title="About me">Nielsen Ramon</a>. Download it <a href="https://github.com/nielsenramon/chalk" rel="noreferrer noopener" target="_blank" title="Download Chalk">here</a>.
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28631876-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-28631876-6');
+  </script>
+
+
+<script type="text/javascript" src="/assets/vendor-e760b40e8059b060dd352a8ac40ea40ba57aa8b6da9908c5c407b5436edec71d.js"></script>
+
+
+  <script type="text/javascript" src="/assets/webfonts-de7fea3d4cd783107fc0bb00615c55b21984b9ee56ee5ea772e71422fa1e3bfa.js"></script>
+
+
+
+  <script type="text/javascript" src="/assets/scrollappear-1f9a4d915d4e354662aa9da29e3a5886705159fbc012da02064b7eeaf5818342.js"></script>
+
+
+<script type="text/javascript" src="/assets/application-08f22c51ba363ca2656b701df59a5f896f041b25efcabd6bccb98cb10af97612.js"></script>
+
+</body>
+</html>

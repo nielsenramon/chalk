@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://chalk.nielsenramon.com/tag/design/</loc>
+<lastmod>2017-12-24T15:14:36+01:00</lastmod>
+</url>
+<url>
+<loc>http://chalk.nielsenramon.com/tag/jekyll/</loc>
+<lastmod>2017-12-24T15:14:36+01:00</lastmod>
+</url>
+<url>
+<loc>http://chalk.nielsenramon.com/tag/web/</loc>
+<lastmod>2017-12-24T15:14:36+01:00</lastmod>
+</url>
+<url>
+<loc>http://chalk.nielsenramon.com/posts/chalk-sample-post-with-all-elements</loc>
+<lastmod>2016-10-15T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://chalk.nielsenramon.com/posts/configuring-chalk</loc>
+<lastmod>2016-10-16T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://chalk.nielsenramon.com/posts/introducing-chalk</loc>
+<lastmod>2016-10-17T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://chalk.nielsenramon.com/about</loc>
+</url>
+<url>
+<loc>http://chalk.nielsenramon.com/</loc>
+</url>
+</urlset>
