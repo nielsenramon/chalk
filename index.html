@@ -13,7 +13,13 @@ description: "Chalk uses all the best tools and merges them into one premium blo
           {% include svg-icon.html icon="arrow-right" %}
         </h5>
       </a>
-      <p>{{ post.description }}</p>
+      <p>
+        {% if post.description %}
+          {{ post.description }}  
+        {% elsif post.excerpt %}
+          {{ post.excerpt }}
+        {% endif %}
+      </p>
       <div class="article-list-footer">
         <span class="article-list-date">
           {{ post.date | date: "%B %-d, %Y" }}
