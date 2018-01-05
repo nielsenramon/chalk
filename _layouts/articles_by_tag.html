@@ -9,7 +9,13 @@ layout: default
         <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
           <h5>{{ post.title }}</h5>
         </a>
-        <p>{{ post.description }}</p>
+        <p>
+          {% if post.description %}
+            {{ post.description }}  
+          {% elsif post.excerpt %}
+            {{ post.excerpt }}
+          {% endif %}
+        </p>
         <div class="article-list-footer">
           <span class="article-list-date">
             {{ post.date | date: "%B %-d, %Y" }}
