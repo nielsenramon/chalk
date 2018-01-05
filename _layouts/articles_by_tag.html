@@ -12,7 +12,7 @@ layout: default
         <p>
           {% if post.description %}
             {{ post.description }}  
-          {% elsif post.excerpt %}
+          {% else %}
             {{ post.excerpt }}
           {% endif %}
         </p>
