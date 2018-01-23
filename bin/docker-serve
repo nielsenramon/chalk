@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+set -e
+SCRIPT=$( realpath -s "$0" ) 
+REPO_DIR=`dirname $(dirname ${SCRIPT})`
+docker run \
+    -p 4000:4000 \
+    -v $REPO_DIR:/blog \
+    -i \
+    -t jekyll-chalk
