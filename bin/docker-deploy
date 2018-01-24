@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+set -e
+SCRIPT=$( realpath -s "$0" ) 
+REPO_DIR=`dirname $(dirname ${SCRIPT})`
+$REPO_DIR/bin/deploy --docker

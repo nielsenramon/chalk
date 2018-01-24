@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+set -e
+SCRIPT=$( realpath -s "$0" ) 
+REPO_DIR=`dirname $(dirname ${SCRIPT})`
+cd $REPO_DIR
+
+docker build . -t jekyll-chalk
+docker run \
+    -v $REPO_DIR:/blog \
+    -t jekyll-chalk \
+    yarn install --modules-folder /blog/_assets/yarn
