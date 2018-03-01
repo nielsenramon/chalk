@@ -1,0 +1,22 @@
+language: ruby
+cache:
+  bundler: true
+  yarn: true
+  directories:
+  - _assets/yarn
+rvm: 2.4.3
+node_js: "8"
+install:
+  - ./bin/setup
+script:
+  - bundle exec jekyll build --trace
+  - rm -R ./_site/node_modules
+  - bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph --url-ignore "feed.xml"
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - USERNAME: Milan Vit
+  - EMAIL: milanvit@milanvit.net
+  - secure: nrpfexcWiW1VhDpJlFCwXu1BjiLC/YfNdGkFBqW50n88Zz3Kt0ydaHYqy1TiJSkC0uxo7zVV4CHRaVjQhuEjpcPAft+X5JCgKaTBq2aG0Xc1BOYk3b/mJwVtv0NM5mkp1k+/kAINjcAO2s+X/pyaaakxaArEyZQmz+KuQuih/wJCJlP0EZLpXSaf/9CfOgidwJOd56m41/KuJTZ6mSazSnjI9uno02HnYxhwFjO1sSTkMxawRLrOHtJIEZEqoPkzzxlIx+19kcimkdthMAIrMse4fBA2gC7f9+PnTJvWf7NlyOfCc/mID6HI2wTL/StAkbaNp6WywK8w6++c7l5mz+V8qkLy5v29MGvPQ5gdilWyyrTsqVD1tUTjK109ShNrjtgWNvbJe5WPhYG8SCphlxBDOr7uHYwtcjaUaiLZSvTH1fAK77RMPd3vodJMB0hNIyIJ0uTtKU5UXYZyNaq1xzfREWhEDEA2qpThNwJoMrnwHo/ZIc7TJsnqPcgesuBwBUlaJ9jGcQBQrtkmGPPUd1ACVLtMg48uHGY3OuxfDnbm4OyxsJFx3KajYUDQ6gv+YoQnWBdovsFKJFSOMICrhGMuGIz7MsgBFtPNzLVUVJ+RObzMn7MZthJMI2gXEe+QcjSSd0oNdzTFF1fTvYFU+I+C+zR4ptd48Ln+zNTCgx0=
+notifications:
+  email: false
