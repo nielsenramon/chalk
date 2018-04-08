@@ -1,5 +1,9 @@
 <a href="{% asset '{{ include.path-detail }}' @path %}"
    data-rjs="{% asset '{{ include.path-detail }}' @path %}"
-   class="fluidbox-trigger">
-  <img src="{% asset '{{ include.path }}' @path %}" alt="{{ include.alt }}" />
+>
+  <img src="{% asset '{{ include.path }}' @path %}" alt="{{ include.alt }}"
+       data-action="zoom"
+       data-zooming-width="{{ assets[include.path].width }}"
+       data-zooming-height="{{ assets[include.path].height }}"
+  />
 </a>
