@@ -2,7 +2,7 @@
   <img src="{% asset '{{ include.path }}' @path %}" alt="{{ include.alt }}"
        data-rjs="{% asset '{{ include.path-detail }}' @path %}"
        data-action="zoom"
-       data-zooming-width="{{ assets[include.path-detail].width }}"
-       data-zooming-height="{{ assets[include.path-detail].height }}"
+       data-zooming-width="{{ assets[include.path-detail].dimensions.width }}"
+       data-zooming-height="{{ assets[include.path-detail].dimensions.height }}"
   />
 </a>
