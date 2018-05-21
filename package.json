@@ -7,9 +7,10 @@
   },
   "dependencies": {
     "jquery": "^3.2.1",
-    "zooming": "^2.0.0",
+    "npm": "^6.0.1",
     "retinajs": "^2.1.1",
+    "svgxuse": "^1.2.4",
     "webfontloader": "^1.6.28",
-    "svgxuse": "^1.2.4"
+    "zooming": "^2.0.0"
   }
 }
