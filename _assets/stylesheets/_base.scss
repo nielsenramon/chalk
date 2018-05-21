@@ -149,6 +149,12 @@ img {
   margin: 0;
 }
 
+.notfound-wrapper {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
 ::selection {
   color: $white;
   background-color: $gray-darkest;
