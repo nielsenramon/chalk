@@ -1,0 +1,1 @@
+{% if page.thumb_image %}{% if page.thumb_image contains '://' %}{{ page.thumb_image }}{% else %}{{ site.url }}{% asset '{{ page.thumb_image }}' @path %}{% endif %}{% else %}{{ site.url }}{% asset og-image.jpg @path %}{% endif %}
