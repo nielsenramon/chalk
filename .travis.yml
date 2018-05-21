@@ -1,4 +1,6 @@
 sudo: false
+
+# version automatically picked up from .ruby-version
 language: ruby
 cache: bundler
 
@@ -11,11 +13,7 @@ before_script:
   - ./bin/setup
   - bundle exec jekyll build
 
-script: LC_ALL=en_US.UTF-8 bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph --url-ignore "feed.xml,/facebook.com/"
-
-branches:
-  except:
-    - master
+script: bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph --url-ignore "feed.xml,/facebook.com/"
 
 env:
   global:
