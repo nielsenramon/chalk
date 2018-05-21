@@ -8,8 +8,8 @@ $(document).ready(function() {
 
   // Zooming
   new Zooming(
-    {customSize: '100%', scaleBase: 0.9, scaleExtra: 0, enableGrab: false}
-  ).listen('img[data-action="zoom"]');
+    {customSize: '100%', scaleBase: 0.9, scaleExtra: 0}
+  ).listen('.zooming');
 
   // Share buttons
   $('.article-share a').on('click', function() {
