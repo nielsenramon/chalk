@@ -30,7 +30,7 @@ sitemap: false
 
     {% if upcase_tag_slug != "PROJECT" %}
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="no-text-decoration tag-cloud" href="{{ 'tag/' | relative_url }}{{ tag_slug }}" title="See all posts by {{ upcase_tag_name }} tag"
+      <a class="tag-cloud" href="{{ 'tag/' | relative_url }}{{ tag_slug }}" title="See all posts by {{ upcase_tag_name }} tag"
       style="font-size: {{ no_of_posts  |  times: 15 | plus: 120  }}%">
         <span>{{ upcase_tag_name }}<small>({{ no_of_posts }})</small></span>
       </a>
