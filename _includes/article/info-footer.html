@@ -1,0 +1,21 @@
+<div class="article-list-footer">
+  <span class="article-list-date">
+    {{ include.post.date | date: "%B %-d, %Y" }}
+  </span>
+  <span class="article-list-divider">-</span>
+  <span class="article-list-minutes">
+    {% capture words %}
+      {{ include.post.content | number_of_words }}
+    {% endcapture %}
+    {% unless words contains "-" %}
+      {{ words | plus: 250 | divided_by: 250 | append: " minute read" }}
+    {% endunless %}
+  </span>
+  <span class="article-list-divider">-</span>
+  <div class="article-list-tags">
+    {% for tag in include.post.tags %}
+      {% assign tag_name = site.my_tags | where: "slug", tag | map: "name" | first %}
+      <a href="{{ 'tag/' | relative_url }}{{ tag }}" title="See all posts with tag '{{ tag_name }}'">{{ tag_name }}</a>
+    {% endfor %}
+  </div>
+</div>
