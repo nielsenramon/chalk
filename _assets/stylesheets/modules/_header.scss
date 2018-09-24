@@ -15,6 +15,10 @@
   font-weight: 700;
   color: $header-logo-color;
   text-decoration: none;
+
+  // hack around SVG padding
+  position: relative;
+  left: -30px;
 }
 
 .header-links {

@@ -2,13 +2,16 @@
 layout: post
 title: "Winter Break Internship, 2018-2019"
 description: "Join us for a three week internship in the Strip District"
-thumb_image: "for-posts/squad.jpg"
-tags: [internship]
+thumb_image: "for-posts/squad"
+tags: [internships]
 ---
+
+{% asset 'for-posts/squad' %}
 
 Make the most of winter break! Idelic is looking for students in computer
 science and related majors at schools in the Pittsburgh area to join us for a
 three-week internship this winter.
+
 
 ### About the Internship
 
@@ -44,8 +47,6 @@ Spun out of the Pitt Ohio trucking company in 2016, Idelic is a fast-growing,
 venture-backed startup in the heart of Pittsburgh's Strip District. We sell
 software for safety teams in the trucking industry to help fleets save time,
 money, and lives.
-
-{% asset 'for-posts/squad' %}
 
 
 ## How to Apply
