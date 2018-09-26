@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+set -e
+
+TAGS="$(grep -h tags:  _posts/* | sed -E 's/tags: \[(.*)\]/\1,/' | xargs | sed -E 's/ |,$//g' | sed -E 's/,/\n/g' | sort | uniq)"
+if [ ! -d "_my_tags" ]
+then
+    mkdir "_my_tags"
+fi
+
+for i in ${TAGS}; do
+    echo found tag: $i
+    if [ -e "_my_tags/${i}.md" ]
+    then
+        echo found  _my_tags/${i}.md, not updating
+    else
+        echo creating  _my_tags/${i}.md
+        firstletter=$(echo $i | cut -c1 | tr ‘[[:lower:]]’ ‘[[:upper:]]’)
+        otherletters=$(echo $i | cut -c2-)
+        capitalized="${firstletter}${otherletters}"
+        cat << EOF > "_my_tags/$i.md"
+---
+slug: $i
+name: $capitalized
+---
+EOF
+    fi
+done

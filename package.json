@@ -2,8 +2,8 @@
   "name": "chalk",
   "scripts": {
     "setup": "bin/setup",
-    "local": "bundle exec jekyll serve --drafts",
-    "publish": "bin/deploy"
+    "local": "bin/tag_scraper && bundle exec jekyll serve --drafts",
+    "publish": "bin/tag_scraper && bin/deploy"
   },
   "dependencies": {
     "jquery": "^3.2.1",
