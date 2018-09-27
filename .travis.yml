@@ -13,6 +13,7 @@ before_script:
   - ./bin/setup
   - bundle exec jekyll build
 
+script: ./tests/test_automatic_tags.sh
 script: bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph --url-ignore "feed.xml,/facebook.com/"
 
 env:
@@ -20,4 +21,3 @@ env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
     - LC_ALL=en_US.UTF-8
     - JEKYLL_ENV=production
-
