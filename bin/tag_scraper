@@ -2,7 +2,10 @@
 
 set -e
 
-TAGS="$(grep -h tags:  _posts/* | sed -E 's/tags: \[(.*)\]/\1,/' | xargs | sed -E 's/ |,$//g' | sed -E 's/,/\n/g' | sort | uniq)"
+ACCEPTABLE_FILES=$(find _posts  -type f   -name "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-*" ! -name "*~" | xargs)
+
+TAGS="$(grep -h tags: ${ACCEPTABLE_FILES} | sed -E 's/tags: \[(.*)\]/\1,/' | xargs | sed -E 's/ |,$//g' | sed -E 's/,/\n/g' | sort | uniq)"
+
 if [ ! -d "_my_tags" ]
 then
     mkdir "_my_tags"
