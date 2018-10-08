@@ -46,15 +46,17 @@ By participating in the Idelic Winter Break Internship, you will:
 Spun out of the Pitt Ohio trucking company in 2016, Idelic is a fast-growing,
 venture-backed startup in the heart of Pittsburgh's Strip District. We sell
 software for safety teams in the trucking industry to help fleets save time,
-money, and lives.
+money, and lives. We ship a web application using Scala and React, with machine
+learning and data pipelining components in Python 3.
 
 
 ## How to Apply
 
 Make the most of winter break! Apply for the Idelic Winter Break Internship by
-sending an email to [chad@idelic.com](mailto:chad@idelic.com) by November 16.
+sending an email with your resume to [chad@idelic.com](mailto:chad@idelic.com)
+by November 16.
 
-In your email, tell us a bit about your background, any interesting projects
+In your email, highlight any relevant projects
 you've worked on in school or open source, and what specific things you would
 hope to get out of participating in the Idelic Winter Break Internship.
 
