@@ -29,7 +29,8 @@ During the internship itself, you will have the option of working in our office
 in the Strip District, and/or working remotely. You will be interacting with
 your peers and with our team in Slack and on GitHub as well as in person.
 
-By participating in the Idelic Winter Break Internship, you will:
+Although this winter internship is unpaid, here are a few of the other perks
+that you can look forward to:
 
 - experience the excitement of fast-paced startup life in the heart of
   Pittsburgh's Strip District,
@@ -39,7 +40,6 @@ By participating in the Idelic Winter Break Internship, you will:
 - establish or expand your GitHub profile, and
 - grow your personal network by meeting and working with professional software
   engineers as well as other highly motivated students.
-
 
 ## About Idelic
 
