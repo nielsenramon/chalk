@@ -35,15 +35,32 @@
     {% asset fonts.css %}
   {% endif %}
 
-  {% if site.blog_theme == "light" %}
-    <link rel="icon" type="image/x-icon" href="{% asset favicon-light.ico @path %}">
-    <link rel="apple-touch-icon" href="{% asset apple-touch-icon-light.png @path %}">
-    <link rel="stylesheet" type="text/css" title="light" id="light" href="{% asset light.css @path%}">
-    <link rel="stylesheet" type="text/css" title="dark" id="dark" href="{% asset dark.css @path%}" disabled="true">
+  {% if site.theme_toggle == true %}
+
+    {% if site.blog_theme == "light" %}
+      <link rel="icon" type="image/x-icon" href="{% asset favicon-light.ico @path %}">
+      <link rel="apple-touch-icon" href="{% asset apple-touch-icon-light.png @path %}">
+      <link rel="stylesheet" type="text/css" title="light" id="light" href="{% asset light.css @path%}">
+      <link rel="stylesheet" type="text/css" title="dark" id="dark" href="{% asset dark.css @path%}" disabled="true">
+    {% else %}
+      <link rel="icon" type="image/x-icon" href="{% asset favicon-dark.ico @path %}">
+      <link rel="apple-touch-icon" href="{% asset apple-touch-icon-dark.png @path %}">
+      <link rel="stylesheet" type="text/css" title="light" id="light" href="{% asset light.css @path%}">
+      <link rel="stylesheet" type="text/css" title="dark" id="dark" href="{% asset dark.css @path%}" disabled="false">
+    {% endif %}
+
   {% else %}
-    <link rel="icon" type="image/x-icon" href="{% asset favicon-dark.ico @path %}">
-    <link rel="apple-touch-icon" href="{% asset apple-touch-icon-dark.png @path %}">
-    <link rel="stylesheet" type="text/css" title="light" id="light" href="{% asset light.css @path%}">
-    <link rel="stylesheet" type="text/css" title="dark" id="dark" href="{% asset dark.css @path%}" disabled="false">
+
+    {% if site.blog_theme == "light" %}
+      <link rel="icon" type="image/x-icon" href="{% asset favicon-light.ico @path %}">
+      <link rel="apple-touch-icon" href="{% asset apple-touch-icon-light.png @path %}">
+      {% asset light.css %}
+    {% else %}
+      <link rel="icon" type="image/x-icon" href="{% asset favicon-dark.ico @path %}">
+      <link rel="apple-touch-icon" href="{% asset apple-touch-icon-dark.png @path %}">
+      {% asset dark.css %}
+    {% endif %}
+
   {% endif %}
+  
 </head>

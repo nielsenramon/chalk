@@ -169,10 +169,12 @@
         </a>
       </li>
     {% endif %}
-    <li>
-      <a onclick="toggle()" title="Toggle Theme">
-        {% include svg-icon.html icon="theme" %}
-      </a>
-    </li>
+    {% if site.theme_toggle == true %}
+      <li>
+        <a onclick="toggle()" title="Toggle Theme">
+          {% include svg-icon.html icon="theme" %}
+        </a>
+      </li>
+    {% endif %}
   </ul>
 </nav>
