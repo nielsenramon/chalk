@@ -8,6 +8,7 @@ url: # add your site url (format: https://example.com)
 
 # Optional settings
 
+theme_toggle: false # Change to true if you wish to show an icon in the navigation for dynamic theme toggling
 about_enabled: false # Change to true if you wish to show an icon in the navigation that redirects to the about page
 baseurl: # Set if blog doesn't sit at the root of the domain (format: /blog)
 discus_identifier: # Add your Disqus identifier
