@@ -3,7 +3,7 @@
 blog_theme: light # Or use dark
 name: Chalk
 paginate: 25
-url: # add your site url (format: https://example.com)
+url: https://topstory.gq
 
 
 # Optional settings
