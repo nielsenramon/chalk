@@ -44,6 +44,30 @@
   }
 }
 
+.tag-nav {
+  display: block;
+  padding-top: 20px;
+
+  .tag-links {
+    padding: 0
+  }
+  li {
+    display: inline-block;
+    margin-right: 7px;
+    vertical-align: middle;
+    &:first-child {
+      margin-left: 0;
+    }
+    a {
+      font-size: 15px;
+      color: $header-link-color;
+      text-decoration: none;
+      padding-right: 5px;
+    }
+  }
+
+}
+
 @include breakpoint(extra-small) {
   .header-nav {
     text-align: center;
@@ -54,6 +78,24 @@
     text-align: center;
     li {
       margin: 0 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@include breakpoint(extra-small) {
+  .tag-nav {
+    text-align: center;
+  }
+  .tag-links {
+    padding: 0;
+    display: block;
+    float: none;
+    text-align: center;
+    li {
+      margin: 0px;
       &:last-child {
         margin-right: 0;
       }

@@ -178,3 +178,19 @@
     {% endif %}
   </ul>
 </nav>
+{% if site.navtags_enabled %}
+  <nav class="tag-nav">
+      <ul class="tag-links">
+          {% assign tags = site.tags | sort %}
+            {% for tag in tags %}
+              {% if forloop.index > 10 %}
+                <li>...</li>
+                <li><a href="/tags">Show all</a></li>
+                {% break %}
+              {% endif %}
+                <li><a href="{{ 'tag/' | relative_url }}{{ tag[0] }}">{{ tag[0] | capitalize }}</a></li>
+            {% endfor %}
+      </ul>
+  </nav>
+{% endif %}
+
