@@ -1,7 +1,7 @@
 stackbitVersion: ~0.2.0
 ssgName: custom
 publishDir: ./_site
-buildCommand: bundle install && jekyll
+buildCommand: bundle install && jekyll build
 uploadDir: images
 staticDir: ./_assets
 pagesDir: ./
