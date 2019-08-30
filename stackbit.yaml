@@ -1,0 +1,297 @@
+stackbitVersion: ~0.2.0
+ssgName: custom
+publishDir: ./_site
+buildCommand: bundle install && jekyll
+uploadDir: images
+staticDir: ./_assets
+pagesDir: ./
+dataDir: ./
+models:
+  config:
+    type: data
+    label: Config
+    file: _config.yml
+    fields:
+      - type: enum
+        name: blog_theme
+        label: Blog Theme
+        options: [light, dark]
+      - type: string
+        name: name
+        label: Name
+      - type: number
+        name: paginate
+        label: Paginate Number
+      - type: string
+        name: url
+        label: URL
+      - type: boolean
+        name: theme_toggle
+        label: Theme Toggle
+      - type: boolean
+        name: about_enabled
+        label: About Enable
+        description: Show an icon in navigation
+      - type: string
+        name: baseurl
+        label: Base URL
+        description: Set if blog doesn't sit at the root of the domain
+      - type: string
+        name: discus_identifier
+        label: Disqus Identifier
+      - type: string
+        name: ga_analytics
+        label: Google Analytics ID
+      - type: boolean
+        name: local_fonts
+        label: Use Local Fonts
+      - type: boolean
+        name: rss_enabled
+        label: RSS Feed
+      - type: boolean
+        name: scrollappear_enabled
+        label: Scrollapper
+      - type: object
+        name: social
+        label: Social
+        fields:
+          - type: string
+            name: dribbble
+            label: Dribbble
+          - type: string
+            name: facebook
+            label: Facebook
+          - type: string
+            name: flickr
+            label: Flickr
+          - type: string
+            name: github
+            label: Github
+          - type: string
+            name: linkedin
+            label: Linkedin
+          - type: string
+            name: twitter
+            label: Twitter
+          - type: string
+            name: email
+            label: Email
+          - type: string
+            name: bitcoin
+            label: Bitcoin
+          - type: string
+            name: ethereum
+            label: Ethereum
+          - type: string
+            name: gitlab
+            label: Gitlab
+          - type: string
+            name: youtube
+            label: Youtube
+          - type: string
+            name: twitch
+            label: Twitch
+          - type: string
+            name: discord
+            label: Discord
+          - type: string
+            name: tumblr
+            label: Tumblr
+          - type: string
+            name: bitbucket
+            label: Bitbucket
+          - type: string
+            name: docker
+            label: Docker
+          - type: string
+            name: instagram
+            label: Instagram
+          - type: string
+            name: keybase
+            label: Keybase
+          - type: string
+            name: medium
+            label: Medium
+          - type: string
+            name: spotify
+            label: Spotify
+          - type: string
+            name: stackoverflow
+            label: Stackoverflow
+          - type: string
+            name: steam
+            label: Steam
+      - type: object
+        name: assets
+        label: Assets
+        description: Important settings (change at own risk)
+        fields:
+          - type: object
+            name: plugins
+            label: Plugins
+            fields:
+              - type: object
+                name: css
+                label: CSS
+                fields:
+                  - type: object
+                    name: autoprefixer
+                    label: Autoprefixer
+              - type: object
+                name: img
+                label: Img
+                fields:
+                  - type: object
+                    name: optim
+                    label: Optim
+          - type: boolean
+            name: source_maps
+            label: Source maps
+          - type: list
+            name: sources
+            label: sources
+            items:
+              type: string
+      - type: object
+        name: collections
+        label: Collections
+        description: Important settings (change at own risk)
+        fields:
+          - type: object
+            name: my_tags
+            label: My Tags
+            fields: 
+              - type: boolean
+                name: output
+                label: Output
+              - type: string
+                name: permalink
+                label: Permalink
+      - type: list
+        name: defaults
+        label: Defaults
+        description: Important settings (change at own risk)
+        items:
+          type: object
+          fields:
+            - type: object
+              name: scope
+              label: Scope
+              fields:
+                - type: string
+                  name: path
+                  label: Path
+                - type: string
+                  name: type
+                  label: Type
+            - type: object
+              name: values
+              label: Values
+              fields:
+                - type: string
+                  name: layout
+                  label: Layout
+      - type: list
+        name: exclude
+        label: Exclude
+        description: Important settings (change at own risk)
+        items:
+          type: string
+      - type: list
+        name: plugins
+        label: Plugins
+        description: Important settings (change at own risk)
+        items:
+          type: string
+      - type: string
+        name: paginate_path
+        label: Paginate Path
+      - type: string
+        name: permalink
+        label: Post Permalink
+  home:
+    type: page
+    label: Home
+    file: index.html
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: text
+        name: title
+        label: Title
+      - type: text
+        name: description
+        label: Description
+  about: 
+    type: page
+    label: About
+    file: about.html
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: text
+        name: title
+        label: Title
+      - type: text
+        name: description
+        label: Description
+  basicpage:
+    type: page
+    label: Basic Page
+    match: "*.html"
+    exclude:
+      - "index.html"
+      - "about.html"
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: text
+        name: description
+        label: Description
+      - type: string
+        name: permalink
+        label: Permalink
+      - type: boolean
+        name: sitemap
+        label: Sitemap
+  post:
+    type: page
+    label: Posts
+    folder: _posts
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: text
+        name: description
+        label: Description
+      - type: image
+        name: thumb_image
+        label: Thumbnail Image
+      - type: list
+        name: tags
+        label: Tags
+        items:
+          type: string
+  my_tags:
+    type: page
+    label: My tags
+    folder: _my_tags
+    fields:
+      - type: string
+        name: slug
+        label: Slug
+      - type: string
+        name: name
+        label: Name
+
+
