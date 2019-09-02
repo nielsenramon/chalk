@@ -212,7 +212,7 @@ models:
   home:
     type: page
     label: Home
-    file: index.html
+    file: index.md
     singleInstance: true
     fields:
       - type: string
@@ -227,9 +227,9 @@ models:
   basicpage:
     type: page
     label: Basic Page
-    match: "*.html"
+    match: "*.md"
     exclude:
-      - "index.html"
+      - "index.md"
     fields:
       - type: string
         name: layout
