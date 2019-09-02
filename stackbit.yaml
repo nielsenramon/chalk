@@ -228,6 +228,7 @@ models:
     type: page
     label: About
     file: about.html
+    singleInstance: true
     fields:
       - type: string
         name: layout
