@@ -3,7 +3,7 @@
 blog_theme: light # Or use dark
 name: Chalk
 paginate: 25
-url: ""# add your site url (format: https://example.com)
+url: "" # add your site url (format: https://example.com)
 
 
 # Optional settings
@@ -50,6 +50,7 @@ assets:
   source_maps: false
   sources:
     - _assets/icons
+    - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
     - _assets/yarn

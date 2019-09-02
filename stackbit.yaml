@@ -1,9 +1,9 @@
 stackbitVersion: ~0.2.0
 ssgName: custom
-publishDir: ./_site
-buildCommand: npm install && bundle install && bundle exec jekyll build --trace
+publishDir: _site
+buildCommand: npm run setup && bundle exec jekyll build
 uploadDir: images
-staticDir: ./_assets
+staticDir: _assets
 pagesDir: ./
 dataDir: ./
 models:
@@ -213,6 +213,7 @@ models:
     type: page
     label: Home
     file: index.html
+    singleInstance: true
     fields:
       - type: string
         name: layout
