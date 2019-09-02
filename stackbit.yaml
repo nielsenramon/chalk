@@ -2,8 +2,8 @@ stackbitVersion: ~0.2.0
 ssgName: custom
 publishDir: _site
 buildCommand: npm run setup && bundle exec jekyll build
-uploadDir: images
-staticDir: _assets
+uploadDir: _assets/images
+staticDir: ""
 pagesDir: ./
 dataDir: ./
 models:
@@ -224,28 +224,12 @@ models:
       - type: text
         name: description
         label: Description
-  about: 
-    type: page
-    label: About
-    file: about.html
-    singleInstance: true
-    fields:
-      - type: string
-        name: layout
-        label: Layout
-      - type: text
-        name: title
-        label: Title
-      - type: text
-        name: description
-        label: Description
   basicpage:
     type: page
     label: Basic Page
     match: "*.html"
     exclude:
       - "index.html"
-      - "about.html"
     fields:
       - type: string
         name: layout
