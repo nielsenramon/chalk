@@ -21,8 +21,8 @@
       <meta property="og:image" content="{{ page.thumb_image }}">
       <meta name="twitter:image" content="{{ page.thumb_image }}">
     {% else %}
-      <meta property="og:image" content="{{ site.url }}{% asset '{{ page.thumb_image }}' @path %}">
-      <meta name="twitter:image" content="{{ site.url }}{% asset '{{ page.thumb_image }}' @path %}">
+      <meta property="og:image" content="{{ site.url }}/_assets/images/{{ page.thumb_image }}">
+      <meta name="twitter:image" content="{{ site.url }}/_assets/images/{{ page.thumb_image }}">
     {% endif %}
   {% else %}
     <meta property="og:image" content="{{ site.url }}{% asset og-image.jpg @path %}">

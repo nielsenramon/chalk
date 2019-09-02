@@ -1,7 +1,7 @@
 stackbitVersion: ~0.2.0
 ssgName: custom
 publishDir: _site
-buildCommand: npm run setup && bundle exec jekyll build
+buildCommand: npm install && npm run setup && bundle exec jekyll build
 uploadDir: _assets/images
 staticDir: ""
 pagesDir: ./
@@ -218,7 +218,7 @@ models:
       - type: string
         name: layout
         label: Layout
-      - type: text
+      - type: string
         name: title
         label: Title
       - type: text
