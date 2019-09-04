@@ -4,8 +4,8 @@ publishDir: _site
 buildCommand: npm install && npm run setup && bundle exec jekyll build
 uploadDir: _assets/images
 staticDir: ""
-pagesDir: ./
-dataDir: ./
+pagesDir: ""
+dataDir: ""
 models:
   config:
     type: data
