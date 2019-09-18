@@ -180,7 +180,7 @@
 </nav>
 
 {% if site.tag_nav_enabled %}
-  <ul class="header-tags">
+  <ul class="header-tags {% if site.scrollappear_enabled %}scrollappear{% endif %}">
     {% assign tags = site.tags | sort %}
     {% for tag in tags %}
       {% if forloop.index > 10 %}

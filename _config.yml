@@ -8,14 +8,14 @@ url: http://chalk.nielsenramon.com
 
 # Optional settings
 
-theme_toggle: true # Change to true if you wish to show an icon in the navigation for dynamic theme toggling
 about_enabled: true # Change to true if you wish to show an icon in the navigation that redirects to the about page
 discus_identifier: chalk-1 # Add your Disqus identifier
 ga_analytics: UA-28631876-6 # Add your GA Tracking Id
 local_fonts: false # Change to true if you wish to use local fonts
 rss_enabled: true # Change to false if not
 scrollappear_enabled: true # Change to false to disable
-tag_nav_enabled: true # Change to true if you wish to show an additional 'tag-list' navigation below the header
+tag_nav_enabled: false # Change to true if you wish to show an additional 'tag-list' navigation below the header
+theme_toggle: false # Change to true if you wish to show an icon in the navigation for dynamic theme toggling
 social:
   dribbble: nielsenramon # Add your Dribbble handle
   facebook: # Add your Facebook handle
