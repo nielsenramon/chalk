@@ -1,40 +1,224 @@
----
-layout: default
-title: "Tags"
-description: "Tag cloud from all the posts"
-permalink: /tags
-sitemap: false
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Chalk | Tags</title>
+  <meta name="description" content="Tag cloud from all the posts">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="tags-page">
+  <meta name="google-site-verification" content="rrfms53zaykhCVWMuR5mkjCjwprrP-O-oDsOCAn8H6c" />
+
+  <meta property="og:title" content="Tags">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://chalk.nielsenramon.com/tags">
+  <meta property="og:description" content="Tag cloud from all the posts">
+  <meta property="og:site_name" content="Chalk">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://chalk.nielsenramon.com/tags">
+  <meta name="twitter:title" content="Tags">
+  <meta name="twitter:description" content="Tag cloud from all the posts">
+
+  
+    <meta property="og:image" content="http://chalk.nielsenramon.com/assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+    <meta name="twitter:image" content="http://chalk.nielsenramon.com/assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+  
+
+  <link href="http://chalk.nielsenramon.com/feed.xml" type="application/rss+xml" rel="alternate" title="Chalk Last 10 blog posts" />
+
+  
+
+  
+
+    
+      <link rel="icon" type="image/x-icon" href="/assets/favicon-light-a98c41efc5ed9fcc06ac664c9e2f7a9b3c3b2e0a52357d221fe382f6f4abc8fc.ico">
+      <link rel="apple-touch-icon" href="/assets/apple-touch-icon-light-87d1f2a3a19b1500e5c1626a0492025ca5f7f97d24540dc5900288e92112925a.png">
+      <link rel="stylesheet" type="text/css" href="/assets/light-bb1553a18d0f1ccfe1aabc010584c49b4277a88503216b78906ba719e30019c1.css">
+    
+
+  
+
+</head>
+
+<body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav scrollappear">
+  <a href="/" class="header-logo" title="Chalk">Chalk</a>
+  <ul class="header-links">
+    
+      <li>
+        <a href="/about" title="About me">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-about">
+  <use href="/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about" xlink:href="/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="https://twitter.com/nielsenramon" rel="noreferrer noopener" target="_blank" title="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-twitter">
+  <use href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter" xlink:href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+      <li>
+        <a href="https://github.com/nielsenramon" rel="noreferrer noopener" target="_blank" title="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-github">
+  <use href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github" xlink:href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="https://dribbble.com/nielsenramon" rel="noreferrer noopener" target="_blank" title="Dribbble">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-dribbble">
+  <use href="/assets/dribbble-13bac13b56f8cd7edb821f8a51d199f6c5867b8ec835d226b27d54a05374ef88.svg#icon-dribbble" xlink:href="/assets/dribbble-13bac13b56f8cd7edb821f8a51d199f6c5867b8ec835d226b27d54a05374ef88.svg#icon-dribbble"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="/feed.xml" rel="noreferrer noopener" target="_blank" title="RSS">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-rss">
+  <use href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss" xlink:href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+  </ul>
+</nav>
+
+
+
+        <div class="tags-page">
   <h1 class="tags-page-header">
     Tags
   </h1>
 
-  {% assign my_tags = site.collections | where: "label", "my_tags" | first %}
+  
 
-  {% assign sorted_tags = site.tags | sort %}
+  
 
-  {% for tag in sorted_tags %}
+  
 
-    {% assign tag_slug = tag | first %}
-    {% assign upcase_tag_slug = tag_slug | upcase %}
-    {% assign no_of_posts = tag | last | size %}
+    
+    
+    
 
-      {% for my_tag in my_tags.docs %}
-        {% if tag_slug == my_tag.slug %}
-          {% assign tag_name = my_tag.name %}
-        {% endif %}
-      {% endfor %}
-      {% assign upcase_tag_name = tag_name | upcase %}
+      
+      
 
-    {% if upcase_tag_slug != "PROJECT" %}
+    
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="tag-cloud" href="{{ 'tag/' | relative_url }}{{ tag_slug }}" title="See all posts by {{ upcase_tag_name }} tag"
-      style="font-size: {{ no_of_posts  |  times: 15 | plus: 120  }}%">
-        <span>{{ upcase_tag_name }}<small>({{ no_of_posts }})</small></span>
+      <a class="tag-cloud" href="/tag/design" title="See all posts by DESIGN tag"
+      style="font-size: 135%">
+        <span>DESIGN<small>(1)</small></span>
       </a>
-    {% endif %}
+    
 
-  {% endfor %}
+  
+
+    
+    
+    
+
+      
+      
+
+    
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="tag-cloud" href="/tag/jekyll" title="See all posts by JEKYLL tag"
+      style="font-size: 165%">
+        <span>JEKYLL<small>(3)</small></span>
+      </a>
+    
+
+  
+
+    
+    
+    
+
+      
+      
+
+    
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="tag-cloud" href="/tag/web" title="See all posts by WEB tag"
+      style="font-size: 150%">
+        <span>WEB<small>(2)</small></span>
+      </a>
+    
+
+  
 </div>
+
+        <footer class="footer scrollappear">
+  <p>
+    Chalk is a high quality, completely customizable, performant and 100% free
+    blog template for Jekyll built by
+    <a href="/about" title="About me">Nielsen Ramon</a>. Download it <a href="https://github.com/nielsenramon/chalk" rel="noreferrer noopener" target="_blank" title="Download Chalk">here</a>.
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28631876-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-28631876-6');
+  </script>
+
+
+<script src="/assets/vendor-2c224c53eb697c739f9490c38819a72184f09472739fd9e492272ef174090428.js" type="text/javascript"></script>
+
+
+  <script src="/assets/webfonts-96493456d319d1bf419afdf8701552d4d486fee6afd304897d4fd81eb4e0cc0b.js" type="text/javascript"></script>
+
+
+
+  <script src="/assets/scrollappear-e2da8ea567e418637e31266cc5302126eaa79f62a2273739086358b589a89ee6.js" type="text/javascript"></script>
+
+
+<script src="/assets/application-cfde13ac81ddaf4351b2e739603e2baf688d0fcc9aba613fe62bbb1c7b037fb9.js" type="text/javascript"></script>
+
+
+</body>
+</html>
