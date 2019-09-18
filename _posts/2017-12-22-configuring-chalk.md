@@ -39,6 +39,7 @@ ga_analytics: # Add your GA Tracking Id
 local_fonts: false # Change to true if you wish to use local fonts
 rss_enabled: true # Change to false if not
 scrollappear_enabled: true # Change to false to disable
+tag_nav_enabled: false # Change to true if you wish to show an additional 'tag-list' navigation below the header
 social:
   dribbble: # Add your Dribbble handle
   facebook: # Add your Facebook handle

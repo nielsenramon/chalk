@@ -3,26 +3,26 @@
 blog_theme: light # Or use dark
 name: Chalk
 paginate: 25
-url: # add your site url (format: https://example.com)
+url: http://chalk.nielsenramon.com
 
 
 # Optional settings
 
-theme_toggle: false # Change to true if you wish to show an icon in the navigation for dynamic theme toggling
-about_enabled: false # Change to true if you wish to show an icon in the navigation that redirects to the about page
-baseurl: # Set if blog doesn't sit at the root of the domain (format: /blog)
-discus_identifier: # Add your Disqus identifier
-ga_analytics: # Add your GA Tracking Id
+theme_toggle: true # Change to true if you wish to show an icon in the navigation for dynamic theme toggling
+about_enabled: true # Change to true if you wish to show an icon in the navigation that redirects to the about page
+discus_identifier: chalk-1 # Add your Disqus identifier
+ga_analytics: UA-28631876-6 # Add your GA Tracking Id
 local_fonts: false # Change to true if you wish to use local fonts
 rss_enabled: true # Change to false if not
 scrollappear_enabled: true # Change to false to disable
+tag_nav_enabled: true # Change to true if you wish to show an additional 'tag-list' navigation below the header
 social:
-  dribbble: # Add your Dribbble handle
+  dribbble: nielsenramon # Add your Dribbble handle
   facebook: # Add your Facebook handle
   flickr: # Add your Flickr handle
-  github: # Add your GitHub handle
+  github: nielsenramon # Add your GitHub handle
   linkedin: # Add your LinkedIn handle
-  twitter: # Add your Twitter handle
+  twitter: nielsenramon # Add your Twitter handle
   email: # Add your Email address
   bitcoin: # Add your Bitcoin link or address
   ethereum: # Add your Ethereum link or address

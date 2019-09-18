@@ -17,6 +17,7 @@ Features:
   - Easy setup and deploying.
   - Enlarge images on click.
   - Filter on tags.
+  - Optional tag navigation.
   - Frequently updated with new versions.
   - Many social media links supported.
   - Media embed for videos.
