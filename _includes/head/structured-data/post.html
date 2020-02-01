@@ -1,0 +1,58 @@
+{% if page.url contains '/posts/' %}
+  {%  unless page.url contains '/posts/page/' %}
+
+    {% assign wordcount = page.content | markdownify | newline_to_br | strip_html | strip_newlines | strip | number_of_words %}
+    {% assign keywordTags = page.tags  | join: ', ' %}
+
+    {% if page.author %}
+      {% assign authorName = page.author %}
+    {% else %}
+      {% assign authorName = site.name %}
+    {% endif %}
+
+    <script type="application/ld+json">
+    {
+      "@context":"http://schema.org",
+      "@type":"Article",
+      "headline":"{{ page.title }}",
+      "name": "{{ page.title }}",
+      "keywords":"{{ keywordTags }}",
+      "wordCount":"{{ wordcount }}",
+      "url":"{{ site.url }}{{ page.url }}",
+      "datePublished":"{{ page.date | | date: '%Y-%m-%d' }}",
+      "dateModified":"{{ page.last_modified_at | | date: '%Y-%m-%d' }}",
+      "author": "{{ authorName }}",
+      "image":"{% include head/structured-data/image-url.html %}",
+      "mainEntityOfPage":{
+        "@type":"WebPage",
+        "@id":"{{ site.url }}{{ page.url }}"
+      },
+      "articleBody":"{{ page.content | markdownify | newline_to_br | strip_html | strip_newlines | strip | escape | remove:'\' }}"
+    }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "{{ site.url }}",
+            "name": "Posts"
+          }
+        }, {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "{{ site.url }}{{ page.url }}",
+            "name": "{{ page.title }}",
+            "image": "{% include head/structured-data/image-url.html %}"
+          }
+        }]
+      }
+    </script>
+
+  {% endunless %}
+{% endif %}
