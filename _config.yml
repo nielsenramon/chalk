@@ -1,28 +1,28 @@
 # Mandatory settings
 
 blog_theme: light # Or use dark
-name: Chalk
+name: JAYMEE
 paginate: 25
-url: http://chalk.nielsenramon.com
+url: https://medium.com/@jaymee.justiniano
 
 
 # Optional settings
 
 about_enabled: true # Change to true if you wish to show an icon in the navigation that redirects to the about page
-discus_identifier: chalk-1 # Add your Disqus identifier
-ga_analytics: UA-28631876-6 # Add your GA Tracking Id
+discus_identifier: #chalk-1 # Add your Disqus identifier
+ga_analytics: UA-168922116-1 #UA-28631876-6 # Add your GA Tracking Id
 local_fonts: false # Change to true if you wish to use local fonts
 rss_enabled: true # Change to false if not
 scrollappear_enabled: true # Change to false to disable
 tag_nav_enabled: false # Change to true if you wish to show an additional 'tag-list' navigation below the header
 theme_toggle: false # Change to true if you wish to show an icon in the navigation for dynamic theme toggling
 social:
-  dribbble: nielsenramon # Add your Dribbble handle
-  facebook: # Add your Facebook handle
+  dribbble: #nielsenramon # Add your Dribbble handle
+  facebook: jaymeemj # Add your Facebook handle
   flickr: # Add your Flickr handle
-  github: nielsenramon # Add your GitHub handle
-  linkedin: # Add your LinkedIn handle
-  twitter: nielsenramon # Add your Twitter handle
+  github: jaymeemj # Add your GitHub handle
+  linkedin: jaymeemj # Add your LinkedIn handle
+  twitter: jaymeemj # Add your Twitter handle
   email: # Add your Email address
   bitcoin: # Add your Bitcoin link or address
   ethereum: # Add your Ethereum link or address
@@ -33,10 +33,10 @@ social:
   tumblr: # Add your Tumblr handle
   bitbucket: # Add your Bitbucket handle
   docker: # Add your Docker Hub handle
-  instagram: # Add your Instagram handle
+  instagram: jaymeemj # Add your Instagram handle
   keybase: # Add your Keybase handle
-  medium: # Add your Medium handle
-  spotify: # Add your Spotify handle
+  medium: jaymee.justiniano # Add your Medium handle
+  spotify: jaymeemj # Add your Spotify handle
   stackoverflow: # Add your Stack Overflow ID number
   steam: # Add your Steam handle
 
