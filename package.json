@@ -1,9 +1,9 @@
 {
   "name": "chalk",
   "scripts": {
-    "setup": "bin/setup",
+    "setup": "sh bin/setup",
     "local": "bundle exec jekyll serve --drafts",
-    "publish": "bin/deploy"
+    "publish": "sh bin/deploy"
   },
   "dependencies": {
     "jquery": "^3.2.1",
