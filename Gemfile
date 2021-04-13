@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "autoprefixer-rails"
+# gem "autoprefixer-rails"
 gem "html-proofer"
 gem "image_optim"
 gem "jekyll", '3.8.6'

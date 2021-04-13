@@ -39,7 +39,7 @@ tags: [web, jekyll]
   - [SVG Icons](https://icomoon.io/)
 
 #### Used tools
-  - [Autoprefixer](https://github.com/postcss/autoprefixer)
+  <!-- - [Autoprefixer](https://github.com/postcss/autoprefixer) -->
   - [Circle CI](https://circleci.com/)
   - [Html-proofer](https://github.com/gjtorikian/html-proofer)
   - [Jekyll](https://jekyllrb.com/)
