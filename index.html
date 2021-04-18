@@ -6,11 +6,10 @@ description: "Chalk uses all the best tools and merges them into one premium blo
 
 <ul class="article-list">
   {% for post in paginator.posts %}
-    <li class="article-list-item {% if site.scrollappear_enabled %}scrollappear{% endif %}">
+    <li class="article-list-item">
       <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
         <h5>
           {{ post.title }}
-          {% include svg-icon.html icon="arrow-right" %}
         </h5>
       </a>
       <p>
@@ -24,12 +23,13 @@ description: "Chalk uses all the best tools and merges them into one premium blo
     </li>
   {% endfor %}
   {% if paginator.total_pages > 1 %}
-    <li class="article-pagination {% if site.settings.scrollappear_enabled %}scrollappear{% endif %}">
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="article-pagination-left">{% include svg-icon.html icon="arrow-left" %} Older posts</a>
-      {% endif %}
+    <li class="article-pagination">
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="article-pagination-right">Newer posts {% include svg-icon.html icon="arrow-right" %}</a>
+        <a href="{{ paginator.previous_page_path }}" class="article-pagination-left">{% include svg-icon.html icon="arrow-left" %} Newer posts</a>
+      {% endif %}
+
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="article-pagination-right">Older posts {% include svg-icon.html icon="arrow-right" %}</a>
       {% endif %}
     </li>
   {% endif %}
