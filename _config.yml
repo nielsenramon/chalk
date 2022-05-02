@@ -16,6 +16,7 @@ rss_enabled: true # Change to false if not
 scrollappear_enabled: true # Change to false to disable
 tag_nav_enabled: false # Change to true if you wish to show an additional 'tag-list' navigation below the header
 theme_toggle: false # Change to true if you wish to show an icon in the navigation for dynamic theme toggling
+mathjax_enabled: false # Change to true if you need LaTeX
 social:
   dribbble: nielsenramon # Add your Dribbble handle
   facebook: # Add your Facebook handle
